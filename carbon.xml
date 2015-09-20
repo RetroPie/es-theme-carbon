@@ -1,0 +1,73 @@
+<!--
+theme name:		Carbon
+version:		1.0
+author:			eric hettervik
+license:		creative commons CC-BY-NC-SA
+based on:		"simple" by nils bonenberger
+-->
+
+<theme>
+    <formatVersion>3</formatVersion>
+
+	<view name="system">
+	
+		<image name="background" extra="true">
+			<size>0 1</size>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+		</image>
+	</view>
+
+    <view name="basic, detailed">
+
+		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
+			<color>393a3b</color>
+			<forceUppercase>1</forceUppercase>
+			<fontPath>./art/OPENSANS-LIGHT.TTF</fontPath>
+			<fontSize>0.03</fontSize>
+			<size>0.12 0.04</size>
+		</text>
+		
+		<text name="md_rating, md_developer, md_publisher, md_genre, md_players, md_playcount">
+			<color>393a3b</color>
+			<forceUppercase>1</forceUppercase>
+			<fontPath>./art/OPENSANS-LIGHT.TTF</fontPath>
+			<fontSize>0.03</fontSize>
+			<size>0.14 0.04</size>
+		</text>
+
+		<text name="md_description">
+			<color>393a3b</color>
+			<forceUppercase>1</forceUppercase>
+			<fontPath>./art/OPENSANS-LIGHT.TTF</fontPath>
+			<fontSize>0.03</fontSize>
+		</text>
+		
+		<datetime name="md_releasedate, md_lastplayed">
+			<color>393a3b</color>
+			<forceUppercase>1</forceUppercase>
+			<fontPath>./art/OPENSANS-LIGHT.TTF</fontPath>
+			<fontSize>0.03</fontSize>
+			<size>0 0.04</size>
+		</datetime>
+
+		<textlist name="gamelist">
+			<selectorColor>1c1c1c</selectorColor>
+			<selectedColor>8b0000</selectedColor>
+			<primaryColor>393a3b</primaryColor>
+			<secondaryColor>871F78</secondaryColor>
+			<fontPath>./art/OPENSANS.TTF</fontPath>
+			<fontSize>0.02</fontSize>
+			<forceUppercase>1</forceUppercase>
+			<scrollSound>./art/flipper.wav</scrollSound>
+		</textlist>
+
+	</view>
+
+	<view name="basic">
+	</view>
+
+	<view name="detailed">
+	</view>
+	
+</theme>
