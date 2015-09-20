@@ -10,23 +10,11 @@ Changelog
 
 Missing Controllers:
 
-Atarijaguar
-Coco
 Colecovision
-Dragon32
-Dreamcast
 Gamecube
-Kodi
-NeoGeo Pocket
-Nintendo DS
-Ports
 PS2
 X-11
-VirtualBoy
 Wii
-Wonderswan
-
-
 
 License
 =======
