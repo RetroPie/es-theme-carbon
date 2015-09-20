@@ -58,7 +58,7 @@
 		
 		<image name="logo2" extra="true">
 			<path>./art/controller.svg</path>
-			<pos>0.80 0.0775</pos>
+			<pos>0.85 0.0775</pos>
 			<maxSize>0.7 0.15</maxSize>
 			<origin>0 0.5</origin>
 		</image>
