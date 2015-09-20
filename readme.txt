@@ -6,64 +6,26 @@ For use with EmulationStation (http://www.emulationstation.org/)
 Changelog
 =========
 
-03-08-2015
-v1.4 update
-- added systems:
-  SNK Neo Geo CD
-  Magnavox Odyssey 2
-  GCE Vectrex
-  Nintendo Virtual Boy
-  Bandai WonderSwan
-  Bandai WonderSwan Color
-  Atari Lynx
-  Nintendo Family Computer
-  Nintendo Super Famicom
-  SEGA Genesis
+9/19/2015
 
-- updated systems:
-  SEGA Mega Drive (showed Genesis logo and text)
-  MSX (wrong path to SVG)
-  
-11-29-2014
-v1.3 update
-- added systems:
-  MSX
+Missing Controllers:
 
-10-03-2014
-v1.2 update
-- reduced resolution of blurred images to 720p, no visible change due to the blur. This decreases the amount of used VRAM by approx. 50 percent! very good for the Raspberry Pi build of EmulationStation.
-- optimized some blurred system background images where banding occurred.
+Atarijaguar
+Coco
+Colecovision
+Dragon32
+Dreamcast
+Gamecube
+Kodi
+NeoGeo Pocket
+Nintendo DS
+Ports
+PS2
+X-11
+VirtualBoy
+Wii
+Wonderswan
 
-08-17-2014
-v1.1 update
-- added systems:
-  Microsoft XBox
-  SEGA Saturn
-  SEGA Dreamcast
-  Nintendo DS
-  Nintendo Wii
-  Sony PlayStation
-  Sony PlayStation Portable
-
-06-16-2014
-v1.0 Initial version
-
-
-Missing systems in the theme
-============================
-
-atarilynx
-wonderswan
-wonderswancolor
-
-No emulation possible (no theme):
-
-n3ds
-ps3
-ps4
-psvita
-wiiu
-xbox360
 
 
 License
