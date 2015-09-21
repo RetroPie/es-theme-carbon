@@ -23,7 +23,7 @@ based on:		"simple" by nils bonenberger
 		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
 			<color>393a3b</color>
 			<forceUppercase>1</forceUppercase>
-			<fontPath>./art/OPENSANS-LIGHT.TTF</fontPath>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
 			<fontSize>0.03</fontSize>
 			<size>0.12 0.04</size>
 		</text>
@@ -31,7 +31,7 @@ based on:		"simple" by nils bonenberger
 		<text name="md_rating, md_developer, md_publisher, md_genre, md_players, md_playcount">
 			<color>393a3b</color>
 			<forceUppercase>1</forceUppercase>
-			<fontPath>./art/OPENSANS-LIGHT.TTF</fontPath>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
 			<fontSize>0.03</fontSize>
 			<size>0.14 0.04</size>
 		</text>
@@ -39,14 +39,14 @@ based on:		"simple" by nils bonenberger
 		<text name="md_description">
 			<color>393a3b</color>
 			<forceUppercase>1</forceUppercase>
-			<fontPath>./art/OPENSANS-LIGHT.TTF</fontPath>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
 			<fontSize>0.03</fontSize>
 		</text>
 		
 		<datetime name="md_releasedate, md_lastplayed">
 			<color>393a3b</color>
 			<forceUppercase>1</forceUppercase>
-			<fontPath>./art/OPENSANS-LIGHT.TTF</fontPath>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
 			<fontSize>0.03</fontSize>
 			<size>0 0.04</size>
 		</datetime>
@@ -56,7 +56,7 @@ based on:		"simple" by nils bonenberger
 			<selectedColor>8b0000</selectedColor>
 			<primaryColor>393a3b</primaryColor>
 			<secondaryColor>871F78</secondaryColor>
-			<fontPath>./art/OPENSANS.TTF</fontPath>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
 			<fontSize>0.02</fontSize>
 			<forceUppercase>1</forceUppercase>
 			<scrollSound>./art/flipper.wav</scrollSound>
