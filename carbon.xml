@@ -54,8 +54,8 @@ based on:		"simple" by nils bonenberger
 		<textlist name="gamelist">
 			<selectorColor>1c1c1c</selectorColor>
 			<selectedColor>8b0000</selectedColor>
-			<primaryColor>393a3b</primaryColor>
-			<secondaryColor>871F78</secondaryColor>
+			<primaryColor>a3a3a3</primaryColor>
+			<secondaryColor>7a6161</secondaryColor>
 			<fontPath>./art/Cabin-Bold.ttf</fontPath>
 			<fontSize>0.02</fontSize>
 			<forceUppercase>1</forceUppercase>
