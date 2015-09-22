@@ -64,14 +64,14 @@ based on:		"simple" by nils bonenberger
 			<secondaryColor>7a6161</secondaryColor>
 			<fontPath>./art/Cabin-Bold.ttf</fontPath>
 			<forceUppercase>1</forceUppercase>
-			<scrollSound>./art/flipper.wav</scrollSound>
+			<scrollSound>./art/select.wav</scrollSound>
 		</textlist>
 
 	</view>
 
 	<view name="basic">
 		<textlist name="gamelist">
-			<fontSize>0.04</fontSize>
+			<fontSize>0.0380</fontSize>
 		</textlist>
 	</view>
 
