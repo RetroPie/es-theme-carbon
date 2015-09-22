@@ -16,7 +16,7 @@
 			<tile>false</tile>
 			<pos>0.5 0.2</pos>
 			<origin>0.5 0.5</origin>
-			<size>0.1 0</size>
+			<size>0.3 0</size>
 			<path>./art/controller.svg</path>
 			<color>8b0000</color>
 		</image>
@@ -31,11 +31,6 @@
 		<image name="logo">
 			<path>./art/system.svg</path>
         </image>
-		
-		<helpsystem name="help">
-			<textColor>7d7d7d</textColor>
-			<iconColor>8b0000</iconColor>
-		</helpsystem>
 		
 	</view>
 
@@ -58,7 +53,7 @@
 		
 		<image name="logo2" extra="true">
 			<path>./art/controller.svg</path>
-			<pos>0.90 0.0775</pos>
+			<pos>0.78 0.0775</pos>
 			<maxSize>0.7 0.15</maxSize>
 			<origin>0 0.5</origin>
 		</image>
@@ -86,7 +81,6 @@
 			<size>0.950 0.72</size>
 			<alignment>center</alignment>
 			<horizontalMargin>0.01</horizontalMargin>
-			<fontSize>0.04</fontSize>
 			<forceUppercase>1</forceUppercase>
 		</textlist>
 		
@@ -177,7 +171,6 @@
 		<textlist name="gamelist">
 			<pos>0.615 0.22</pos>
 			<size>0.359 0.70</size>
-			<fontSize>0.04</fontSize>
 			<forceUppercase>1</forceUppercase>
 			<alignment>left</alignment>
 			<horizontalMargin>0.01</horizontalMargin>

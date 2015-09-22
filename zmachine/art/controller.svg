@@ -11,19 +11,27 @@
 	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
 	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
 ]>
-<svg version="1.2" baseProfile="tiny" id="Layer_3" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+<svg version="1.2" baseProfile="tiny"
+	 id="Layer_3" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-	 x="0px" y="0px" width="598.191px" height="350.257px" viewBox="0 0 598.191 350.257" xml:space="preserve">
-<metadata>
+	 x="0px" y="0px" width="598.189px" height="350.26px" viewBox="0 0 598.189 350.26" xml:space="preserve">
+<metadata  id="metadata55">
+	<rdf:RDF>
+		<cc:Work  rdf:about="">
+			<dc:format>image/svg+xml</dc:format>
+			<dc:type  rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+			<dc:title></dc:title>
+		</cc:Work>
+	</rdf:RDF>
 	<sfw  xmlns="&ns_sfw;">
 		<slices></slices>
-		<sliceSourceBounds  x="823.62" y="419.989" width="313.889" height="215.799" bottomLeftOrigin="true"></sliceSourceBounds>
+		<sliceSourceBounds  x="-7231" y="-7652" width="16383" height="16383" bottomLeftOrigin="true"></sliceSourceBounds>
 	</sfw>
 </metadata>
 <g>
-	<path fill="#F4F4F4" d="M162.216,78.84h39.236v19.618h19.618v19.618h19.618v19.618h19.618v19.618h19.618v19.618h-19.618v19.618
-		h-19.618v19.618H221.07v19.618h-19.618v19.618h-39.236v-19.618h19.618v-19.618h19.618v-19.618h19.618V176.93h19.618v-19.618H221.07
-		v-19.618h-19.618v-19.618h-19.618V98.458h-19.618V78.84z"/>
-	<path fill="#F4F4F4" d="M319.16,275.021h156.944v19.618H319.16V275.021z"/>
+	<path fill="#F4F4F4" d="M103.215,29.841h48.589v24.295h24.294v24.294h24.295v24.294h24.294v24.295h24.294v24.294h-24.294v24.295
+		h-24.294v24.294h-24.295v24.296h-24.294v24.293h-48.589v-24.293h24.295v-24.296h24.294v-24.294h24.294v-24.295h24.295V127.02
+		h-24.295v-24.295h-24.294V78.431H127.51V54.136h-24.295V29.841z"/>
+	<path fill="#F4F4F4" d="M297.572,272.788h194.355v24.295H297.572V272.788z"/>
 </g>
 </svg>
