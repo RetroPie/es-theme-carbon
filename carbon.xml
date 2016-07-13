@@ -1,84 +1,35 @@
-<!--
-theme name:		Carbon
-version:		1.0
-author:			eric hettervik
-license:		creative commons CC-BY-NC-SA
-based on:		"simple" by nils bonenberger
+<!-- 
+Theme: Carbon
+version: 2.0
+author: Eric Hettervik (Rookervik)
+license: creative commons CC-BY-NC-SA
+originally based on: "simple" by nils bonenberger
+
+To change theme color, edit this line:
+
+<include>./carbon_red.xml</include>
+				 _blue
+				 _green
+				 _yellow
+				 _orange
+				 _purple
+				 _teal
+				 _pink
+
+Reference Colors:
+	Red 	8b 00 00
+	Blue 	30 82 ce
+	Green 	50 d6 2c
+	Yellow	ef bc 0b
+	Orange	ef 71 0b
+	Purple	ac 0b ef
+	Teal	04 e9 f7
+	Pink	f5 02 97
 -->
+
+
 
 <theme>
     <formatVersion>3</formatVersion>
-
-	<view name="system">
-	
-		<image name="background" extra="true">
-			<size>0 1</size>
-			<pos>0.5 0.5</pos>
-			<origin>0.5 0.5</origin>
-		</image>
-		
-		<helpsystem name="help">
-			<textColor>7d7d7d</textColor>
-			<iconColor>7d7d7d</iconColor>
-		</helpsystem>
-		
-	</view>
-
-    <view name="basic, detailed">
-
-		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
-			<color>969696</color>
-			<forceUppercase>1</forceUppercase>
-			<fontPath>./art/Cabin-Bold.ttf</fontPath>
-			<fontSize>0.023</fontSize>
-			<size>0.12 0.04</size>
-		</text>
-		
-		<text name="md_rating, md_developer, md_publisher, md_genre, md_players, md_playcount">
-			<color>969696</color>
-			<forceUppercase>1</forceUppercase>
-			<fontPath>./art/Cabin-Bold.ttf</fontPath>
-			<fontSize>0.023</fontSize>
-			<size>0.14 0.04</size>
-		</text>
-
-		<text name="md_description">
-			<color>969696</color>
-			<forceUppercase>1</forceUppercase>
-			<fontPath>./art/Cabin-Bold.ttf</fontPath>
-			<fontSize>0.023</fontSize>
-		</text>
-		
-		<datetime name="md_releasedate, md_lastplayed">
-			<color>969696</color>
-			<forceUppercase>1</forceUppercase>
-			<fontPath>./art/Cabin-Bold.ttf</fontPath>
-			<fontSize>0.023</fontSize>
-			<size>0 0.04</size>
-		</datetime>
-
-		<textlist name="gamelist">
-			<selectorColor>1c1c1c</selectorColor>
-			<selectedColor>8b0000</selectedColor>
-			<primaryColor>969696</primaryColor>
-			<secondaryColor>7a6161</secondaryColor>
-			<fontPath>./art/Cabin-Bold.ttf</fontPath>
-			<forceUppercase>1</forceUppercase>
-			<scrollSound>./art/select.wav</scrollSound>
-		</textlist>
-
-	</view>
-
-	<view name="basic">
-		<textlist name="gamelist">
-			<fontSize>0.0380</fontSize>
-		</textlist>
-	</view>
-
-	<view name="detailed">
-		<textlist name="gamelist">
-			<fontSize>0.03</fontSize>
-		</textlist>
-	</view>
-	
+		<include>./carbon_red.xml</include>	
 </theme>

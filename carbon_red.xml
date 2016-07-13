@@ -1,0 +1,241 @@
+<!-- 
+Theme: Carbon
+version: 2.0
+author: Eric Hettervik (Rookervik)
+license: creative commons CC-BY-NC-SA
+originally based on: "simple" by nils bonenberger
+
+Element color: Search and replace colors. Do not use spaces
+	Red 	8b 00 00
+	Blue 	30 82 ce
+	Green 	50 d6 2c
+	Yellow	ef bc 0b
+	Orange	ef 71 0b
+	Purple	ac 0b ef
+	Teal	04 e9 f7
+	Pink	f5 02 97
+-->
+
+
+
+<theme>
+    <formatVersion>3</formatVersion>
+	
+	<view name="system">
+	
+		<image name="background" extra="true">
+			<tile>true</tile>
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<path>./art/carbon_fiber.png</path>
+		</image>
+		
+		<helpsystem name="help">
+			<textColor>7d7d7d</textColor>
+			<iconColor>7d7d7d</iconColor>
+		</helpsystem>
+		
+		<image name="CenterFade" extra="true">
+			<tile>false</tile>
+			<size>1 0.5</size>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<path>./art/centerfade.png</path>
+			<color>8b000050</color>
+		</image>
+
+		<image name="BottomBar" extra="true">
+			<tile>false</tile>
+			<size>1 0.065</size>
+			<pos>0 1</pos>
+			<origin>0 1</origin>
+			<path>./art/bottom.png</path>
+			<color>8b0000c0</color>
+		</image>
+		
+		<image name="ControllerOverlay" extra="true">
+			<color>8b0000</color>
+		</image>
+		
+	</view>
+	
+	<view name="basic">
+	
+		<image name="background" extra="true">
+			<tile>true</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>./art/carbon_fiber.png</path>
+		</image>
+	
+		<textlist name="gamelist">
+			<selectorColor>1c1c1c</selectorColor>
+			<selectedColor>8b0000</selectedColor>
+			<primaryColor>969696</primaryColor>
+			<secondaryColor>7a6161</secondaryColor>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.030</fontSize>
+			<pos>0.025 0.18</pos>
+			<size>0.950 0.72</size>
+			<alignment>center</alignment>
+			<horizontalMargin>0.01</horizontalMargin>
+			<forceUppercase>1</forceUppercase>
+			<scrollSound>./art/scroll.wav</scrollSound>
+		</textlist>
+		
+	</view>
+
+	<view name="detailed">
+
+		<image name="background" extra="true">
+			<tile>true</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>./art/carbon_fiber.png</path>
+		</image>
+	
+		<image name="md_image">
+			<pos>0.746 0.406</pos>
+			<maxSize>0.405 0.480</maxSize>
+			<origin>0.5 0.5</origin>
+		</image>
+		
+		<text name="md_lbl_rating, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount">
+			<color>969696</color>
+			<forceUppercase>1</forceUppercase>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.023</fontSize>
+			<size>0 0</size>
+			<pos>1 1</pos>
+		</text>
+		
+		<text name="md_lbl_releasedate, md_lbl_genre, md_genre, md_lbl_developer, md_developer, md_lbl_players, md_players">
+			<color>969696</color>
+			<forceUppercase>1</forceUppercase>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.023</fontSize>
+		</text>		
+		
+		<text name="md_lbl_releasedate">
+			<pos>0.542 0.664</pos>
+		</text>
+		
+		<datetime name="md_releasedate">
+			<pos>0.615 0.654</pos>
+			<color>969696</color>
+			<forceUppercase>1</forceUppercase>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.023</fontSize>
+		</datetime>
+
+		<text name="md_lbl_genre">
+			<pos>0.542 0.693</pos>
+		</text>
+		
+		<text name="md_genre">
+			<pos>0.593 0.6925</pos>
+			<size>0.171 0.034</size>
+		</text>
+		
+		<text name="md_lbl_developer">
+			<pos>0.542 0.724</pos>
+		</text>
+		
+		<text name="md_developer">
+			<pos>0.623 0.722</pos>
+			<size>0.171 0.034</size>
+		</text>
+
+		<text name="md_lbl_players">
+			<pos>0.796 0.664</pos>
+		</text>
+		
+		<text name="md_players">
+			<pos>0.862 0.65405</pos>
+		</text>
+
+		<datetime name="md_lastplayed">
+			<pos>1 1</pos>
+		</datetime>
+		
+		<rating name="md_rating">
+			<pos>1 1</pos>
+			<size>0.028 0.028</size>
+			<filledPath>./art/star_filled_spacing.svg</filledPath>
+			<unfilledPath>./art/star_hollow_3_spacing.svg</unfilledPath>
+		</rating>
+		
+		<text name="md_description">
+			<color>969696</color>
+			<forceUppercase>0</forceUppercase>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.023</fontSize>
+			<size>0.404 0.145</size>
+			<pos>0.543 0.762</pos>
+		</text>
+		
+		<textlist name="gamelist">
+			<selectorColor>1c1c1c</selectorColor>
+			<selectedColor>8b0000</selectedColor>
+			<primaryColor>969696</primaryColor>
+			<secondaryColor>7a6161</secondaryColor>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<forceUppercase>1</forceUppercase>
+			<pos>0.039 0.167</pos>
+			<size>0.442 0.741</size>
+			<forceUppercase>1</forceUppercase>
+			<alignment>left</alignment>
+			<horizontalMargin>0.01</horizontalMargin>
+			<fontSize>0.03</fontSize>
+			<scrollSound>./art/scroll.wav</scrollSound>
+		</textlist>
+		
+		<image name="md_hidden">
+			<pos>0.811 0.728</pos>
+			<path>./art/hidden.svg</path>
+			<maxSize>0.032 0.032</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>969696</color>
+		</image>
+		<image name="md_kidgame">
+			<pos>0.85 0.728</pos>
+			<path>./art/kid.svg</path>
+			<maxSize>0.032 0.032</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>969696</color>
+		</image>
+		<image name="md_favorite">
+			<pos>0.893 0.728</pos>
+			<path>./art/favorite.svg</path>
+			<maxSize>0.032 0.032</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>969696</color>
+		</image>
+
+		</view>	
+	
+	<view name="basic, detailed">
+
+		<image name="bottom" extra="true">
+			<pos>0 1</pos>
+			<origin>0 1</origin>
+			<size>1 0.065</size>
+			<path>./art/bottom.png</path>
+			<color>8b0000</color>
+		</image> 
+
+		<image name="top" extra="true">
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 0.16</size>
+			<path>./art/top.png</path>
+			<color>8b0000</color>
+		</image> 
+		
+	</view>	
+
+	
+</theme>

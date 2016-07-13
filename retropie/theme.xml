@@ -4,29 +4,14 @@
 
 	<view name="system">
 
-		<image name="background" extra="true">
-			<tile>true</tile>
-			<pos>0 0</pos>
-			<origin>0 0</origin>
-			<size>1 1</size>
-			<path>./../art/carbon_fiber.png</path>
-		</image>
-		
-		<image name="overlay" extra="true">
+		<image name="ControllerOverlay" extra="true">
 			<tile>false</tile>
 			<pos>0.5 0.2</pos>
 			<origin>0.5 0.5</origin>
 			<size>0.3 0</size>
 			<path>./art/controller.svg</path>
-			<color>8b0000</color>
+			<!--<color>8b0000</color>-->
 		</image>
-		
-		<image name="bottom" extra="true">
-			<pos>0 1</pos>
-			<origin>0 1</origin>
-			<size>1 0.060</size>
-			<path>./../art/system_bottom.png</path>
-		</image> 
 		
 		<image name="logo">
 			<path>./art/system.svg</path>
@@ -38,107 +23,25 @@
 
 		<image name="logo">
 			<path>./art/system.svg</path>
-			<pos>0.025 0.0775</pos>
-			<maxSize>0.55 0.1</maxSize>
-			<origin>0 0.5</origin>
-		</image>
-		
-		<image name="background" extra="true">
-			<tile>true</tile>
-			<pos>0 0</pos>
-			<origin>0 0</origin>
-			<size>1 1</size>
-			<path>./../art/carbon_fiber.png</path>
+			<pos>0.038 0.020</pos>
+			<maxSize>0.388 0.114</maxSize>
+			<origin>0.0 0.0</origin>
 		</image>
 		
 		<image name="logo2" extra="true">
 			<path>./art/controller.svg</path>
-			<pos>0.78 0.0775</pos>
-			<maxSize>0.7 0.15</maxSize>
-			<origin>0 0.5</origin>
+			<pos>0.952 0.010</pos>
+			<maxSize>0.388 0.134</maxSize>
+			<origin>1 0</origin>
+			<color>969696</color>
 		</image>
-		
-		<image name="bottom" extra="true">
-			<pos>0 1</pos>
-			<origin>0 1</origin>
-			<size>1 0.065</size>
-			<path>./../art/bottom.png</path>
-		</image> 
-
-		<image name="top" extra="true">
-			<pos>0 0</pos>
-			<origin>0 0</origin>
-			<size>1 0.16</size>
-			<path>./../art/top.png</path>
-		</image> 
 		
 	</view>
 
-	<view name="basic">
-	
-		<textlist name="gamelist">
-			<pos>0.025 0.18</pos>
-			<size>0.950 0.72</size>
-			<alignment>center</alignment>
-			<horizontalMargin>0.01</horizontalMargin>
-			<forceUppercase>1</forceUppercase>
-		</textlist>
-		
+	<view name="basic">		
 	</view>
 
 	<view name="detailed">
-
-		<image name="icon_background" extra="true">
-			<path>./art/icon_background.png</path>
-			<pos>0.292 0.4</pos>
-			<maxSize>0.375 0.375</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>f40000</color>
-		</image>	
-	
-		<image name="md_image">
-			<pos>0.292 0.4</pos>
-			<maxSize>0.27 0.27</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>f40000</color>
-		</image>
-		
-		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
-			<pos>1 1</pos>
-		</text>
-		
-		<text name="md_playcount, md_players, md_genre, md_publisher, md_developer, md_releasedate">
-			<pos>1 1</pos>
-		</text>
-
-		<datetime name="md_lastplayed">
-			<pos>1 1</pos>
-		</datetime>
-		
-	
-		<rating name="md_rating">
-			<pos>1 1</pos>
-			<size>0.028 0.028</size>
-			<filledPath>./../art/star_filled_spacing.svg</filledPath>
-			<unfilledPath>./../art/star_hollow_3_spacing.svg</unfilledPath>
-		</rating>
-		
-		<text name="md_description">
-			<size>0.52 0.3</size>
-			<pos>0.025 0.65</pos>
-			<fontSize>0.0380</fontSize>
-			<alignment>center</alignment>
-			<forceUppercase>0</forceUppercase>
-		</text>
-		
-		<textlist name="gamelist">
-			<pos>0.615 0.22</pos>
-			<size>0.359 0.70</size>
-			<forceUppercase>1</forceUppercase>
-			<alignment>center</alignment>
-			<horizontalMargin>0.01</horizontalMargin>
-		</textlist>
-
 	</view>
 	
 </theme>
