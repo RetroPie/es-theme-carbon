@@ -42,6 +42,15 @@
 	</view>
 
 	<view name="detailed">
+
+		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
+			<pos>1 1</pos>
+		</text>
+		
+		<text name="md_playcount, md_players, md_genre, md_publisher, md_developer, md_releasedate">
+			<pos>1 1</pos>
+		</text>
+
 	</view>
 	
 </theme>
