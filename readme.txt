@@ -1,4 +1,4 @@
-Theme 'carbon' v2.0 - 07-08-2016 by Rookervik
+Theme 'carbon' v2.4 - 08-16-2016 by Rookervik
 based on simple(c) Nils Bonenberger - nilsbyte@nilsbyte.de - http://blog.nilsbyte.de/
 For use with EmulationStation (http://www.emulationstation.org/)
 
@@ -18,6 +18,13 @@ To change the sound effect, replace /art/scroll.wav with what ever WAV file you 
 Changelog
 =========
 
+===08/16/2016===
+Added Super Grafx
+Added PC Engine CD-Rom²
+Added Turbo Grafx CD
+Removed metadata labels (only the actual meta data is shown)
+Re-positioned elements slightly
+
 ===07/08/2016===
 Complete re-write.
 Simplified all system theme.xml files.
@@ -26,7 +33,6 @@ UI flipped for left-to-right reading order
 Meta-data tags reduced to: released, genre, players, and description
 Kid-Friendly icons and code added
 Flipper sound removed
-
 
 ===9/19/2015===
 Missing controllers added:

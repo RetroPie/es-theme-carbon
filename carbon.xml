@@ -15,9 +15,6 @@ Element color: Search and replace colors. Do not use spaces!
 	Teal	04 e9 f7
 	Pink	f5 02 97
 -->
-
-
-
 <theme>
     <formatVersion>3</formatVersion>
 
@@ -98,92 +95,51 @@ Element color: Search and replace colors. Do not use spaces!
 		</image>
 
 		<image name="md_image">
-			<pos>0.746 0.406</pos>
-			<maxSize>0.4 0.4</maxSize>
+			<pos>0.763 0.400</pos>
+			<maxSize>0.453 0.436</maxSize>
 			<origin>0.5 0.5</origin>
 		</image>
 
-		<text name="md_lbl_rating, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount">
+		<text name="md_lbl_genre, md_genre, md_lbl_rating, md_lbl_developer, md_developer, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lastplayed, md_lbl_playcount, md_playcount, md_lbl_players, md_players, md_lbl_releasedate, md_releasedate">
 			<color>969696</color>
 			<forceUppercase>0</forceUppercase>
 			<fontPath>./art/Cabin-Bold.ttf</fontPath>
 			<fontSize>0.023</fontSize>
-			<size>0 0</size>
+		</text>
+
+		<text name="md_lbl_rating, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_releasedate, md_lbl_genre, md_lbl_developer">
 			<pos>1 1</pos>
-		</text>
-
-		<text name="md_lbl_releasedate, md_lbl_genre, md_genre, md_lbl_developer, md_developer, md_lbl_players, md_players">
-			<color>969696</color>
-			<forceUppercase>0</forceUppercase>
-			<fontPath>./art/Cabin-Bold.ttf</fontPath>
-			<fontSize>0.023</fontSize>
-		</text>
-
-		<text name="md_lbl_releasedate">
-			<pos>0.542 0.634</pos>
 		</text>
 
 		<datetime name="md_releasedate">
-			<pos>0.622 0.625</pos>
-			<color>969696</color>
-			<forceUppercase>0</forceUppercase>
-			<fontPath>./art/Cabin-Bold.ttf</fontPath>
-			<fontSize>0.023</fontSize>
+			<pos>0.53 0.63</pos>
 		</datetime>
 
-		<text name="md_lbl_genre">
-			<pos>0.542 0.663</pos>
-		</text>
-
 		<text name="md_genre">
-			<pos>0.600 0.6635</pos>
-			<size>0.171 0.034</size>
-		</text>
-
-		<text name="md_lbl_developer">
-			<pos>0.542 0.694</pos>
+			<pos>0.53 0.66</pos>
 		</text>
 
 		<text name="md_developer">
-			<pos>0.632 0.693</pos>
-			<size>0.171 0.034</size>
+			<pos>0.53 0.69</pos>
 		</text>
 
-		<text name="md_lbl_players">
-			<pos>0.816 0.634</pos>
+		<text name="md_lbl_players, md_players">
+			<pos>0.91 0.63</pos>
+			<size>0.09 0</size>
 		</text>
 
 		<text name="md_players">
-			<pos>0.880 0.62505</pos>
+			<pos>0.98 0.63</pos>
+			<size>0.02 0</size>
 		</text>
-
-		<datetime name="md_lastplayed">
-			<pos>1 1</pos>
-		</datetime>
-
-		<rating name="md_rating">
-			<pos>1 1</pos>
-			<size>0.028 0.028</size>
-			<filledPath>./art/star_filled_spacing.svg</filledPath>
-			<unfilledPath>./art/star_hollow_3_spacing.svg</unfilledPath>
-		</rating>
-
-<!-- Description Test Box
-		<image name="junk" extra="true">
-			<size>0.442 0.180</size>
-			<pos>0.543 0.737</pos>
-			<path>./art/carbon_fiber.png</path>
-		</image>
--->
-
 
 		<text name="md_description">
 			<color>969696</color>
 			<forceUppercase>0</forceUppercase>
 			<fontPath>./art/Cabin-Bold.ttf</fontPath>
 			<fontSize>0.023</fontSize>
-			<size>0.442 0.180</size>
-			<pos>0.543 0.737</pos>
+			<size>0.467 0.16</size>
+			<pos>0.530 0.746</pos>
 		</text>
 
 		<textlist name="gamelist">
@@ -193,30 +149,30 @@ Element color: Search and replace colors. Do not use spaces!
 			<secondaryColor>7a6161</secondaryColor>
 			<fontPath>./art/Cabin-Bold.ttf</fontPath>
 			<forceUppercase>1</forceUppercase>
-			<pos>0.039 0.167</pos>
-			<size>0.442 0.741</size>
+			<pos>0.021 0.168</pos>
+			<size>0.489 0.754</size>
 			<alignment>left</alignment>
-			<horizontalMargin>0.01</horizontalMargin>
+			<horizontalMargin>0.00</horizontalMargin>
 			<fontSize>0.03</fontSize>
 			<scrollSound>./art/scroll.wav</scrollSound>
 		</textlist>
 
 		<image name="md_hidden">
-			<pos>0.811 0.698</pos>
+			<pos>0.823 0.700</pos>
 			<path>./art/hidden.svg</path>
 			<maxSize>0.032 0.032</maxSize>
 			<origin>0.5 0.5</origin>
 			<color>969696</color>
 		</image>
 		<image name="md_kidgame">
-			<pos>0.85 0.698</pos>
+			<pos>0.883 0.700</pos>
 			<path>./art/kid.svg</path>
 			<maxSize>0.032 0.032</maxSize>
 			<origin>0.5 0.5</origin>
 			<color>969696</color>
 		</image>
 		<image name="md_favorite">
-			<pos>0.893 0.698</pos>
+			<pos>0.940 0.700</pos>
 			<path>./art/favorite.svg</path>
 			<maxSize>0.032 0.032</maxSize>
 			<origin>0.5 0.5</origin>

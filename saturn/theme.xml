@@ -23,17 +23,17 @@
 
 		<image name="logo">
 			<path>./art/system.svg</path>
-			<pos>0.038 0.020</pos>
-			<maxSize>0.388 0.114</maxSize>
-			<origin>0.0 0.0</origin>
+			<pos>0.266 0.074</pos>
+			<maxSize>0.460 0.126</maxSize>
+			<origin>0.5 0.5</origin>
 		</image>
 		
 		<image name="logo2" extra="true">
 			<path>./art/controller.svg</path>
-			<pos>0.952 0.010</pos>
-			<maxSize>0.388 0.134</maxSize>
-			<origin>1 0</origin>
-			<color>969696</color>
+			<pos>0.874 0.074</pos>
+			<maxSize>0.460 0.126</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>bbbbbb</color>
 		</image>
 		
 	</view>
