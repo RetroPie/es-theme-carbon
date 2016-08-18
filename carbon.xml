@@ -184,7 +184,15 @@ Element color: Search and replace colors. Do not use spaces!
 
 		</view>
 
-	<view name="basic, detailed">
+	<view name="basic, detailed, grid">
+
+		<image name="background" extra="true">
+			<tile>true</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>./art/carbon_fiber.png</path>
+		</image>
 
 		<image name="bottom" extra="true">
 			<pos>0 1</pos>
