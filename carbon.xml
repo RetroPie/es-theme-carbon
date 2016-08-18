@@ -113,17 +113,17 @@ Element color: Search and replace colors. Do not use spaces!
 
 		<datetime name="md_releasedate">
 			<pos>0.53 0.63</pos>
-			<size>0 0.04</size>
+			<size>0 0.033</size>
 		</datetime>
 
 		<text name="md_genre">
 			<pos>0.53 0.66</pos>
-			<size>0 0.04</size>
+			<size>0 0.033</size>
 		</text>
 
 		<text name="md_developer">
 			<pos>0.53 0.69</pos>
-			<size>0 0.04</size>
+			<size>0 0.033</size>
 		</text>
 
 		<text name="md_lbl_players, md_players">
