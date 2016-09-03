@@ -100,7 +100,7 @@ Element color: Search and replace colors. Do not use spaces!
 			<origin>0.5 0.5</origin>
 		</image>
 
-		<text name="md_lbl_genre, md_genre, md_lbl_rating, md_lbl_developer, md_developer, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lastplayed, md_lbl_playcount, md_playcount, md_lbl_players, md_players, md_lbl_releasedate, md_releasedate">
+		<text name="md_lbl_genre, md_genre, md_lbl_rating, md_lbl_developer, md_developer, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_players, md_players, md_lbl_releasedate">
 			<color>969696</color>
 			<forceUppercase>0</forceUppercase>
 			<fontPath>./art/Cabin-Bold.ttf</fontPath>
@@ -110,6 +110,17 @@ Element color: Search and replace colors. Do not use spaces!
 		<text name="md_lbl_rating, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_releasedate, md_lbl_genre, md_lbl_developer">
 			<pos>1 1</pos>
 		</text>
+
+		<datetime name="md_lastplayed, md_releasedate">
+			<color>969696</color>
+			<forceUppercase>0</forceUppercase>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.023</fontSize>
+		</datetime>
+
+		<datetime name="md_lastplayed">
+			<pos>1 1</pos>
+		</datetime>
 
 		<datetime name="md_releasedate">
 			<pos>0.53 0.63</pos>
