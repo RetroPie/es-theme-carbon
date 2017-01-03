@@ -99,12 +99,18 @@ Element color: Search and replace colors. Do not use spaces!
 		<video name="md_video">
 			<pos>0.763 0.400</pos>
 			<origin>0.5 0.5</origin>
-			<size>0.366 0.480</size>
+			<size>0.366 0.436</size>
 			<delay>0.2</delay>
 			<default></default>
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
 			<showSnapshotDelay>false</showSnapshotDelay>
 		</video>
+
+		<image name="md_marquee">
+			<pos>0.6 0.035</pos>
+			<origin>0 0</origin>
+			<maxSize>0.2 0.1</maxSize>
+		</image>
 
 	</view>
 
