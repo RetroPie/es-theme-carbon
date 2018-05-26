@@ -118,7 +118,7 @@ Element color: Search and replace colors. Do not use spaces!
 
 	</feature>
 
-	<view name="detailed, video">
+	<view name="detailed, video, grid">
 
 		<image name="background">
 			<tile>true</tile>
@@ -223,7 +223,7 @@ Element color: Search and replace colors. Do not use spaces!
 
 		</view>
 
-	<view name="basic, detailed, video">
+	<view name="basic, detailed, video, grid">
 
 		<image name="bottom" extra="true">
 			<pos>0 1</pos>
@@ -243,5 +243,26 @@ Element color: Search and replace colors. Do not use spaces!
 
 	</view>
 
+	<view name="grid">
+		<text name="md_name">
+			<pos>0.02 .175</pos>
+			<origin>0 0</origin>
+			<size>0.5 0.075</size>
+		</text>
+		<imagegrid name="gamegrid">
+			<pos>0.025 0.275</pos>
+                        <size>0.5 0.64</size>
+			<margin>0.05 0.02</margin>
+		</imagegrid>
+		<gridtile name="default,selected">
+			<size>0.13 0.2</size>
+			<padding>16 16</padding>
+			<backgroundCornerSize>8 8</backgroundCornerSize>
+			<backgroundColor>ffffff13</backgroundColor>
+		</gridtile>
+		<gridtile name="selected">
+			<backgroundEdgeColor>ff0000ff</backgroundEdgeColor>
+		</gridtile>
+	</view>
 
 </theme>
