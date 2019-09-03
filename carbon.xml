@@ -1,4 +1,4 @@
-<!--
+﻿<!--
 Theme: Carbon
 version: 2.0
 author: Eric Hettervik (Rookervik)
@@ -17,7 +17,62 @@ Element color: Search and replace colors. Do not use spaces!
 -->
 <theme>
     <formatVersion>3</formatVersion>
-
+ <view name="menu">
+    <menuText name="menutitle">
+      <fontPath>./art/Cabin-Bold.ttf</fontPath>
+      <fontSize>0.044</fontSize>
+      <color>FAFAFA</color>
+    </menuText>  
+    <menuText name="menufooter">
+      <fontPath>./art/Cabin-Regular.ttf</fontPath>
+      <fontSize>0.02</fontSize>
+      <color>777777FF</color>
+    </menuText>
+    <menuText name="menutext">
+      <fontPath>./art/Cabin-Regular.ttf</fontPath>
+      <fontSize>0.033</fontSize>
+      <color>969696</color>
+      <separatorColor>363636FF</separatorColor>
+      <selectorColor>8b1012</selectorColor>      
+      <selectorColorEnd>5b0000</selectorColorEnd>
+      <selectedColor>FFFFFF</selectedColor>
+    </menuText>
+    <menuTextSmall name="menutextsmall">
+      <fontPath>./art/Cabin-Regular.ttf</fontPath>
+      <fontSize>0.02</fontSize>
+      <color>deec00</color>
+    </menuTextSmall>
+    <menuBackground name="menubg">
+      <color>202020</color>
+    </menuBackground>
+    <menuIcons name="menuicons">
+      <iconKodi>./art/icons/Kodi.png</iconKodi>
+      <iconSystem>./art/icons/System.png</iconSystem>
+      <iconUpdates>./art/icons/Updates.png</iconUpdates>
+      <iconGames>./art/icons/Games.png</iconGames>
+      <iconControllers>./art/icons/Controllers.png</iconControllers>
+      <iconUI>./art/icons/UI.png</iconUI>
+      <iconSound>./art/icons/Sound.png</iconSound>
+      <iconNetwork>./art/icons/Network.png</iconNetwork>
+      <iconScraper>./art/icons/Scraper.png</iconScraper>
+      <iconAdvanced>./art/icons/Advanced.png</iconAdvanced>
+      <iconQuit>./art/icons/Quit.png</iconQuit>
+      <iconRestart>./art/icons/Restart.png</iconRestart>
+      <iconShutdown>./art/icons/Shutdown.png</iconShutdown>
+      <iconFastShutdown>./art/icons/Fastshutdown.png</iconFastShutdown>
+    </menuIcons>
+  </view>
+ <feature supported="carousel">
+    <view name="system">
+      <carousel name="systemcarousel">
+        <color>FFFFFF80</color>
+        <colorEnd>FFFFFFD0</colorEnd>
+        <pos>0 0.3837</pos>        
+        <size>1 0.2325</size>
+      </carousel>
+    </view>
+  </feature>
+      
 	<view name="system">
 
 		<image name="background" extra="true">
@@ -101,11 +156,11 @@ Element color: Search and replace colors. Do not use spaces!
 			<video name="md_video">
 				<pos>0.763 0.400</pos>
 				<maxSize>0.366 0.436</maxSize>
-				<origin>0.5 0.5</origin>			
-				<delay>0.2</delay>
+				<origin>0.5 0.5</origin>
+				<delay>0.8</delay>
 				<default></default>
 				<showSnapshotNoVideo>true</showSnapshotNoVideo>
-				<showSnapshotDelay>false</showSnapshotDelay>
+				<showSnapshotDelay>true</showSnapshotDelay>
 			</video>
 
 			<image name="md_marquee">
