@@ -1,49 +1,425 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Theme: Carbon
+version: 2.0
+author: Eric Hettervik (Rookervik)
+license: creative commons CC-BY-NC-SA
+originally based on: "simple" by nils bonenberger
+
+Element color: Search and replace colors. Do not use spaces!
+	Red 	8b 00 00
+	Blue 	30 82 ce
+	Green 	50 d6 2c
+	Yellow	ef bc 0b
+	Orange	ef 71 0b
+	Purple	ac 0b ef
+	Teal	04 e9 f7
+	Pink	f5 02 97
+-->
 <theme>
-	<formatVersion>4</formatVersion>
-    <include>./carbon.xml</include>
-
-	<view name="system">
-		<image name="ControllerOverlay" extra="true">
-			<tile>false</tile>
-			<pos>0.5 0.2</pos>
-			<origin>0.5 0.5</origin>
-			<size>0.3 0</size>
-			<path>./art/controller/${system.theme}.svg</path>
-		</image>
-
-		<image name="logo">
-			<path>./art/logo/${system.theme}.svg</path>
-		</image>
-
-		<text name="logoText">
-			<fontPath>./art/Cabin-Bold.ttf</fontPath>
-			<color>8b0000</color>
-			<forceUppercase>true</forceUppercase>
-		</text>
-	</view>
-
-	<view name="basic, detailed, video">
-		<text name="logoText">
-			<pos>0.01 0.02</pos>
-			<size>0.460 0.126</size>
-			<fontSize>0.12</fontSize>
-			<fontPath>./art/Cabin-Bold.ttf</fontPath>
-			<color>8b0000</color>
-			<forceUppercase>true</forceUppercase>
-		</text>
-		<image name="logo">
-			<path>./art/logo/${system.theme}.svg</path>
-			<pos>0.266 0.074</pos>
-			<maxSize>0.460 0.126</maxSize>
-			<origin>0.5 0.5</origin>
-		</image>
-
-		<image name="logo2" extra="true">
-			<path>./art/controller/${system.theme}.svg</path>
-			<pos>0.874 0.074</pos>
-			<maxSize>0.460 0.126</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>bbbbbb</color>
-		</image>
-	</view>
+  <formatVersion>4</formatVersion>
+  <variables>
+    <baseColor>8b0000</baseColor>
+    <gradientEndColor>5b0000</gradientEndColor>
+    <centerFadeColor>8b000050</centerFadeColor>
+    <bottomBarColor>8b0000c0</bottomBarColor>
+    <glowColor>Ab000020</glowColor>
+    <systemInfoColor>DDDDDDD8</systemInfoColor>
+  </variables>
+  <include subset="colorset" name="default"/>
+  <include subset="colorset" name="blue">./art/colors/blue.xml</include>
+  <include subset="colorset" name="green">./art/colors/green.xml</include>
+  <view name="menu">
+    <menuText name="menutitle">
+      <fontPath>./art/Cabin-Bold.ttf</fontPath>
+      <fontSize>0.044</fontSize>
+      <color>FAFAFA</color>
+    </menuText>
+    <menuText name="menufooter">
+      <fontPath>./art/Cabin-Regular.ttf</fontPath>
+      <fontSize>0.02</fontSize>
+      <color>777777FF</color>
+    </menuText>
+    <menuText name="menutext">
+      <fontPath>./art/Cabin-Regular.ttf</fontPath>
+      <fontSize>0.038</fontSize>
+      <color>969696</color>
+      <separatorColor>363636FF</separatorColor>
+      <selectorColor>${baseColor}</selectorColor>
+      <selectorColorEnd>${gradientEndColor}</selectorColorEnd>
+      <selectedColor>FFFFFF</selectedColor>
+    </menuText>
+    <menuTextSmall name="menutextsmall">
+      <fontPath>./art/Cabin-Regular.ttf</fontPath>
+      <fontSize>0.02</fontSize>
+      <color>deec00</color>
+    </menuTextSmall>
+    <menuBackground name="menubg">
+      <color>202020</color>
+    </menuBackground>
+    <menuIcons name="menuicons">
+      <iconKodi>./art/icons/Kodi.png</iconKodi>
+      <iconSystem>./art/icons/System.png</iconSystem>
+      <iconUpdates>./art/icons/Updates.png</iconUpdates>
+      <iconGames>./art/icons/Games.png</iconGames>
+      <iconControllers>./art/icons/Controllers.png</iconControllers>
+      <iconUI>./art/icons/UI.png</iconUI>
+      <iconSound>./art/icons/Sound.png</iconSound>
+      <iconNetwork>./art/icons/Network.png</iconNetwork>
+      <iconScraper>./art/icons/Scraper.png</iconScraper>
+      <iconAdvanced>./art/icons/Advanced.png</iconAdvanced>
+      <iconQuit>./art/icons/Quit.png</iconQuit>
+      <iconRestart>./art/icons/Restart.png</iconRestart>
+      <iconShutdown>./art/icons/Shutdown.png</iconShutdown>
+      <iconFastShutdown>./art/icons/Fastshutdown.png</iconFastShutdown>
+    </menuIcons>
+  </view>
+  <view name="menu" tinyScreen="true">
+    <menuText name="menutext">
+      <fontSize>0.0415</fontSize>
+    </menuText>
+  </view>
+  <feature supported="carousel">
+    <view name="system">
+      <carousel name="systemcarousel">
+        <color>FFFFFF80</color>
+        <colorEnd>FFFFFFD0</colorEnd>
+      </carousel>
+    </view>
+    <view name="system" tinyScreen="true">
+      <carousel name="systemcarousel">
+        <color>FFFFFF00</color>
+        <colorEnd>FFFFFF00</colorEnd>
+        <pos>0 0.40</pos>
+        <size>1 0.45</size>
+        <maxLogoCount>1</maxLogoCount>
+        <logoSize>0.25 0.15</logoSize>
+        <logoScale>2.6</logoScale>
+      </carousel>
+    </view>
+  </feature>
+  <view name="system">
+    <image name="background" extra="true">
+      <tile>true</tile>
+      <size>1 1</size>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <path>./art/carbon_fiber.png</path>
+    </image>
+    <helpsystem name="help">
+      <textColor>7d7d7d</textColor>
+      <iconColor>7d7d7d</iconColor>
+    </helpsystem>
+    <image name="CenterFade" extra="true">
+      <tile>false</tile>
+      <size>1 0.5</size>
+      <pos>0.5 0.5</pos>
+      <origin>0.5 0.5</origin>
+      <path>./art/centerfade.png</path>
+      <color>${centerFadeColor}</color>
+    </image>
+    <image name="BottomBar" extra="true">
+      <tile>false</tile>
+      <size>1 0.065</size>
+      <pos>0 1</pos>
+      <origin>0 1</origin>
+      <path>./art/bottom.png</path>
+      <color>${bottomBarColor}</color>
+    </image>
+    <image name="ControllerOverlay" extra="true">
+      <tile>false</tile>
+      <pos>0.5 0.2</pos>
+      <origin>0.5 0.5</origin>
+      <size>0.3 0</size>
+      <path>./${system.theme}/art/controller.svg</path>
+      <color>${baseColor}</color>
+    </image>
+    <text name="logoText">
+      <fontPath>./art/Cabin-Bold.ttf</fontPath>
+      <color>${baseColor}</color>
+      <forceUppercase>true</forceUppercase>
+    </text>
+    <image name="logo">
+      <path>./${system.theme}/art/system.svg</path>
+    </image>
+    <text name="systemInfo">
+      <backgroundColor>${systemInfoColor}</backgroundColor>
+    </text>    
+  </view>
+  <view name="system" tinyScreen="true">
+    <text name="systemInfo">
+      <pos>0.05 0.83</pos>
+      <size>0.95 0.05</size>
+      <backgroundColor>00000000</backgroundColor>
+      <color>A2A2A2</color>
+      <fontSize>0.048</fontSize>
+      <alignment>center</alignment>
+    </text>
+    <image name="CenterFade" extra="true">
+      <tile>false</tile>
+      <size>1 0.5</size>
+      <pos>0.5 0.6</pos>
+    </image>
+    <clock name="clock">
+      <textColor>A2A2A2FF</textColor>
+      <fontSize>0.048</fontSize>
+      <pos>0.86 0.03</pos>
+    </clock>
+    <image name="ControllerOverlay" extra="true">
+      <pos>0.5 0.25</pos>
+      <size>0.4 0</size>
+    </image>
+  </view>
+  <view name="basic">
+    <image name="background" extra="true">
+      <tile>true</tile>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <size>1 1</size>
+      <path>./art/carbon_fiber.png</path>
+    </image>
+    <textlist name="gamelist">
+      <selectorColor>1c1c1c</selectorColor>
+      <selectedColor>${basecolor}</selectedColor>
+      <primaryColor>969696</primaryColor>
+      <secondaryColor>7a6161</secondaryColor>
+      <fontPath>./art/Cabin-Bold.ttf</fontPath>
+      <fontSize>0.030</fontSize>
+      <pos>0.025 0.18</pos>
+      <size>0.950 0.73</size>
+      <alignment>center</alignment>
+      <horizontalMargin>0.01</horizontalMargin>
+      <forceUppercase>1</forceUppercase>
+      <scrollSound>./art/scroll.wav</scrollSound>
+    </textlist>
+  </view>
+  <view name="detailed">
+    <image name="md_image">
+      <pos>0.763 0.400</pos>
+      <maxSize>0.453 0.436</maxSize>
+      <origin>0.5 0.5</origin>
+    </image>
+  </view>
+  <feature supported="video">
+    <view name="video">
+      <video name="md_video">
+        <pos>0.763 0.400</pos>
+        <maxSize>0.366 0.436</maxSize>
+        <origin>0.5 0.5</origin>
+        <delay>0.8</delay>
+        <default/>
+        <showSnapshotNoVideo>true</showSnapshotNoVideo>
+        <showSnapshotDelay>true</showSnapshotDelay>
+      </video>
+      <image name="md_marquee">
+        <pos>0.6 0.035</pos>
+        <origin>0 0</origin>
+        <maxSize>0.2 0.1</maxSize>
+      </image>
+    </view>
+  </feature>
+  <view name="detailed, video">
+    <image name="background">
+      <tile>true</tile>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <size>1 1</size>
+      <path>./art/carbon_fiber.png</path>
+    </image>
+    <text name="md_lbl_genre, md_genre, md_lbl_rating, md_lbl_developer, md_developer, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_players, md_players, md_lbl_releasedate">
+      <color>969696</color>
+      <forceUppercase>0</forceUppercase>
+      <fontPath>./art/Cabin-Bold.ttf</fontPath>
+      <fontSize>0.023</fontSize>
+    </text>
+    <text name="md_lbl_rating, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_releasedate, md_lbl_genre, md_lbl_developer">
+      <pos>1 1</pos>
+    </text>
+    <datetime name="md_lastplayed, md_releasedate">
+      <color>969696</color>
+      <forceUppercase>0</forceUppercase>
+      <fontPath>./art/Cabin-Bold.ttf</fontPath>
+      <fontSize>0.023</fontSize>
+    </datetime>
+    <datetime name="md_lastplayed">
+      <pos>1 1</pos>
+    </datetime>
+    <datetime name="md_releasedate">
+      <pos>0.53 0.63</pos>
+      <size>0 0.033</size>
+    </datetime>
+    <text name="md_genre">
+      <pos>0.53 0.66</pos>
+      <size>0 0.033</size>
+    </text>
+    <text name="md_developer">
+      <pos>0.53 0.69</pos>
+      <size>0 0.033</size>
+    </text>
+    <text name="md_lbl_players, md_players">
+      <pos>0.91 0.63</pos>
+      <size>0.09 0</size>
+    </text>
+    <text name="md_players">
+      <pos>0.98 0.63</pos>
+      <size>0.02 0</size>
+    </text>
+    <text name="md_description">
+      <color>969696</color>
+      <forceUppercase>0</forceUppercase>
+      <fontPath>./art/Cabin-Bold.ttf</fontPath>
+      <fontSize>0.023</fontSize>
+      <size>0.467 0.16</size>
+      <pos>0.530 0.746</pos>
+    </text>
+    <textlist name="gamelist">
+      <selectorColor>1c1c1c</selectorColor>
+      <selectedColor>${baseColor}</selectedColor>
+      <primaryColor>969696</primaryColor>
+      <secondaryColor>7a6161</secondaryColor>
+      <fontPath>./art/Cabin-Bold.ttf</fontPath>
+      <forceUppercase>1</forceUppercase>
+      <pos>0.021 0.168</pos>
+      <size>0.489 0.754</size>
+      <alignment>left</alignment>
+      <horizontalMargin>0.00</horizontalMargin>
+      <fontSize>0.03</fontSize>
+      <scrollSound>./art/scroll.wav</scrollSound>
+    </textlist>
+    <image name="md_hidden">
+      <pos>0.823 0.700</pos>
+      <path>./art/hidden.svg</path>
+      <maxSize>0.032 0.032</maxSize>
+      <origin>0.5 0.5</origin>
+      <color>969696</color>
+    </image>
+    <image name="md_kidgame">
+      <pos>0.883 0.700</pos>
+      <path>./art/kid.svg</path>
+      <maxSize>0.032 0.032</maxSize>
+      <origin>0.5 0.5</origin>
+      <color>969696</color>
+    </image>
+    <image name="md_favorite">
+      <pos>0.940 0.700</pos>
+      <path>./art/favorite.svg</path>
+      <maxSize>0.032 0.032</maxSize>
+      <origin>0.5 0.5</origin>
+      <color>969696</color>
+    </image>
+  </view>
+  <view name="basic, detailed, video, grid">
+    <image name="bottom" extra="true">
+      <pos>0 1</pos>
+      <origin>0 1</origin>
+      <size>1 0.065</size>
+      <path>./art/bottom.png</path>
+      <color>${baseColor}</color>
+    </image>
+    <image name="top" extra="true">
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <size>1 0.16</size>
+      <path>./art/top.png</path>
+      <color>${baseColor}</color>
+    </image>
+    <text name="logoText">
+      <pos>0.01 0.02</pos>
+      <size>0.460 0.126</size>
+      <fontSize>0.12</fontSize>
+      <fontPath>./art/Cabin-Bold.ttf</fontPath>
+      <color>8b0000</color>
+      <forceUppercase>true</forceUppercase>
+    </text>
+    <image name="logo">
+      <path>./${system.theme}/art/system.svg</path>
+      <pos>0.266 0.074</pos>
+      <maxSize>0.460 0.126</maxSize>
+      <origin>0.5 0.5</origin>
+    </image>
+    <image name="logo2" extra="true">
+      <path>./${system.theme}/art/controller.svg</path>
+      <pos>0.874 0.074</pos>
+      <maxSize>0.460 0.126</maxSize>
+      <origin>0.5 0.5</origin>
+      <color>${baseColor}</color>
+    </image>
+  </view>
+  <view name="grid">
+    <image name="background">
+      <tile>true</tile>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <size>1 1</size>
+      <path>./art/carbon_fiber.png</path>
+    </image>
+    <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
+      <color>A0A0B000</color>
+    </text>
+    <text name="md_developer, md_publisher, md_genre, md_players, md_playcount, md_description">
+      <color>ffffff00</color>
+    </text>
+    <datetime name="md_releasedate, md_lastplayed">
+      <color>ffffff00</color>
+    </datetime>
+    <text name="md_rating">
+      <pos>0.88 0.88</pos>
+      <size>0.05 0.03</size>
+    </text>
+    <imagegrid name="gamegrid">
+      <pos>0.025 0.16</pos>
+      <size>0.950 0.774</size>
+      <margin>0.005 0.010</margin>
+      <padding>0.03 0.05 0.03 0.04</padding>
+      <autoLayout>5 2</autoLayout>
+      <autoLayoutSelectedZoom>1.12</autoLayoutSelectedZoom>
+      <animateSelection>false</animateSelection>
+    </imagegrid>
+    <gridtile name="default">
+      <backgroundColor>FFFFFF00</backgroundColor>
+      <backgroundCornerSize>9 9</backgroundCornerSize>
+      <selectionMode>image</selectionMode>
+      <padding>6 6</padding>
+    </gridtile>
+    <gridtile name="selected">
+      <backgroundCenterColor>${baseColor}</backgroundCenterColor>
+      <backgroundEdgeColor>${bottomBarColor}</backgroundEdgeColor>
+    </gridtile>
+    <text name="gridtile">
+      <color>D0D0D0</color>
+      <backgroundColor>00000000</backgroundColor>
+      <fontSize>0.022</fontSize>
+      <alignment>center</alignment>
+      <size>1 0.24</size>
+    </text>
+    <text name="gridtile_selected">
+      <color>FFFFFF</color>
+      <glowColor>${glowColor}</glowColor>
+      <glowSize>3</glowSize>
+    </text>
+  </view>
+  <view name="grid" tinyScreen="true">
+    <imagegrid name="gamegrid">
+      <autoLayout>1 1</autoLayout>
+      <padding>0.03 0.06 0.03 0.04</padding>
+      <margin>0.010 0.03</margin>
+      <scrollDirection>horizontal</scrollDirection>
+      <centerSelection>true</centerSelection>
+      <scrollLoop>true</scrollLoop>
+    </imagegrid>
+    <gridtile name="selected">
+      <backgroundColor>00000000</backgroundColor>
+      <backgroundCenterColor>00000000</backgroundCenterColor>
+      <backgroundEdgeColor>00000000</backgroundEdgeColor>
+    </gridtile>
+    <text name="gridtile">
+      <size>1 0.20</size>
+      <fontSize>0.039</fontSize>
+    </text>
+  </view>
+  <view name="system, basic, detailed, video, grid" tinyScreen="true">
+    <helpsystem name="help">
+      <fontSize>0.024</fontSize>
+    </helpsystem>
+  </view>
 </theme>
