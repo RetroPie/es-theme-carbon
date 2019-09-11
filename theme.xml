@@ -5,18 +5,9 @@ version: 2.0
 author: Eric Hettervik (Rookervik)
 license: creative commons CC-BY-NC-SA
 originally based on: "simple" by nils bonenberger
-
-Element color: Search and replace colors. Do not use spaces!
-	Red 	8b 00 00
-	Blue 	30 82 ce
-	Green 	50 d6 2c
-	Yellow	ef bc 0b
-	Orange	ef 71 0b
-	Purple	ac 0b ef
-	Teal	04 e9 f7
-	Pink	f5 02 97
 -->
 <theme>
+  <!-- <theme defaultView="grid"> -->
   <formatVersion>4</formatVersion>
   <variables>
     <baseColor>8b0000</baseColor>
@@ -25,6 +16,7 @@ Element color: Search and replace colors. Do not use spaces!
     <bottomBarColor>8b0000c0</bottomBarColor>
     <glowColor>Ab000020</glowColor>
     <systemInfoColor>DDDDDDD8</systemInfoColor>
+    <backgroundImage>./art/carbon_fiber.png</backgroundImage>
   </variables>
   <include subset="colorset" name="default"/>
   <include subset="colorset" name="blue">./art/colors/blue.xml</include>
@@ -74,37 +66,17 @@ Element color: Search and replace colors. Do not use spaces!
       <iconFastShutdown>./art/icons/Fastshutdown.png</iconFastShutdown>
     </menuIcons>
   </view>
-  <view name="menu" tinyScreen="true">
-    <menuText name="menutext">
-      <fontSize>0.0415</fontSize>
-    </menuText>
-  </view>
-  <feature supported="carousel">
-    <view name="system">
-      <carousel name="systemcarousel">
-        <color>FFFFFF80</color>
-        <colorEnd>FFFFFFD0</colorEnd>
-      </carousel>
-    </view>
-    <view name="system" tinyScreen="true">
-      <carousel name="systemcarousel">
-        <color>FFFFFF00</color>
-        <colorEnd>FFFFFF00</colorEnd>
-        <pos>0 0.40</pos>
-        <size>1 0.45</size>
-        <maxLogoCount>1</maxLogoCount>
-        <logoSize>0.25 0.15</logoSize>
-        <logoScale>2.6</logoScale>
-      </carousel>
-    </view>
-  </feature>
   <view name="system">
+    <carousel name="systemcarousel">
+      <color>FFFFFF80</color>
+      <colorEnd>FFFFFFD0</colorEnd>
+    </carousel>
     <image name="background" extra="true">
       <tile>true</tile>
       <size>1 1</size>
       <pos>0 0</pos>
       <origin>0 0</origin>
-      <path>./art/carbon_fiber.png</path>
+      <path>${backgroundImage}</path>
     </image>
     <helpsystem name="help">
       <textColor>7d7d7d</textColor>
@@ -144,31 +116,7 @@ Element color: Search and replace colors. Do not use spaces!
     </image>
     <text name="systemInfo">
       <backgroundColor>${systemInfoColor}</backgroundColor>
-    </text>    
-  </view>
-  <view name="system" tinyScreen="true">
-    <text name="systemInfo">
-      <pos>0.05 0.83</pos>
-      <size>0.95 0.05</size>
-      <backgroundColor>00000000</backgroundColor>
-      <color>A2A2A2</color>
-      <fontSize>0.048</fontSize>
-      <alignment>center</alignment>
     </text>
-    <image name="CenterFade" extra="true">
-      <tile>false</tile>
-      <size>1 0.5</size>
-      <pos>0.5 0.6</pos>
-    </image>
-    <clock name="clock">
-      <textColor>A2A2A2FF</textColor>
-      <fontSize>0.048</fontSize>
-      <pos>0.86 0.03</pos>
-    </clock>
-    <image name="ControllerOverlay" extra="true">
-      <pos>0.5 0.25</pos>
-      <size>0.4 0</size>
-    </image>
   </view>
   <view name="basic">
     <image name="background" extra="true">
@@ -176,7 +124,7 @@ Element color: Search and replace colors. Do not use spaces!
       <pos>0 0</pos>
       <origin>0 0</origin>
       <size>1 1</size>
-      <path>./art/carbon_fiber.png</path>
+      <path>${backgroundImage}</path>
     </image>
     <textlist name="gamelist">
       <selectorColor>1c1c1c</selectorColor>
@@ -194,37 +142,22 @@ Element color: Search and replace colors. Do not use spaces!
     </textlist>
   </view>
   <view name="detailed">
-    <image name="md_image">
+    <video name="md_video">
       <pos>0.763 0.400</pos>
       <maxSize>0.453 0.436</maxSize>
       <origin>0.5 0.5</origin>
-    </image>
+      <delay>0.8</delay>
+      <showSnapshotNoVideo>true</showSnapshotNoVideo>
+      <showSnapshotDelay>true</showSnapshotDelay>
+    </video>
   </view>
-  <feature supported="video">
-    <view name="video">
-      <video name="md_video">
-        <pos>0.763 0.400</pos>
-        <maxSize>0.366 0.436</maxSize>
-        <origin>0.5 0.5</origin>
-        <delay>0.8</delay>
-        <default/>
-        <showSnapshotNoVideo>true</showSnapshotNoVideo>
-        <showSnapshotDelay>true</showSnapshotDelay>
-      </video>
-      <image name="md_marquee">
-        <pos>0.6 0.035</pos>
-        <origin>0 0</origin>
-        <maxSize>0.2 0.1</maxSize>
-      </image>
-    </view>
-  </feature>
-  <view name="detailed, video">
+  <view name="detailed">
     <image name="background">
       <tile>true</tile>
       <pos>0 0</pos>
       <origin>0 0</origin>
       <size>1 1</size>
-      <path>./art/carbon_fiber.png</path>
+      <path>${backgroundImage}</path>
     </image>
     <text name="md_lbl_genre, md_genre, md_lbl_rating, md_lbl_developer, md_developer, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_players, md_players, md_lbl_releasedate">
       <color>969696</color>
@@ -308,7 +241,7 @@ Element color: Search and replace colors. Do not use spaces!
       <color>969696</color>
     </image>
   </view>
-  <view name="basic, detailed, video, grid">
+  <view name="basic, detailed, grid">
     <image name="bottom" extra="true">
       <pos>0 1</pos>
       <origin>0 1</origin>
@@ -351,7 +284,7 @@ Element color: Search and replace colors. Do not use spaces!
       <pos>0 0</pos>
       <origin>0 0</origin>
       <size>1 1</size>
-      <path>./art/carbon_fiber.png</path>
+      <path>${backgroundImage}</path>
     </image>
     <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
       <color>A0A0B000</color>
@@ -398,28 +331,55 @@ Element color: Search and replace colors. Do not use spaces!
       <glowSize>3</glowSize>
     </text>
   </view>
-  <view name="grid" tinyScreen="true">
+  <customView name="Carousel" inherits="grid" tinyScreen="false">
+    <text name="md_name">
+      <color>ffffffff</color>
+      <pos>0.04 0.76</pos>
+      <size>0.92 0.10</size>
+      <alignment>center</alignment>
+      <glowColor>00000016</glowColor>
+      <glowSize>4</glowSize>
+    </text>
+    <text name="md_developer">
+      <color>808080ff</color>
+      <pos>0.04 0.80</pos>
+      <size>0.92 0.10</size>
+      <alignment>center</alignment>
+      <fontSize>0.020</fontSize>
+      <glowColor>00000016</glowColor>
+      <glowSize>3</glowSize>
+    </text>
     <imagegrid name="gamegrid">
-      <autoLayout>1 1</autoLayout>
-      <padding>0.03 0.06 0.03 0.04</padding>
-      <margin>0.010 0.03</margin>
+      <padding>0.05 0.14 0.05 0.30</padding>
       <scrollDirection>horizontal</scrollDirection>
+      <autoLayout>5 1</autoLayout>
+      <autoLayoutSelectedZoom>1.50</autoLayoutSelectedZoom>
+      <margin>0.005 0.010</margin>
       <centerSelection>true</centerSelection>
       <scrollLoop>true</scrollLoop>
     </imagegrid>
+    <gridtile name="default">
+      <padding>64 16</padding>
+      <backgroundColor>FFFFFF00</backgroundColor>
+      <imageSizeMode>maxSize</imageSizeMode>
+      <imageColor>FFFFFFAA</imageColor>
+      <reflexion>0.24 0.0</reflexion>
+    </gridtile>
     <gridtile name="selected">
-      <backgroundColor>00000000</backgroundColor>
-      <backgroundCenterColor>00000000</backgroundCenterColor>
-      <backgroundEdgeColor>00000000</backgroundEdgeColor>
+      <backgroundColor>FFFFFF00</backgroundColor>
+      <padding>64 16</padding>
+      <imageColor>FFFFFFFF</imageColor>
     </gridtile>
     <text name="gridtile">
-      <size>1 0.20</size>
-      <fontSize>0.039</fontSize>
+      <color>80808080</color>
+      <fontSize>0.016</fontSize>
+      <size>1 0</size>
     </text>
-  </view>
-  <view name="system, basic, detailed, video, grid" tinyScreen="true">
-    <helpsystem name="help">
-      <fontSize>0.024</fontSize>
-    </helpsystem>
-  </view>
+    <text name="gridtile_selected">
+      <color>FFFFFF00</color>
+      <fontSize>0.035</fontSize>
+      <size>1 0</size>
+    </text>
+  </customView>
+  <include tinyScreen="true">./gpicase.xml</include>
 </theme>
