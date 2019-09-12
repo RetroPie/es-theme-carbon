@@ -18,8 +18,8 @@ originally based on: "simple" by nils bonenberger
     <systemInfoColor>DDDDDDD8</systemInfoColor>
     <backgroundImage>./art/carbon_fiber.png</backgroundImage>
   </variables>
-  <include subset="colorset" name="default"/>
   <include subset="colorset" name="blue">./art/colors/blue.xml</include>
+  <include subset="colorset" name="red"/>
   <include subset="colorset" name="green">./art/colors/green.xml</include>
   <view name="menu">
     <menuText name="menutitle">
@@ -312,11 +312,13 @@ originally based on: "simple" by nils bonenberger
       <backgroundColor>FFFFFF00</backgroundColor>
       <backgroundCornerSize>9 9</backgroundCornerSize>
       <selectionMode>image</selectionMode>
-      <padding>6 6</padding>
+      <padding>5 5</padding>
+      <imageColor>FFFFFFB0</imageColor>
     </gridtile>
     <gridtile name="selected">
-      <backgroundCenterColor>${baseColor}</backgroundCenterColor>
+      <backgroundCenterColor>${centerFadeColor}</backgroundCenterColor>
       <backgroundEdgeColor>${bottomBarColor}</backgroundEdgeColor>
+      <imageColor>FFFFFFFF</imageColor>
     </gridtile>
     <text name="gridtile">
       <color>D0D0D0</color>
@@ -360,20 +362,22 @@ originally based on: "simple" by nils bonenberger
     </imagegrid>
     <gridtile name="default">
       <padding>64 16</padding>
-      <backgroundColor>FFFFFF00</backgroundColor>
+      <backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+      <backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
       <imageSizeMode>maxSize</imageSizeMode>
       <imageColor>FFFFFFAA</imageColor>
       <reflexion>0.24 0.0</reflexion>
     </gridtile>
-    <gridtile name="selected">
-      <backgroundColor>FFFFFF00</backgroundColor>
+    <gridtile name="selected">      
+      <backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+      <backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
       <padding>64 16</padding>
-      <imageColor>FFFFFFFF</imageColor>
+     
     </gridtile>
     <text name="gridtile">
       <color>80808080</color>
       <fontSize>0.016</fontSize>
-      <size>1 0</size>
+      <size>1 0</size>    
     </text>
     <text name="gridtile_selected">
       <color>FFFFFF00</color>
