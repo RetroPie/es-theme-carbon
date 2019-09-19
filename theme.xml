@@ -352,6 +352,8 @@ originally based on: "simple" by nils bonenberger
       <glowSize>3</glowSize>
     </text>
     <imagegrid name="gamegrid">
+      <pos>0 0.16</pos>
+      <size>1 0.774</size>
       <padding>0.05 0.14 0.05 0.30</padding>
       <scrollDirection>horizontal</scrollDirection>
       <autoLayout>5 1</autoLayout>
@@ -368,16 +370,15 @@ originally based on: "simple" by nils bonenberger
       <imageColor>FFFFFFAA</imageColor>
       <reflexion>0.24 0.0</reflexion>
     </gridtile>
-    <gridtile name="selected">      
+    <gridtile name="selected">
       <backgroundCenterColor>FFFFFF00</backgroundCenterColor>
       <backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
       <padding>64 16</padding>
-     
     </gridtile>
     <text name="gridtile">
       <color>80808080</color>
       <fontSize>0.016</fontSize>
-      <size>1 0</size>    
+      <size>1 0</size>
     </text>
     <text name="gridtile_selected">
       <color>FFFFFF00</color>
@@ -385,5 +386,65 @@ originally based on: "simple" by nils bonenberger
       <size>1 0</size>
     </text>
   </customView>
+  <customView name="Tiles" inherits="grid">
+    <imagegrid name="gamegrid">
+      <autoLayout>3 2</autoLayout>
+      <autoLayoutSelectedZoom>1.02</autoLayoutSelectedZoom>
+      <imageSource>image</imageSource>
+      <margin>0.005 0.010</margin>
+      <padding>0.03 0.05 0.03 0.04</padding>
+      <zIndex>11</zIndex>
+    </imagegrid>
+    <gridtile name="default">
+      <size>0.225 0.254</size>
+      <backgroundCenterColor>FFFFFF20</backgroundCenterColor>
+      <backgroundEdgeColor>FFFFFF20</backgroundEdgeColor>
+      <backgroundCornerSize>0 0</backgroundCornerSize>
+      <padding>1 1</padding>
+      <imageSizeMode>minSize</imageSizeMode>
+      <imageColor>FFFFFFAA</imageColor>
+    </gridtile>
+    <gridtile name="selected">
+      <size>0.230 0.259</size>
+      <padding>1 1</padding>
+      <backgroundCornerSize>0 0</backgroundCornerSize>
+      <imageColor>FFFFFFFF</imageColor>
+    </gridtile>
+    <text name="gridtile">
+      <color>D0D0D0D0</color>
+      <backgroundColor>00000000</backgroundColor>
+      <fontSize>0.028</fontSize>
+      <alignment>center</alignment>
+      <size>0 0.18</size>
+    </text>
+    <text name="gridtile_selected">
+      <color>FFFFFF</color>
+      <glowColor>${glowColor}</glowColor>
+      <glowSize>3</glowSize>
+    </text>
+  </customView>
+  <customView name="Video Tiles" inherits="grid">
+    <imagegrid name="gamegrid">
+      <showVideoAtDelay>800</showVideoAtDelay>
+    </imagegrid>
+  </customView>
   <include tinyScreen="true">./gpicase.xml</include>
+  <view name="system" ifHelpPrompts="false">
+    <image name="BottomBar" extra="true">
+      <visible>false</visible>
+    </image>
+  </view>
+  <view name="basic, detailed, grid">
+    <image name="bottom" extra="true">
+      <visible>false</visible>
+    </image>
+  </view>
+  <view name="detailed">
+    <textlist name="gamelist">
+      <size>0.489 0.804</size>
+    </textlist>
+    <text name="md_description">
+      <size>0.467 0.21</size>
+    </text>
+  </view>
 </theme>
