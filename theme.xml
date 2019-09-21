@@ -423,7 +423,7 @@ originally based on: "simple" by nils bonenberger
       <glowSize>3</glowSize>
     </text>
   </customView>
-  <customView name="Video Tiles" inherits="grid">
+  <customView name="Video Tiles" inherits="Tiles">
     <imagegrid name="gamegrid">
       <showVideoAtDelay>800</showVideoAtDelay>
     </imagegrid>
@@ -434,12 +434,12 @@ originally based on: "simple" by nils bonenberger
       <visible>false</visible>
     </image>
   </view>
-  <view name="basic, detailed, grid">
+  <view name="basic, detailed, grid" ifHelpPrompts="false">
     <image name="bottom" extra="true">
       <visible>false</visible>
     </image>
   </view>
-  <view name="detailed">
+  <view name="detailed" ifHelpPrompts="false">
     <textlist name="gamelist">
       <size>0.489 0.804</size>
     </textlist>
