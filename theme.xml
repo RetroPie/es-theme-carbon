@@ -11,7 +11,7 @@ originally based on: "simple" by nils bonenberger
   <formatVersion>4</formatVersion>
   <variables>
     <baseColor>8b0000</baseColor>
-    <gradientEndColor>5b0000</gradientEndColor>
+    <gradientEndColor>6b2020</gradientEndColor>
     <centerFadeColor>8b000050</centerFadeColor>
     <bottomBarColor>8b0000c0</bottomBarColor>
     <glowColor>Ab000020</glowColor>
@@ -37,9 +37,11 @@ originally based on: "simple" by nils bonenberger
       <fontSize>0.038</fontSize>
       <color>969696</color>
       <separatorColor>363636FF</separatorColor>
+
       <selectorColor>${baseColor}</selectorColor>
       <selectorColorEnd>${gradientEndColor}</selectorColorEnd>
-      <selectedColor>FFFFFF</selectedColor>
+      <selectedColor>FFFFFF</selectedColor>    
+      <selectorGradientType>horizontal</selectorGradientType>
     </menuText>
     <menuTextSmall name="menutextsmall">
       <fontPath>./art/Cabin-Regular.ttf</fontPath>
