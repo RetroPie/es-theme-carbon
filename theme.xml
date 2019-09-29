@@ -66,6 +66,7 @@ originally based on: "simple" by nils bonenberger
       <iconRestart>./art/icons/Restart.png</iconRestart>
       <iconShutdown>./art/icons/Shutdown.png</iconShutdown>
       <iconFastShutdown>./art/icons/Fastshutdown.png</iconFastShutdown>
+      <iconRetroachievements>./art/icons/Contest.png</iconRetroachievements>
     </menuIcons>
     <menuTextEdit name="menutextedit">
       <inactive>./art/textinput_ninepatch.png</inactive>
