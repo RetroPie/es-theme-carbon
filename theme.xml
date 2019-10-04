@@ -85,6 +85,7 @@ originally based on: "simple" by nils bonenberger
       <color>${systemInfoColor}</color>
       <glowColor>${glowColor}</glowColor>
       <glowSize>2</glowSize>
+      <reflexion>0.20 0.0</reflexion>
     </text>
     <image name="carousel-shadow" extra="true">
       <path>./art/shadow.png</path>
@@ -484,20 +485,18 @@ originally based on: "simple" by nils bonenberger
     </text>
     <video name="md_video">
       <pos>0.83 0.455</pos>
-      <minSize>0.29 0.39</minSize>      
+      <minSize>0.29 0.39</minSize>
       <origin>0.5 0.5</origin>
       <delay>1</delay>
       <showSnapshotNoVideo>true</showSnapshotNoVideo>
       <showSnapshotDelay>true</showSnapshotDelay>
     </video>
-
     <image name="tv_overlay" extra="true">
       <pos>0.68 0.25</pos>
-      <size>0.30 0.40</size>      
+      <size>0.30 0.40</size>
       <path>./art/tv.png</path>
       <zIndex>140</zIndex>
     </image>
-
     <text name="md_description">
       <pos>0.68 0.678</pos>
       <size>0.30 0.20</size>
@@ -553,6 +552,22 @@ originally based on: "simple" by nils bonenberger
       <showVideoAtDelay>800</showVideoAtDelay>
     </imagegrid>
   </customView>
+  
+  <customView name="Video Marquee Tiles" inherits="Video Tiles">
+    <image name="gridtile.marquee">
+      <pos>0.5 0.5</pos>
+      <origin>0.5 0.5</origin>
+      <size>0.7 0.7</size>
+    </image>
+    <text name="gridtile">
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <fontSize>0.040</fontSize>
+      <fontPath>./art/Cabin-Bold.ttf</fontPath>
+      <padding>0.1 0</padding>
+    </text>
+  </customView>
+  
   <include tinyScreen="true">./gpicase.xml</include>
   <view name="system" ifHelpPrompts="false">
     <image name="BottomBar" extra="true">
