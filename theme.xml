@@ -77,6 +77,7 @@ originally based on: "simple" by nils bonenberger
     <carousel name="systemcarousel">
       <color>FFFFFF50</color>
       <colorEnd>FFFFFFD0</colorEnd>
+      <systemInfoDelay>700</systemInfoDelay>
     </carousel>
     <text name="systemInfo">
       <pos>0 0.62</pos>
