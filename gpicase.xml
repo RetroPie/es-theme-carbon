@@ -38,6 +38,9 @@
       <pos>0.5 0.25</pos>
       <size>0.4 0</size>
     </image>
+    <image name="carousel-shadow" extra="true">
+      <visible>false</visible>
+    </image>
   </view>
   <view name="system, basic, detailed, grid">
     <helpsystem name="help">

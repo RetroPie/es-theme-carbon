@@ -578,7 +578,7 @@ originally based on: "simple" by nils bonenberger
     <image name="gridtile.marquee">
       <pos>0.5 0.5</pos>
       <origin>0.5 0.5</origin>
-      <size>0.7 0.7</size>
+      <size>0.6 0.6</size>
     </image>
     <text name="gridtile">
       <pos>0 0</pos>
