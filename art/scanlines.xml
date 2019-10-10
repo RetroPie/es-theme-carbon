@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>4</formatVersion>
+  <view name="menu">
+    <menuBackground name="menubg">
+      <shaderPath>./scanlines.png</shaderPath>
+      <shaderColor>FFFFFF60</shaderColor>
+      <shaderTiled>true</shaderTiled>
+    </menuBackground>
+  </view>
+</theme>
