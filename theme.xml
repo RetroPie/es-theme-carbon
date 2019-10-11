@@ -8,7 +8,7 @@ originally based on: "simple" by nils bonenberger
 -->
 <theme defaultView="Video Tiles">
   <!-- <theme defaultView="grid"> -->
-  <formatVersion>4</formatVersion>
+  <formatVersion>7</formatVersion>
   <variables>
     <baseColor>8b0000</baseColor>
     <gradientEndColor>6b2020</gradientEndColor>
@@ -25,7 +25,17 @@ originally based on: "simple" by nils bonenberger
   <include subset="shader" name="None"/>
   <include subset="shader" name="ScanLines">./art/scanlines.xml</include>
   <include subset="shader" name="Crt">./art/crt.xml</include>
-  
+
+  <view name="screen">
+    <text name="clock">
+      <textColor>777777FF</textColor>      
+      <fontSize>0.035</fontSize>
+      <pos>0.94 0.94</pos>           
+      <size>0.05 0.058</size>     
+      <verticalAlignment>center</verticalAlignment>
+    </text>
+  </view>
+
   <view name="menu">
     <menuText name="menutitle">
       <fontPath>./art/Cabin-Bold.ttf</fontPath>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>4</formatVersion>
+  <formatVersion>7</formatVersion>
   <feature supported="carousel">
     <view name="system">
       <carousel name="systemcarousel">

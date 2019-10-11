@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <theme defaultView="grid">
-  <formatVersion>4</formatVersion>
+  <formatVersion>7</formatVersion>
   <view name="menu">
     <menuText name="menutext">
       <fontSize>0.0415</fontSize>
