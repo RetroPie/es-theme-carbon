@@ -34,6 +34,16 @@ originally based on: "simple" by nils bonenberger
       <size>0.05 0.058</size>     
       <verticalAlignment>center</verticalAlignment>
     </text>
+    <controllerActivity name="controllerActivity">
+      <pos>0.01 0.012</pos>
+      <size>0.085 0.025</size>
+      <!--<horizontalAlignment>right</horizontalAlignment>-->
+      <itemSpacing>0.003</itemSpacing>
+      <imagePath>./art/gamepad.svg</imagePath>
+      <color>FFFFFF80</color>
+      <activityColor>A0A0FFC0</activityColor>
+      <hotkeyColor>FFA0A0C0</hotkeyColor>
+    </controllerActivity>
   </view>
 
   <view name="menu">
