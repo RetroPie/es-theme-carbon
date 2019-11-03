@@ -24,8 +24,9 @@ originally based on: "simple" by nils bonenberger
     <tilesViewName>Vignettes</tilesViewName>
     <tilesVideoViewName>Vignettes + Vidéo</tilesVideoViewName>
     <tilesVideoMarqueeViewName>Vignettes + Vidéo + Logos</tilesVideoMarqueeViewName>
-    <basicGridName>Grille simple</basicGridName>
-    <basicGridDetailsName>Grille simple + Aperçu</basicGridDetailsName>
+    <basicGridName>Boites</basicGridName>
+    <basicGridDetailsName>Boites + Aperçu</basicGridDetailsName>
+    <basicGridVideoName>Boites + Vidéo</basicGridVideoName>
     <carouselViewName>Carrousel</carouselViewName>
     <carouselDetailsViewName>Carrousel + Aperçu</carouselDetailsViewName>    
     <blue>Bleu</blue>
@@ -450,16 +451,26 @@ originally based on: "simple" by nils bonenberger
       <glowSize>3</glowSize>
     </text>
   </view>
-  <customView name="Basic grid" inherits="grid" displayName="${basicGridName}">
+  <customView name="Boxes" inherits="grid" displayName="${basicGridName}">
     <imagegrid name="gamegrid">
       <autoLayout>6 2</autoLayout>
       <autoLayoutSelectedZoom>1.08</autoLayoutSelectedZoom>
-    </imagegrid>
+    </imagegrid>   
     <text name="gridtile">
       <visible>false</visible>
     </text>
   </customView>
-  <customView name="Basic grid + details" inherits="Basic grid" displayName="${basicGridDetailsName}">
+  <customView name="Boxes + Video" inherits="Boxes" displayName="${basicGridVideoName}">
+    <imagegrid name="gamegrid">     
+     <showVideoAtDelay>800</showVideoAtDelay>
+    </imagegrid>
+     <gridtile name="default">
+      <padding>2 2</padding>
+      <backgroundCornerSize>0 0</backgroundCornerSize>
+      <imageSizeMode>minSize</imageSizeMode>
+    </gridtile>
+  </customView>
+  <customView name="Boxes + details" inherits="Boxes" displayName="${basicGridDetailsName}">
     <imagegrid name="gamegrid">      
       <pos>0 0.16</pos>
       <size>0.66 0.774</size>
