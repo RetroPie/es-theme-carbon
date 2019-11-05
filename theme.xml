@@ -463,6 +463,8 @@ originally based on: "simple" by nils bonenberger
   <customView name="Boxes + Video" inherits="Boxes" displayName="${basicGridVideoName}">
     <imagegrid name="gamegrid">     
      <showVideoAtDelay>800</showVideoAtDelay>
+     <padding>0.04 0.03 0.04 0.03</padding>
+     <margin>0.003 0.003</margin>
     </imagegrid>
      <gridtile name="default">
       <padding>2 2</padding>
