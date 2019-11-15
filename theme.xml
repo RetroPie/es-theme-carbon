@@ -8,7 +8,6 @@ originally based on: "simple" by nils bonenberger
 -->
 <theme defaultView="Tiles + Video + Marquee">
   <formatVersion>7</formatVersion>
-
   <variables>
     <baseColor>8b0000</baseColor>
     <gradientEndColor>6b2020</gradientEndColor>
@@ -19,7 +18,6 @@ originally based on: "simple" by nils bonenberger
     <backgroundImage>./art/fiber.png</backgroundImage>
     <tilesViewName>Tiles</tilesViewName>
   </variables>
-  
   <variables lang="fr">
     <tilesViewName>Vignettes</tilesViewName>
     <tilesVideoViewName>Vignettes + Vidéo</tilesVideoViewName>
@@ -28,23 +26,26 @@ originally based on: "simple" by nils bonenberger
     <basicGridDetailsName>Boites + Aperçu</basicGridDetailsName>
     <basicGridVideoName>Boites + Vidéo</basicGridVideoName>
     <carouselViewName>Carrousel</carouselViewName>
-    <carouselDetailsViewName>Carrousel + Aperçu</carouselDetailsViewName>    
+    <carouselDetailsViewName>Carrousel + Aperçu</carouselDetailsViewName>
     <blue>Bleu</blue>
     <red>Rouge</red>
-    <green>Vert</green>    
+    <green>Vert</green>
     <none>Aucun</none>
     <subset.colorset>Jeux de couleurs</subset.colorset>
-    <subset.shader>Effets TV</subset.shader>    
+    <subset.shader>Effets TV</subset.shader>
   </variables>
-
+  
   <include subset="colorset" name="blue" displayName="${blue}">./art/colors/blue.xml</include>
   <include subset="colorset" name="red" displayName="${red}"/>
   <include subset="colorset" name="green" displayName="${green}">./art/colors/green.xml</include>
-
+  
   <include subset="shader" name="None" displayName="${none}"/>
   <include subset="shader" name="ScanLines">./art/scanlines.xml</include>
   <include subset="shader" name="Crt">./art/crt.xml</include>
-
+  
+  <include subset="systemview" name="classic"></include>
+	<include subset="systemview" name="video view">./video.xml</include>
+ 
   <view name="screen">
     <text name="clock">
       <textColor>777777FF</textColor>
@@ -413,10 +414,12 @@ originally based on: "simple" by nils bonenberger
     <datetime name="md_releasedate, md_lastplayed">
       <color>ffffff00</color>
     </datetime>
-    <text name="md_rating">
+    <rating name="md_rating">
       <pos>0.88 0.88</pos>
       <size>0.05 0.03</size>
-    </text>
+      <color>FFFFFF</color>
+      <unfilledColor>808080</unfilledColor>
+    </rating>
     <imagegrid name="gamegrid">
       <pos>0.025 0.16</pos>
       <size>0.950 0.774</size>
@@ -426,6 +429,7 @@ originally based on: "simple" by nils bonenberger
       <autoLayoutSelectedZoom>1.12</autoLayoutSelectedZoom>
       <animateSelection>false</animateSelection>
     </imagegrid>
+
     <gridtile name="default">
       <backgroundColor>FFFFFF00</backgroundColor>
       <backgroundCornerSize>9 9</backgroundCornerSize>
@@ -455,29 +459,52 @@ originally based on: "simple" by nils bonenberger
     <imagegrid name="gamegrid">
       <autoLayout>6 2</autoLayout>
       <autoLayoutSelectedZoom>1.08</autoLayoutSelectedZoom>
-    </imagegrid>   
+    </imagegrid>
     <text name="gridtile">
       <visible>false</visible>
     </text>
+
+    <image name="gridtile.image">
+      <roundCorners>0</roundCorners>
+    </image>
+
+    <image name="gridtile.image:selected">
+      <roundCorners>0.03</roundCorners>
+    </image>
+
+    <image name="gridtile.favorite">
+      <path>./art/gridfav.png</path>
+      <pos>0.75 0</pos>
+      <maxSize>0.25 0.25</maxSize>
+      <!-- <horizontalAlignment>right</horizontalAlignment> -->
+      <origin>0 0</origin>
+      <color>A0A0A0A0</color>
+    </image>  
+    
+   <image name="gridtile.favorite:selected">
+    <path>./art/gridfav.png</path>
+      <color>${bottomBarColor}</color>      
+    </image>
+
   </customView>
   <customView name="Boxes + Video" inherits="Boxes" displayName="${basicGridVideoName}">
-    <imagegrid name="gamegrid">     
-     <showVideoAtDelay>800</showVideoAtDelay>
-     <padding>0.04 0.03 0.04 0.03</padding>
-     <margin>0.003 0.003</margin>
+    <imagegrid name="gamegrid">
+      <showVideoAtDelay>800</showVideoAtDelay>
+      <padding>0.04 0.03 0.04 0.03</padding>
+      <margin>0.003 0.003</margin>
     </imagegrid>
-     <gridtile name="default">
+    <gridtile name="default">
       <padding>2 2</padding>
       <backgroundCornerSize>0 0</backgroundCornerSize>
       <imageSizeMode>minSize</imageSizeMode>
     </gridtile>
   </customView>
   <customView name="Boxes + details" inherits="Boxes" displayName="${basicGridDetailsName}">
-    <imagegrid name="gamegrid">      
+    <imagegrid name="gamegrid">
       <pos>0 0.16</pos>
       <size>0.66 0.774</size>
       <autoLayoutSelectedZoom>1.08</autoLayoutSelectedZoom>
-      <autoLayout>4 2</autoLayout>      
+      <autoLayout>4 2</autoLayout>
     </imagegrid>
     <image name="gamelistBackground" extra="true">
       <path>./art/filter.png</path>
@@ -656,21 +683,40 @@ originally based on: "simple" by nils bonenberger
       <padding>0.03 0.05 0.03 0.04</padding>
       <zIndex>11</zIndex>
     </imagegrid>
+    
     <gridtile name="default">
       <size>0.225 0.254</size>
+      
+      <backgroundImage></backgroundImage>
       <backgroundCenterColor>FFFFFF20</backgroundCenterColor>
-      <backgroundEdgeColor>FFFFFF20</backgroundEdgeColor>
-      <backgroundCornerSize>0 0</backgroundCornerSize>
+      <backgroundEdgeColor>FFFFFF20</backgroundEdgeColor>      
+            
       <padding>1 1</padding>
       <imageSizeMode>minSize</imageSizeMode>
       <imageColor>FFFFFFAA</imageColor>
+      <backgroundCornerSize>0 0</backgroundCornerSize>      
+      <backgroundCornerSize>0.06</backgroundCornerSize>     
     </gridtile>
+    
     <gridtile name="selected">
       <size>0.230 0.259</size>
-      <padding>2 2</padding>
-      <backgroundCornerSize>0 0</backgroundCornerSize>
+      <padding>3 3</padding>
       <imageColor>FFFFFFFF</imageColor>
+      <backgroundCornerSize>0 0</backgroundCornerSize>      
+      <backgroundCornerSize>0.06</backgroundCornerSize> 
     </gridtile>
+    
+   
+    <ninepatch name="gridtile.background:selected">
+      <animateColor>EFEF60B0</animateColor>
+      <animateColorTime>350</animateColorTime>
+    </ninepatch>
+
+    
+    <image name="gridtile.image">
+      <roundCorners>0.06</roundCorners>
+    </image>
+    
     <text name="gridtile">
       <color>D0D0D0D0</color>
       <backgroundColor>00000000</backgroundColor>
@@ -685,6 +731,30 @@ originally based on: "simple" by nils bonenberger
       <glowColor>${glowColor}</glowColor>
       <glowSize>3</glowSize>
     </text>
+    
+    <image name="gridtile.favorite">
+      <path>:/star_filled.svg</path>      
+      <pos>0.93 0.07</pos>
+      <maxSize>0.10 0.10</maxSize>
+      <origin>0.5 0.5</origin>
+      <horizontalAlignment>right</horizontalAlignment>
+      <color>FFFF0090</color>
+    </image>  
+
+    <image name="gridtile.favorite:selected">
+      <color>FFFF00C0</color>
+    </image>  
+
+<!--
+    <image name="gridtile.overlay">
+      <path>./art/scanlines.png</path>
+      <tile>true</tile>
+      <color>FFFFFF90</color>
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <origin>0 0</origin>
+    </image>  
+-->
   </customView>
   <customView name="Tiles + Video" inherits="Tiles" displayName="${tilesVideoViewName}">
     <imagegrid name="gamegrid">
@@ -695,7 +765,10 @@ originally based on: "simple" by nils bonenberger
     <image name="gridtile.marquee">
       <pos>0.5 0.5</pos>
       <origin>0.5 0.5</origin>
-      <size>0.6 0.6</size>
+      <size>0.55 0.55</size>
+    </image>
+    <image name="gridtile.marquee:selected">      
+      <color>FFFFFFC0</color>
     </image>
     <text name="gridtile">
       <pos>0 0</pos>

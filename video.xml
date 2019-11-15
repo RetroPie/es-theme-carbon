@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>4</formatVersion>
+  <view name="system">
+    <video name="md_video" extra="true">
+      <path>*</path>           
+<color>FFFFFF30</color>
+      <pos>0.20 0.78</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>0.24 0.24</maxSize>
+      <delay>0.5</delay>
+      <zIndex>12</zIndex>
+      <roundCorners>0.05</roundCorners>
+    </video>
+
+    <video name="md_video2" extra="true">
+      <path>*</path>          
+<color>FFFFFF30</color>      
+      <pos>0.80 0.78</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>0.24 0.24</maxSize>
+      <delay>1</delay>
+      <zIndex>12</zIndex>
+      <roundCorners>0.05</roundCorners>
+    </video>
+  </view>
+</theme>
