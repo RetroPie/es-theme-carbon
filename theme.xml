@@ -464,14 +464,6 @@ originally based on: "simple" by nils bonenberger
       <visible>false</visible>
     </text>
 
-    <image name="gridtile.image">
-      <roundCorners>0</roundCorners>
-    </image>
-
-    <image name="gridtile.image:selected">
-      <roundCorners>0.03</roundCorners>
-    </image>
-
     <image name="gridtile.favorite">
       <path>./art/gridfav.png</path>
       <pos>0.75 0</pos>
@@ -700,7 +692,7 @@ originally based on: "simple" by nils bonenberger
     
     <gridtile name="selected">
       <size>0.230 0.259</size>
-      <padding>3 3</padding>
+      <padding>5 5</padding>
       <imageColor>FFFFFFFF</imageColor>
       <backgroundCornerSize>0 0</backgroundCornerSize>      
       <backgroundCornerSize>0.06</backgroundCornerSize> 
@@ -711,12 +703,17 @@ originally based on: "simple" by nils bonenberger
       <animateColor>EFEF60B0</animateColor>
       <animateColorTime>350</animateColorTime>
     </ninepatch>
-
     
     <image name="gridtile.image">
       <roundCorners>0.06</roundCorners>
     </image>
-    
+    <!--
+  <image name="gridtile.overlay">
+      <path>./art/overlay.png</path>
+      <roundCorners>0.06</roundCorners>
+      <color>FFFFFFA0</color>
+    </image>
+-->
     <text name="gridtile">
       <color>D0D0D0D0</color>
       <backgroundColor>00000000</backgroundColor>
@@ -738,11 +735,11 @@ originally based on: "simple" by nils bonenberger
       <maxSize>0.10 0.10</maxSize>
       <origin>0.5 0.5</origin>
       <horizontalAlignment>right</horizontalAlignment>
-      <color>FFFF0090</color>
+      <color>FFFF0080</color>
     </image>  
 
     <image name="gridtile.favorite:selected">
-      <color>FFFF00C0</color>
+      <color>FFFF00D0</color>
     </image>  
 
 <!--
@@ -762,13 +759,34 @@ originally based on: "simple" by nils bonenberger
     </imagegrid>
   </customView>
   <customView name="Tiles + Video + Marquee" inherits="Tiles + Video" displayName="${tilesVideoMarqueeViewName}">
+
+    <gridtile name="default">
+      <imageColor>A0A0A0FF</imageColor>
+    </gridtile>
+<!--
+    <image name="md_thumbnail">
+      <pos>0.5 0.55</pos>
+      <minSize>1 0.774</minSize>
+      <origin>0.5 0.5</origin>
+      <zIndex>10</zIndex>
+      <color>FFFFFF40</color>
+    </image>
+-->
+  
     <image name="gridtile.marquee">
+      <color>FFFFFFD0</color>
       <pos>0.5 0.5</pos>
       <origin>0.5 0.5</origin>
-      <size>0.55 0.55</size>
+      <size>0.50 0.50</size>
     </image>
     <image name="gridtile.marquee:selected">      
-      <color>FFFFFFC0</color>
+      <color>FFFFFFFF</color>
+      <size>0.65 0.65</size>   
+    </image>
+    <image name="gridtile.marquee:videoplaying">      
+      <color>FFFFFFA0</color>
+      <pos>0.5 0.17</pos>
+      <size>0.50 0.25</size>
     </image>
     <text name="gridtile">
       <pos>0 0</pos>
