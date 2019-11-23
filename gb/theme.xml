@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>4</formatVersion>
+  <include>./../theme.xml</include>
+  <customView name="Boxes + Video">
+    <imagegrid name="gamegrid">
+      <autoLayout>4 2</autoLayout>
+    </imagegrid>
+    <gridtile name="default">
+      <imageSizeMode>maxSize</imageSizeMode>
+    </gridtile>
+  </customView>
+</theme>
