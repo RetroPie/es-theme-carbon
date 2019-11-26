@@ -2,21 +2,18 @@
 <theme>
   <formatVersion>4</formatVersion>
   <view name="system">
-  
-    <image name="background" extra="true">
-      <color>000000FF</color>
-    </image>
-   
-    <video name="backgroundvideo" extra="true">
-      <path>{random}</path>                 
-      <pos>0.5 0.475</pos>
+    <image name="randomImage" extra="true">
+      <path>{random:image}</path>          
+      <color>FFFFFF90</color>      
+      <pos>0.5 0.5</pos>
       <origin>0.5 0.5</origin>
-      <minSize>1 0.95</minSize>
-      <delay>0</delay>
-      <color>FFFFFFA0</color>
-      <effect>none</effect>
-      <zIndex>11</zIndex>      
-    </video>
+      <minSize>1 1</minSize>
+      <zIndex>11</zIndex>     
+    </image>
+
+    <image name="BottomBar-shadow" extra="true">
+      <color>FFFFFF30</color>
+    </image>
 <!--
     <video name="md_video" extra="true">
       <path>{random}</path>           

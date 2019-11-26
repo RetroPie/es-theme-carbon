@@ -44,7 +44,8 @@ originally based on: "simple" by nils bonenberger
   <include subset="shader" name="Crt">./art/crt.xml</include>
   
   <include subset="systemview" name="classic"></include>
-	<include subset="systemview" name="video view">./video.xml</include>
+	<include subset="systemview" name="random video">./video.xml</include>
+	<include subset="systemview" name="random image">./image.xml</include>
  
   <view name="screen">
     <text name="clock">
@@ -89,7 +90,7 @@ originally based on: "simple" by nils bonenberger
     <menuTextSmall name="menutextsmall">
       <fontPath>./art/Cabin-Regular.ttf</fontPath>
       <fontSize>0.02</fontSize>
-      <color>deec00</color>
+      <color>909090FF</color>
     </menuTextSmall>
     <menuBackground name="menubg">
       <color>242424</color>
@@ -119,11 +120,26 @@ originally based on: "simple" by nils bonenberger
     </menuTextEdit>
   </view>
   <view name="system">
+  
+  
     <carousel name="systemcarousel">
-      <color>FFFFFF50</color>
-      <colorEnd>FFFFFFD0</colorEnd>
+      <color>FAFAFF70</color>
+      <colorEnd>FAFAFFD0</colorEnd>
       <systemInfoDelay>700</systemInfoDelay>
+      <pos>0 0.3837</pos>
+      <size>1 0.2325</size>
     </carousel>
+
+    <image name="carousel-inner" extra="true">
+      <path>./art/carousel.png</path>
+      <color>FFFFFFFF</color>      
+      <origin>0 0</origin>
+      <pos>0 0.3837</pos>
+      <size>1 0.2325</size>
+      <zIndex>40</zIndex>
+    </image>
+
+
     <text name="systemInfo">
       <pos>0 0.62</pos>
       <size>1 0.25</size>
@@ -135,7 +151,7 @@ originally based on: "simple" by nils bonenberger
     </text>
     <image name="carousel-shadow" extra="true">
       <path>./art/shadow.png</path>
-      <color>FFFFFF50</color>
+      <color>FFFFFF40</color>
       <pos>0 0.6162</pos>
       <origin>0 0</origin>
       <size>1 0.025</size>
@@ -169,6 +185,7 @@ originally based on: "simple" by nils bonenberger
       <path>./art/centerfade.png</path>
       <color>${centerFadeColor}</color>
     </image>
+    <!--
     <image name="BottomBar-shadow" extra="true">
       <path>./art/shadow.png</path>
       <color>FFFFFF05</color>
@@ -177,7 +194,7 @@ originally based on: "simple" by nils bonenberger
       <size>1 0.025</size>
       <flipY>true</flipY>
       <zIndex>11</zIndex>
-    </image>
+    </image>-->
     <image name="BottomBar" extra="true">
       <tile>false</tile>
       <size>1 0.065</size>
@@ -185,6 +202,7 @@ originally based on: "simple" by nils bonenberger
       <origin>0 1</origin>
       <path>./art/bottom.png</path>
       <color>${bottomBarColor}</color>
+      <zIndex>12</zIndex>
     </image>
     <image name="ControllerOverlay" extra="true">
       <tile>false</tile>
@@ -339,6 +357,7 @@ originally based on: "simple" by nils bonenberger
       <path>./art/bottom.png</path>
       <color>${baseColor}</color>
     </image>
+<!--
     <image name="bottom-shadow" extra="true">
       <path>./art/shadow.png</path>
       <color>FFFFFF90</color>
@@ -347,7 +366,7 @@ originally based on: "simple" by nils bonenberger
       <size>1 0.04</size>
       <flipY>true</flipY>
       <zIndex>11</zIndex>
-    </image>
+    </image>-->
     <image name="top-shadow" extra="true">
       <path>./art/shadow.png</path>
       <color>FFFFFF90</color>
@@ -666,36 +685,36 @@ originally based on: "simple" by nils bonenberger
       <size>0.05 0.03</size>
     </text>
   </customView>
+
+
+
+
   <customView name="Tiles" inherits="grid" displayName="${tilesViewName}">
     <imagegrid name="gamegrid">
       <autoLayout>3 2</autoLayout>
-      <autoLayoutSelectedZoom>1.02</autoLayoutSelectedZoom>
+      <autoLayoutSelectedZoom>1.03</autoLayoutSelectedZoom>
       <imageSource>image</imageSource>
       <margin>0.005 0.010</margin>
       <padding>0.03 0.05 0.03 0.04</padding>
       <zIndex>11</zIndex>
     </imagegrid>
     
-    <gridtile name="default">
-      <size>0.225 0.254</size>
-      
+    <gridtile name="default">      
       <backgroundImage></backgroundImage>
       <backgroundCenterColor>FFFFFF20</backgroundCenterColor>
-      <backgroundEdgeColor>FFFFFF20</backgroundEdgeColor>      
-            
+      <backgroundEdgeColor>FFFFFF20</backgroundEdgeColor>                  
       <padding>1 1</padding>
       <imageSizeMode>minSize</imageSizeMode>
       <imageColor>FFFFFFAA</imageColor>
       <backgroundCornerSize>0 0</backgroundCornerSize>      
       <backgroundCornerSize>0.06</backgroundCornerSize>     
-    </gridtile>
-    
-    <gridtile name="selected">
-      <size>0.230 0.259</size>
+    </gridtile>    
+    <gridtile name="selected">      
       <padding>5 5</padding>
       <imageColor>FFFFFFFF</imageColor>
       <backgroundCornerSize>0 0</backgroundCornerSize>      
       <backgroundCornerSize>0.06</backgroundCornerSize> 
+
     </gridtile>
     
    
@@ -707,19 +726,16 @@ originally based on: "simple" by nils bonenberger
     <image name="gridtile.image">
       <roundCorners>0.06</roundCorners>
     </image>
-    <!--
-  <image name="gridtile.overlay">
-      <path>./art/overlay.png</path>
-      <roundCorners>0.06</roundCorners>
-      <color>FFFFFFA0</color>
-    </image>
--->
+
     <text name="gridtile">
       <color>D0D0D0D0</color>
       <backgroundColor>00000000</backgroundColor>
-      <fontSize>0.028</fontSize>
+      <fontPath>./art/Cabin-Bold.ttf</fontPath>
+      <fontSize>0.040</fontSize>
       <alignment>center</alignment>
-      <size>0 0.18</size>
+      <singleLineScroll>true</singleLineScroll>
+      <padding>0.08 0</padding>      
+      <size>0 0.24</size>
       <glowColor>00000008</glowColor>
       <glowSize>3</glowSize>
     </text>
@@ -741,17 +757,17 @@ originally based on: "simple" by nils bonenberger
     <image name="gridtile.favorite:selected">
       <color>FFFF00D0</color>
     </image>  
-
-<!--
+    
+   
     <image name="gridtile.overlay">
-      <path>./art/scanlines.png</path>
-      <tile>true</tile>
-      <color>FFFFFF90</color>
-      <pos>0 0</pos>
-      <size>1 1</size>
-      <origin>0 0</origin>
-    </image>  
--->
+      <path>./art/overlay.png</path>
+      <roundCorners>0.06</roundCorners>
+      <color>FFFFFF50</color>
+    </image>    
+    <image name="gridtile.overlay:selected">
+      <color>FFFFFF00</color>
+    </image>
+
   </customView>
   <customView name="Tiles + Video" inherits="Tiles" displayName="${tilesVideoViewName}">
     <imagegrid name="gamegrid">
