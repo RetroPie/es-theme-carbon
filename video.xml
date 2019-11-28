@@ -2,7 +2,7 @@
 <theme>
   <formatVersion>4</formatVersion>
   <view name="system">
-  
+
     <image name="background" extra="true">
       <color>000000FF</color>
     </image>

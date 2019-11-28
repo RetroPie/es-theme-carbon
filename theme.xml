@@ -43,16 +43,13 @@ originally based on: "simple" by nils bonenberger
   <include subset="shader" name="ScanLines">./art/scanlines.xml</include>
   <include subset="shader" name="Crt">./art/crt.xml</include>
   
-  <include subset="systemview" name="classic"></include>
-	<include subset="systemview" name="random video">./video.xml</include>
-	<include subset="systemview" name="random image">./image.xml</include>
- 
   <view name="screen">
     <text name="clock">
       <textColor>777777FF</textColor>
       <fontSize>0.035</fontSize>
-      <pos>0.94 0.94</pos>
-      <size>0.05 0.058</size>
+      <pos>0.90 0.94</pos>
+      <size>0.09 0.058</size>
+<alignment>right</alignment>
       <verticalAlignment>center</verticalAlignment>
     </text>
     <controllerActivity name="controllerActivity">
@@ -259,6 +256,7 @@ originally based on: "simple" by nils bonenberger
       <delay>0.8</delay>
       <showSnapshotNoVideo>true</showSnapshotNoVideo>
       <showSnapshotDelay>true</showSnapshotDelay>
+      <loops>0</loops>
     </video>
     <image name="background">
       <tile>true</tile>
@@ -553,6 +551,7 @@ originally based on: "simple" by nils bonenberger
       <delay>1</delay>
       <showSnapshotNoVideo>true</showSnapshotNoVideo>
       <showSnapshotDelay>true</showSnapshotDelay>
+      <loops>0</loops>
     </video>
     <image name="tv_overlay" extra="true">
       <pos>0.68 0.25</pos>
@@ -667,6 +666,7 @@ originally based on: "simple" by nils bonenberger
       <delay>1</delay>
       <showSnapshotNoVideo>true</showSnapshotNoVideo>
       <showSnapshotDelay>true</showSnapshotDelay>
+      <loops>0</loops>
     </video>
     <image name="tv_overlay" extra="true">
       <pos>0.68 0.25</pos>
@@ -767,13 +767,17 @@ originally based on: "simple" by nils bonenberger
     <image name="gridtile.overlay:selected">
       <color>FFFFFF00</color>
     </image>
-
   </customView>
+  
   <customView name="Tiles + Video" inherits="Tiles" displayName="${tilesVideoViewName}">
     <imagegrid name="gamegrid">
       <showVideoAtDelay>800</showVideoAtDelay>
     </imagegrid>
+    <video name="imagegrid.video">
+      <loops>0</loops>
+    </video>
   </customView>
+  
   <customView name="Tiles + Video + Marquee" inherits="Tiles + Video" displayName="${tilesVideoMarqueeViewName}">
 
     <gridtile name="default">
@@ -843,4 +847,9 @@ originally based on: "simple" by nils bonenberger
       <size>0.950 0.84</size>
     </imagegrid>
   </view>
+  
+  <include subset="systemview" name="classic"></include>
+	<include subset="systemview" name="random video">./video.xml</include>
+	<include subset="systemview" name="random image">./image.xml</include>
+  
 </theme>
