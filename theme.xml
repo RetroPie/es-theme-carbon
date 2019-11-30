@@ -480,7 +480,9 @@ originally based on: "simple" by nils bonenberger
     <text name="gridtile">
       <visible>false</visible>
     </text>
-
+    <text name="gridtile_selected">
+      <visible>false</visible>
+    </text>
     <image name="gridtile.favorite">
       <path>./art/gridfav.png</path>
       <pos>0.75 0</pos>
@@ -613,6 +615,7 @@ originally based on: "simple" by nils bonenberger
       <padding>64 16</padding>
     </gridtile>
     <text name="gridtile">
+      <visible>false</visible>
       <color>80808080</color>
       <fontSize>0.016</fontSize>
       <size>1 0</size>
@@ -701,8 +704,8 @@ originally based on: "simple" by nils bonenberger
     
     <gridtile name="default">      
       <backgroundImage></backgroundImage>
-      <backgroundCenterColor>FFFFFF20</backgroundCenterColor>
-      <backgroundEdgeColor>FFFFFF20</backgroundEdgeColor>                  
+      <backgroundCenterColor>40404080</backgroundCenterColor>
+      <backgroundEdgeColor>40404080</backgroundEdgeColor>                  
       <padding>1 1</padding>
       <imageSizeMode>minSize</imageSizeMode>
       <imageColor>FFFFFFAA</imageColor>
