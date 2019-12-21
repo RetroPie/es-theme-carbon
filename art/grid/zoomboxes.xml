@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  
+  <customView name="Boxes,grid">
+   <gridtile name="default">
+      <padding>2 2</padding>
+      <backgroundCornerSize>0 0</backgroundCornerSize>
+      <imageSizeMode>minSize</imageSizeMode>
+    </gridtile>
+  </customView>
+  
+</theme>
