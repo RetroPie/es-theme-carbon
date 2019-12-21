@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <carousel name="systemcarousel">
+      <color>FAFAFF70</color>
+      <colorEnd>FAFAFFD0</colorEnd>
+      <systemInfoDelay>700</systemInfoDelay>
+      <pos>0 0.3837</pos>
+      <size>1 0.2325</size>
+    </carousel>
+    <image name="carousel-inner" extra="true">
+      <path>./../carousel.png</path>
+      <color>FFFFFFFF</color>
+      <origin>0 0</origin>
+      <pos>0 0.3837</pos>
+      <size>1 0.2325</size>
+      <zIndex>40</zIndex>
+    </image>
+    <text name="systemInfo">
+      <pos>0 0.62</pos>
+      <size>1 0.25</size>
+      <backgroundColor>0000FF00</backgroundColor>
+      <color>${systemInfoColor}</color>
+      <glowColor>${glowColor}</glowColor>
+      <glowSize>2</glowSize>
+      <reflexion>0.20 0.0</reflexion>
+    </text>
+    <image name="carousel-shadow" extra="true">
+      <path>./../shadow.png</path>
+      <color>FFFFFF40</color>
+      <pos>0 0.6162</pos>
+      <origin>0 0</origin>
+      <size>1 0.025</size>
+      <zIndex>13</zIndex>
+    </image>
+    <image name="CenterFade" extra="true">
+      <tile>false</tile>
+      <size>1 0.5</size>
+      <pos>0.5 0.5</pos>
+      <origin>0.5 0.5</origin>
+      <path>./../centerfade.png</path>
+      <color>${centerFadeColor}</color>
+      <zIndex>12</zIndex>
+    </image>
+    <image name="ControllerOverlay" extra="true">
+      <tile>false</tile>
+      <pos>0.5 0.19</pos>
+      <origin>0.5 0.5</origin>
+      <size>0.3 0</size>
+      <path>./../splash.svg</path>
+      <path>./../../${system.theme}/art/controller.svg</path>
+      <color>${baseColor}</color>
+    </image>
+  </view>
+</theme>

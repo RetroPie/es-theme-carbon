@@ -23,6 +23,10 @@ originally based on: "simple" by nils bonenberger
     <videoboxesSubsetName>Show Video in boxes</videoboxesSubsetName>
     <zoomboxesSubsetName>Zoom boxes</zoomboxesSubsetName>  
     <hideselectionSubsetName>Hide selection</hideselectionSubsetName>
+    <systemBackgroundName>System background</systemBackgroundName>
+    <systemViewName>System view</systemViewName>
+    <subset.colorset>Colorset</subset.colorset>
+    <subset.shader>Shader</subset.shader>
   </variables>
   <!-- French -->
   <variables lang="fr">
@@ -32,11 +36,14 @@ originally based on: "simple" by nils bonenberger
     <blue>Bleu</blue>
     <red>Rouge</red>
     <green>Vert</green>
+    <yellow>Jaune</yellow>
     <none>Aucun</none>    
     <roundBorderSubsetName>Bords arrondis</roundBorderSubsetName>    
     <blinkBorderSubsetName>Bords clignotants</blinkBorderSubsetName>    
     <yes>Oui</yes>
     <no>Non</no>
+    <systemBackgroundName>Arrière-plan</systemBackgroundName>
+    <systemViewName>Vue Système</systemViewName>
     <previewBarSubsetName>Volet aperçu</previewBarSubsetName>    
     <videoboxesSubsetName>Afficher la video en mode boite</videoboxesSubsetName>
     <zoomboxesSubsetName>Zoomer les boites</zoomboxesSubsetName>  
@@ -46,19 +53,78 @@ originally based on: "simple" by nils bonenberger
   </variables>
 
   <!-- Subset options for color  -->
-  <subset name="colorset">
+  <subset name="colorset" displayName="${subset.colorset}">
     <include name="blue" displayName="${blue}">./art/colors/blue.xml</include>
     <include name="red" displayName="${red}"/>
     <include name="green" displayName="${green}">./art/colors/green.xml</include>  
+    <include name="yellow" displayName="${yellow}">./art/colors/yellow.xml</include>
   </subset>
 
   <!-- Subset options for screen -->
-  <subset name="shader">
+  <subset name="shader" displayName="${subset.shader}">
     <include name="None" displayName="${none}"/>
     <include name="ScanLines">./art/scanlines.xml</include>
     <include name="Crt">./art/crt.xml</include>
   </subset>
   
+  <view name="system">
+    <image name="background" extra="true">
+      <tile>true</tile>
+      <size>1 1</size>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <path>${backgroundImage}</path>
+    </image>
+    <helpsystem name="help">
+      <textColor>7d7d7d</textColor>
+      <iconColor>7d7d7d</iconColor>
+    </helpsystem>
+    <text name="logoText">
+      <fontPath>./art/Cabin-Bold.ttf</fontPath>
+      <color>${baseColor}</color>
+      <forceUppercase>true</forceUppercase>
+    </text>
+    <image name="logo">
+      <!-- try png -->
+      <path>./${system.theme}/art/system.png</path>
+      <!-- try svg -->
+      <path>./${system.theme}/art/system.svg</path>
+      <!-- check if lang resources exist -->
+      <path>./${system.theme}/art/system-${lang}.png</path>
+      <path>./${system.theme}/art/system-${lang}.svg</path>
+      
+      <!-- 
+      <path>/userdata/themes/${system.theme}/art/${system}.png</path>
+      <path>/userdata/themes/${system.theme}/art/${system}.svg</path>
+      <path>/userdata/themes/${system.theme}/art/${system}-${lang}.png</path>
+      <path>/userdata/themes/${system.theme}/art/${system}-${lang}.svg</path>
+      -->
+    </image>
+    <image name="BottomBar" extra="true">
+      <tile>false</tile>
+      <size>1 0.065</size>
+      <pos>0 1</pos>
+      <origin>0 1</origin>
+      <path>./art/bottom.png</path>
+      <color>${bottomBarColor}</color>
+      <zIndex>50</zIndex>
+    </image>
+  </view>
+  
+  <!-- Subset options for screen -->
+  <subset name="systemview" displayName="${systemViewName}">
+    <include name="horizontal">./art/systemview/horizontal.xml</include>
+    <include name="vertical">./art/systemview/vertical.xml</include>
+  </subset>
+  
+  <!-- Subset option for System view background -->
+  <subset name="systembackground" displayName="${systemBackgroundName}">
+    <include name="classic"></include>
+    <include name="random video">./art/background/video.xml</include>
+    <include name="random image">./art/background/image.xml</include>
+    <include name="random box">./art/background/box.xml</include>
+  </subset>
+
   <view name="screen">
     <text name="clock">
       <textColor>777777FF</textColor>
@@ -131,95 +197,7 @@ originally based on: "simple" by nils bonenberger
       <active>./art/textinput_ninepatch_active.png</active>
     </menuTextEdit>
   </view>
-  <view name="system">
-    
-    <carousel name="systemcarousel">
-      <color>FAFAFF70</color>
-      <colorEnd>FAFAFFD0</colorEnd>
-      <systemInfoDelay>700</systemInfoDelay>
-      <pos>0 0.3837</pos>
-      <size>1 0.2325</size>
-    </carousel>
-
-    <image name="carousel-inner" extra="true">
-      <path>./art/carousel.png</path>
-      <color>FFFFFFFF</color>      
-      <origin>0 0</origin>
-      <pos>0 0.3837</pos>
-      <size>1 0.2325</size>
-      <zIndex>40</zIndex>
-    </image>
-
-
-    <text name="systemInfo">
-      <pos>0 0.62</pos>
-      <size>1 0.25</size>
-      <backgroundColor>0000FF00</backgroundColor>
-      <color>${systemInfoColor}</color>
-      <glowColor>${glowColor}</glowColor>
-      <glowSize>2</glowSize>
-      <reflexion>0.20 0.0</reflexion>
-    </text>
-    <image name="carousel-shadow" extra="true">
-      <path>./art/shadow.png</path>
-      <color>FFFFFF40</color>
-      <pos>0 0.6162</pos>
-      <origin>0 0</origin>
-      <size>1 0.025</size>
-      <zIndex>11</zIndex>
-    </image>
-    <image name="background" extra="true">
-      <tile>true</tile>
-      <size>1 1</size>
-      <pos>0 0</pos>
-      <origin>0 0</origin>
-      <path>${backgroundImage}</path>
-    </image>
-    <helpsystem name="help">
-      <textColor>7d7d7d</textColor>
-      <iconColor>7d7d7d</iconColor>
-    </helpsystem>
-    <image name="CenterFade" extra="true">
-      <tile>false</tile>
-      <size>1 0.5</size>
-      <pos>0.5 0.5</pos>
-      <origin>0.5 0.5</origin>
-      <path>./art/centerfade.png</path>
-      <color>${centerFadeColor}</color>
-    </image>
-    <image name="BottomBar" extra="true">
-      <tile>false</tile>
-      <size>1 0.065</size>
-      <pos>0 1</pos>
-      <origin>0 1</origin>
-      <path>./art/bottom.png</path>
-      <color>${bottomBarColor}</color>
-      <zIndex>12</zIndex>
-    </image>
-    <image name="ControllerOverlay" extra="true">
-      <tile>false</tile>
-      <pos>0.5 0.19</pos>
-      <origin>0.5 0.5</origin>
-      <size>0.3 0</size>
-      <path>./art/splash.svg</path>
-      <path>./${system.theme}/art/controller.svg</path>
-      <color>${baseColor}</color>
-    </image>
-    <text name="logoText">
-      <fontPath>./art/Cabin-Bold.ttf</fontPath>
-      <color>${baseColor}</color>
-      <forceUppercase>true</forceUppercase>
-    </text>
-    <image name="logo">
-      <!-- try png -->
-      <path>./${system.theme}/art/system.png</path>
-      <!-- try svg -->
-      <path>./${system.theme}/art/system.svg</path>
-      <!-- check if lang resources exist -->
-      <path>./${system.theme}/art/system-${lang}.png</path>
-      <path>./${system.theme}/art/system-${lang}.svg</path>
-    </image>
-  </view>
+ 
   <view name="basic">
     <image name="background" extra="true">
       <tile>true</tile>
@@ -602,12 +580,6 @@ originally based on: "simple" by nils bonenberger
   <!-- Layout when help is disabled -->
   <include ifHelpPrompts="false">./nohelp.xml</include>
 
-  <!-- Subset options for System view -->
-  <subset name="systemview">
-    <include name="classic"></include>
-    <include name="random video">./art/background/video.xml</include>
-    <include name="random image">./art/background/image.xml</include>
-  </subset>
 
   <!-- Subset options for grid views -->  
   <subset name="videoboxes" displayName="${videoboxesSubsetName}" appliesTo="Boxes,grid">

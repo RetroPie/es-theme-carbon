@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+    <carousel name="systemcarousel">
+      <type>vertical</type>
+      <pos>0.04 0</pos>
+      <size>0.33 0.935</size>
+      <color>F0F0F080</color>
+      <colorEnd>F0F0F0D0</colorEnd>
+      <logoScale>2.8</logoScale>
+      <logoSize>0.1 0.1</logoSize>
+      <logoRotation>14</logoRotation>
+      <logoRotationOrigin>-2.2 0.5</logoRotationOrigin>
+      <maxLogoCount>5</maxLogoCount>
+      <defaultTransition>fade</defaultTransition>
+    </carousel>
+    <text name="systemInfo">
+      <pos>0.175 0.65</pos>
+      <size>1 0.25</size>
+      <backgroundColor>0000FF00</backgroundColor>
+      <color>${systemInfoColor}</color>
+      <glowColor>${glowColor}</glowColor>
+      <glowSize>2</glowSize>
+      <reflexion>0.20 0.0</reflexion>
+    </text>
+    <image name="CenterFade" extra="true">
+      <tile>false</tile>
+      <size>0.50 1</size>
+      <pos>0.445 1</pos>
+      <origin>1 1</origin>
+      <path>./../centerfade_v.png</path>
+      <color>${centerFadeColor}</color>
+    </image>
+    <image name="ControllerOverlay" extra="true">
+      <tile>false</tile>
+      <pos>0.675 0.25</pos>
+      <origin>0.5 0.5</origin>
+      <size>0.3 0</size>
+        <path>./../splash.svg</path>
+      <path>./../../${system.theme}/art/controller.svg</path>
+      <color>${baseColor}</color>
+      <!-- <reflexion>0.20 0.0</reflexion> -->
+    </image>
+  </view>
+</theme>

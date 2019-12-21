@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>4</formatVersion>
+  <variables>
+    <baseColor>bf9f1c</baseColor>
+    <gradientEndColor>746111</gradientEndColor>
+    <centerFadeColor>d7b31f50</centerFadeColor>
+    <bottomBarColor>e2c036B0</bottomBarColor>
+    <glowColor>8B711520</glowColor>
+    <systemInfoColor>FAFAFFB0</systemInfoColor>
+  </variables>
+</theme>
