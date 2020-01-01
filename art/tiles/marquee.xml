@@ -24,7 +24,6 @@
       <pos>0 0</pos>
       <size>1 1</size>
       <fontSize>0.040</fontSize>
-      <fontPath>./art/Cabin-Bold.ttf</fontPath>
       <padding>0.1 0</padding>
     </text>
   </customView>

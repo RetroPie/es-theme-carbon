@@ -2,21 +2,42 @@
 <theme>
   <formatVersion>7</formatVersion>
   <view name="system">
+
+    <!-- When random box -->
+    <image name="box" extra="true">
+      <pos>0.675 0.40</pos>
+      <maxSize>0.40 0.55</maxSize>
+    </image>   
+
+    <video name="videobox" extra="true">
+      <pos>0.675 0.40</pos>
+      <maxSize>0.40 0.55</maxSize>
+    </video>   
+
+   <image name="logo">
+      <!-- if system2 exists, take this version -->
+      <path>./../../${system.theme}/art/system2.svg</path>
+    </image>
+    
     <carousel name="systemcarousel">
       <type>vertical</type>
-      <pos>0.04 0</pos>
-      <size>0.33 0.935</size>
-      <color>F0F0F080</color>
-      <colorEnd>F0F0F0D0</colorEnd>
-      <logoScale>2.8</logoScale>
-      <logoSize>0.1 0.1</logoSize>
-      <logoRotation>14</logoRotation>
-      <logoRotationOrigin>-2.2 0.5</logoRotationOrigin>
+      <pos>0 0</pos>
+      <size>0.42 0.935</size>
+      
+      <pos>0 -0.5</pos>
+      <size>0.42 1.435</size>
+      
+      <color>00000040</color>
+      <colorEnd>00000000</colorEnd>
+      <gradientType>horizontal</gradientType>
+      <logoScale>1.8</logoScale>
+      <logoSize>0.15 0.12</logoSize>
       <maxLogoCount>5</maxLogoCount>
+      <systemInfoDelay>0</systemInfoDelay>
       <defaultTransition>fade</defaultTransition>
     </carousel>
     <text name="systemInfo">
-      <pos>0.175 0.65</pos>
+      <pos>0.175 0.67</pos>
       <size>1 0.25</size>
       <backgroundColor>0000FF00</backgroundColor>
       <color>${systemInfoColor}</color>
@@ -26,21 +47,28 @@
     </text>
     <image name="CenterFade" extra="true">
       <tile>false</tile>
-      <size>0.50 1</size>
-      <pos>0.445 1</pos>
+      <size>0.40 1</size>
+      <pos>0.40 1</pos>
       <origin>1 1</origin>
       <path>./../centerfade_v.png</path>
       <color>${centerFadeColor}</color>
+      <visible>false</visible>
     </image>
     <image name="ControllerOverlay" extra="true">
       <tile>false</tile>
-      <pos>0.675 0.25</pos>
-      <origin>0.5 0.5</origin>
-      <size>0.3 0</size>
-        <path>./../splash.svg</path>
-      <path>./../../${system.theme}/art/controller.svg</path>
-      <color>${baseColor}</color>
-      <!-- <reflexion>0.20 0.0</reflexion> -->
+      <pos>0.675 0.40</pos>
+      <size>0.4 0</size>
     </image>
+
+   <image name="staticBackground">
+      <tile>false</tile>
+      <pos>0.21 0.2175</pos>
+      <size>0.36 0.285</size>
+      <origin>0.5 0.5</origin>
+      <path>./../darkwheel.png</path>      
+      <zIndex>12</zIndex>
+    </image>
+
+
   </view>
 </theme>

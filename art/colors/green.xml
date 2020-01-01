@@ -4,7 +4,8 @@
   <variables>
     <baseColor>008b00</baseColor>
     <gradientEndColor>005b00</gradientEndColor>
-    <centerFadeColor>008b0050</centerFadeColor>
+    <centerFadeColor>008b0040</centerFadeColor>
     <bottomBarColor>008b00c0</bottomBarColor>
+    <glowColor>006b0020</glowColor>
   </variables>
 </theme>

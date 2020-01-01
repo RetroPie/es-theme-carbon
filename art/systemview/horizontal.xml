@@ -3,7 +3,7 @@
   <formatVersion>7</formatVersion>
   <view name="system">
     <carousel name="systemcarousel">
-      <color>FAFAFF70</color>
+      <color>FAFAFFA0</color>
       <colorEnd>FAFAFFD0</colorEnd>
       <systemInfoDelay>700</systemInfoDelay>
       <pos>0 0.3837</pos>
@@ -42,15 +42,6 @@
       <path>./../centerfade.png</path>
       <color>${centerFadeColor}</color>
       <zIndex>12</zIndex>
-    </image>
-    <image name="ControllerOverlay" extra="true">
-      <tile>false</tile>
-      <pos>0.5 0.19</pos>
-      <origin>0.5 0.5</origin>
-      <size>0.3 0</size>
-      <path>./../splash.svg</path>
-      <path>./../../${system.theme}/art/controller.svg</path>
-      <color>${baseColor}</color>
     </image>
   </view>
 </theme>
