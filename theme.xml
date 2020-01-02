@@ -146,7 +146,7 @@ originally based on: "simple" by nils bonenberger
   <subset name="systembackground" displayName="${systemBackgroundName}">
     <include name="mini-consoles">./art/systemsbk/consoles.xml</include>
     <include name="consoles">./art/systemsbk/batomachines.xml</include>
-    <include name="flat carbon"/>
+    <include name="carbon controllers"/>
     <include name="carbon legacy">./art/systemsbk/carbon.xml</include>
     <include name="random video">./art/systemsbk/video.xml</include>
     <include name="random image">./art/systemsbk/image.xml</include>
@@ -155,6 +155,11 @@ originally based on: "simple" by nils bonenberger
     <include name="mini random box">./art/systemsbk/smallbox.xml</include>
     <include name="mini random video">./art/systemsbk/smallvideo.xml</include>
   </subset>
+
+  <!-- Fix for controller image size -->
+  <include subset="systemview" name="simple">./art/systemview/controllersizefix.xml</include>
+  <include subset="systemview" name="vertical">./art/systemview/controllersizefix.xml</include>
+  <include subset="systemview" name="wheel">./art/systemview/controllersizefix.xml</include>
 
   <!-- Fix for Legacy option in systemview subset : systemInfo colors have to be restored after applying systembackground subset -->
   <include subset="systemview" name="legacy">./art/systemview/legacyfix.xml</include>
