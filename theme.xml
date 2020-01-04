@@ -61,6 +61,8 @@ originally based on: "simple" by nils bonenberger
     <include name="red" displayName="${red}"/>
     <include name="green" displayName="${green}">./art/colors/green.xml</include>
     <include name="yellow" displayName="${yellow}">./art/colors/yellow.xml</include>
+    <include name="violet" >./art/colors/violet.xml</include>
+    <include name="cyan" >./art/colors/cyan.xml</include>
   </subset>
 
   <view name="system,basic,detailed,grid">
@@ -471,6 +473,12 @@ originally based on: "simple" by nils bonenberger
       <glowColor>${glowColor}</glowColor>
       <glowSize>3</glowSize>
     </text>
+
+    <ninepatch name="gridtile.background:selected">
+      <animateColor>EFEF60B0</animateColor>
+      <animateColorTime>350</animateColorTime>
+    </ninepatch>
+
   </view>
   <customView name="Boxes" inherits="grid" displayName="${basicGridName}">
     <imagegrid name="gamegrid">
@@ -571,10 +579,7 @@ originally based on: "simple" by nils bonenberger
       <backgroundCornerSize>0 0</backgroundCornerSize>
       <backgroundCornerSize>0.06</backgroundCornerSize>
     </gridtile>
-    <ninepatch name="gridtile.background:selected">
-      <animateColor>EFEF60B0</animateColor>
-      <animateColorTime>350</animateColorTime>
-    </ninepatch>
+
     <image name="gridtile.image">
       <roundCorners>0.06</roundCorners>
     </image>
@@ -587,14 +592,14 @@ originally based on: "simple" by nils bonenberger
       <singleLineScroll>false</singleLineScroll>
       <padding>0.08 0</padding>
       <size>0 0.23</size>
-      <glowColor>00000008</glowColor>
-      <glowSize>3</glowSize>
+      <glowColor>00000060</glowColor>
+      <glowSize>1</glowSize>
     </text>
     <text name="gridtile:selected">
       <singleLineScroll>false</singleLineScroll>
       <color>FFFFFF</color>
       <glowColor>${glowColor}</glowColor>
-      <glowSize>3</glowSize>
+      <glowSize>2</glowSize>
     </text>
     <image name="gridtile.favorite">
       <path>:/star_filled.svg</path>
@@ -623,7 +628,7 @@ originally based on: "simple" by nils bonenberger
   </subset>
 
   <!-- Specific layout for systems -->
-  <include tinyScreen="true">./art/layouts/${system.theme}.xml</include>
+  <include>./art/layouts/${system.theme}.xml</include>
   <!-- Layout for small screens -->
   <include tinyScreen="true">./art/layouts/gpicase.xml</include>
   <!-- Layout when help is disabled -->
@@ -654,9 +659,9 @@ originally based on: "simple" by nils bonenberger
     <include name="yes" displayName="${yes}"/>
     <include name="no" displayName="${no}">./art/tiles/squareborders.xml</include>
   </subset>
-  <subset name="blinkborders" displayName="${blinkBorderSubsetName}" appliesTo="Tiles">
+  <subset name="blinkborders" displayName="${blinkBorderSubsetName}" appliesTo="Tiles,Carousel,Boxes,grid">
     <include name="yes" displayName="${yes}"/>
-    <include name="no" displayName="${no}">./art/tiles/blinkbordersoff.xml</include>
+    <include name="no" displayName="${no}">./art/grid/blinkbordersoff.xml</include>
   </subset>
   <subset name="videotiles" displayName="Videos" appliesTo="Tiles">
     <include name="yes" displayName="${yes}"/>

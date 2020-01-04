@@ -77,7 +77,7 @@
   <customView name="Boxes,Tiles,grid">
     <imagegrid name="gamegrid">
       <pos>0 0.16</pos>
-      <size>0.66 0.774</size>
+      <size>0.66 0.84</size>
       <autoLayout>4 2</autoLayout>
     </imagegrid>
   </customView>

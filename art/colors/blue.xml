@@ -5,7 +5,7 @@
     <baseColor>30508b</baseColor>
     <gradientEndColor>00205b</gradientEndColor>
     <centerFadeColor>40609b50</centerFadeColor>
-    <bottomBarColor>407bc0</bottomBarColor>
+    <bottomBarColor>407bc0B9</bottomBarColor>
     <glowColor>3060Ab20</glowColor>
     <systemInfoColor>FAFAFFB0</systemInfoColor>
     <backgroundImage>./art/fiber.png</backgroundImage>

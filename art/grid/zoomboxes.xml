@@ -4,8 +4,6 @@
   
   <customView name="Boxes,grid">
    <gridtile name="default">
-      <padding>2 2</padding>
-      <backgroundCornerSize>0 0</backgroundCornerSize>
       <imageSizeMode>minSize</imageSizeMode>
     </gridtile>
   </customView>
