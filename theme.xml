@@ -134,6 +134,7 @@ originally based on: "simple" by nils bonenberger
       <path>./art/splash.svg</path>
       <path>./art/controllers/${system.theme}.svg</path>
       <color>${baseColor}</color>
+      <zIndex>21</zIndex>
     </image>
   </view>
   <!-- Subset options for screen -->

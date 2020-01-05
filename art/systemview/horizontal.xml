@@ -8,6 +8,7 @@
       <systemInfoDelay>700</systemInfoDelay>
       <pos>0 0.3837</pos>
       <size>1 0.2325</size>
+<zIndex>20</zIndex>
     </carousel>
     <image name="carousel-inner" extra="true">
       <path>./../carousel.png</path>

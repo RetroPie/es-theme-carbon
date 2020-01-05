@@ -4,6 +4,7 @@
   <view name="system">
     <image name="background" extra="true">
       <tile>false</tile>
+      <linearSmooth>true</linearSmooth>
       <path>./../background/${system.theme}.jpg</path>
       <color>FFFFFFFF</color>
       <pos>0.5 0.5</pos>
