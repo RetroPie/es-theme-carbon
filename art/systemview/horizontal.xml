@@ -8,7 +8,7 @@
       <systemInfoDelay>700</systemInfoDelay>
       <pos>0 0.3837</pos>
       <size>1 0.2325</size>
-<zIndex>20</zIndex>
+      <zIndex>20</zIndex>
     </carousel>
     <image name="carousel-inner" extra="true">
       <path>./../carousel.png</path>
@@ -19,7 +19,7 @@
       <zIndex>40</zIndex>
     </image>
     <text name="systemInfo">
-      <pos>0 0.62</pos>
+      <pos>0 0.64</pos>
       <size>1 0.25</size>
       <backgroundColor>0000FF00</backgroundColor>
       <color>${systemInfoColor}</color>
@@ -41,7 +41,7 @@
       <pos>0.5 0.5</pos>
       <origin>0.5 0.5</origin>
       <path>./../centerfade.png</path>
-      <color>${centerFadeColor}</color>
+      <color>${centerFadeColor}</color>      
       <zIndex>12</zIndex>
     </image>
   </view>

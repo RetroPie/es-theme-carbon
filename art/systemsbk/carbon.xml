@@ -7,7 +7,8 @@
       <size>1 1</size>
       <pos>0 0</pos>
       <origin>0 0</origin>
-        <path>./../carbon_fiber.png</path>
+      <path>./../carbon_fiber.png</path>
+      <color>FFFFFF</color>
     </image>
   </view>
 </theme>

@@ -33,16 +33,11 @@
       <maxLogoCount>5</maxLogoCount>
       <systemInfoDelay>0.1</systemInfoDelay>
       <zIndex>13</zIndex>
-      <defaultTransition>fade</defaultTransition>
     </carousel>
 
-
-   <image name="darkwheel" extra="true">
+   <image name="darkwheel" extra="static">
       <tile>false</tile>
-      <pos>0.22 0.45</pos>
-      
-      <pos>0.22 0.25</pos>
-        
+      <pos>0.22 0.25</pos>        
       <size>0.43 0.36</size>
       <origin>0.5 0.5</origin>
       <path>./../darkwheel.png</path>      

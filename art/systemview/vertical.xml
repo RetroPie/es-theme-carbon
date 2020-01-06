@@ -34,7 +34,7 @@
       <logoSize>0.15 0.12</logoSize>
       <maxLogoCount>5</maxLogoCount>
       <systemInfoDelay>0</systemInfoDelay>
-      <defaultTransition>fade</defaultTransition>
+      
     </carousel>
     <text name="systemInfo">
       <pos>0.175 0.67</pos>
@@ -60,7 +60,7 @@
       <size>0.4 0</size>
     </image>
 
-   <image name="staticBackground">
+   <image name="darkwheel" extra="static">
       <tile>false</tile>
       <pos>0.21 0.2175</pos>
       <size>0.36 0.285</size>

@@ -4,7 +4,8 @@
   <variables>
     <baseColor>30508b</baseColor>
     <gradientEndColor>00205b</gradientEndColor>
-    <centerFadeColor>40609b50</centerFadeColor>
+    <centerFadeColor>40609b50</centerFadeColor>    
+    <backgroundColor>102035</backgroundColor>
     <bottomBarColor>407bc0B9</bottomBarColor>
     <glowColor>3060Ab20</glowColor>
     <systemInfoColor>FAFAFFB0</systemInfoColor>

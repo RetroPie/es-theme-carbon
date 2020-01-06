@@ -12,6 +12,7 @@ originally based on: "simple" by nils bonenberger
     <baseColor>8b0000</baseColor>
     <gradientEndColor>6b2020</gradientEndColor>
     <centerFadeColor>8b000050</centerFadeColor>
+    <backgroundColor>252525</backgroundColor>
     <bottomBarColor>8b0000c0</bottomBarColor>
     <glowColor>Ab000020</glowColor>
     <systemInfoColor>DDDDDDD8</systemInfoColor>
@@ -89,13 +90,18 @@ originally based on: "simple" by nils bonenberger
       <zIndex>12</zIndex>
     </video>
     
-    <image name="background" extra="true">
-      <tile>true</tile>
+      
+    <image name="background" extra="static">
+      <tile>false</tile>
       <size>1 1</size>
       <pos>0 0</pos>
       <origin>0 0</origin>
-      <path>${backgroundImage}</path>
+      <path>./art/bg.png</path>      
+      <color>${backgroundColor}</color>
+      <zIndex>10</zIndex>
     </image>
+
+    
     <text name="logoText">
       <fontPath>./art/Cabin-Bold.ttf</fontPath>
       <color>${baseColor}</color>
@@ -117,7 +123,7 @@ originally based on: "simple" by nils bonenberger
       -->
     </image>
 
-    <image name="BottomBar" extra="true">
+    <image name="BottomBar" extra="static">
       <tile>false</tile>
       <size>1 0.065</size>
       <pos>0 1</pos>
@@ -134,13 +140,14 @@ originally based on: "simple" by nils bonenberger
       <path>./art/splash.svg</path>
       <path>./art/controllers/${system.theme}.svg</path>
       <color>${baseColor}</color>
-      <zIndex>21</zIndex>
+      <zIndex>19</zIndex>
     </image>
   </view>
   <!-- Subset options for screen -->
   <subset name="systemview" displayName="${systemViewName}">
     <include name="horizontal">./art/systemview/horizontal.xml</include>
     <include name="legacy">./art/systemview/legacy.xml</include>
+    <include name="transparent">./art/systemview/transparent.xml</include>
     <include name="simple">./art/systemview/verticalone.xml</include>
     <include name="vertical">./art/systemview/vertical.xml</include>
     <include name="wheel">./art/systemview/wheel.xml</include>
