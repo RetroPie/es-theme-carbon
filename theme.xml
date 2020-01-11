@@ -561,6 +561,9 @@ originally based on: "simple" by nils bonenberger
       <fontSize>0.035</fontSize>
       <size>1 0</size>
     </text>
+    <ninepatch name="gridtile.background:selected">
+      <animateColorTime>0</animateColorTime>
+    </ninepatch>    
   </customView>
   <customView name="Tiles" inherits="grid" displayName="${tilesViewName}">
     <imagegrid name="gamegrid">
