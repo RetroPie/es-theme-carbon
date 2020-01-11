@@ -64,6 +64,7 @@ originally based on: "simple" by nils bonenberger
     <include name="yellow" displayName="${yellow}">./art/colors/yellow.xml</include>
     <include name="violet" >./art/colors/violet.xml</include>
     <include name="cyan" >./art/colors/cyan.xml</include>
+    <include name="orange" >./art/colors/orange.xml</include>
   </subset>
 
   <view name="system,basic,detailed,grid">
