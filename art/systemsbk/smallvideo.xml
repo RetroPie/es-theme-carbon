@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <theme>
   <formatVersion>7</formatVersion>
+  <include>./animatedbackgroundsubset.xml</include>
   <view name="system">
     <video name="videobox" extra="true">
       <path>{random}</path>
@@ -8,9 +9,8 @@
       <color>FFFFFFFF</color>
       <effect>none</effect>
       <roundCorners>0.05</roundCorners>
-      <visible>true</visible>      
+      <visible>true</visible>
     </video>
-
     <image name="ControllerOverlay" extra="true">
       <visible>false</visible>
     </image>

@@ -2,13 +2,13 @@
 <theme>
   <formatVersion>7</formatVersion>
   <view name="system">
-    <image name="background" extra="true">
-      <tile>true</tile>
+    <video name="staticBackgroundVideo">
       <size>1 1</size>
       <pos>0 0</pos>
       <origin>0 0</origin>
-      <path>./../carbon_fiber.png</path>
-      <color>FFFFFF</color>
-    </image>
+      <path>./../background.mp4</path>
+      <color>A0A0A028</color>
+      <zIndex>19</zIndex>
+    </video>
   </view>
 </theme>

@@ -90,8 +90,7 @@ originally based on: "simple" by nils bonenberger
       <visible>false</visible>
       <zIndex>12</zIndex>
     </video>
-    
-      
+          
     <image name="background" extra="static">
       <tile>false</tile>
       <size>1 1</size>
@@ -101,8 +100,7 @@ originally based on: "simple" by nils bonenberger
       <color>${backgroundColor}</color>
       <zIndex>10</zIndex>
     </image>
-
-    
+      
     <text name="logoText">
       <fontPath>./art/Cabin-Bold.ttf</fontPath>
       <color>${baseColor}</color>
@@ -153,11 +151,12 @@ originally based on: "simple" by nils bonenberger
     <include name="vertical">./art/systemview/vertical.xml</include>
     <include name="wheel">./art/systemview/wheel.xml</include>
   </subset>
+
   <!-- Subset option for System view background -->
   <subset name="systembackground" displayName="${systemBackgroundName}">
     <include name="mini-consoles">./art/systemsbk/consoles.xml</include>
     <include name="consoles">./art/systemsbk/batomachines.xml</include>
-    <include name="carbon controllers"/>
+    <include name="carbon controllers">./art/systemsbk/animatedbackgroundsubset.xml</include>
     <include name="carbon legacy">./art/systemsbk/carbon.xml</include>
     <include name="random video">./art/systemsbk/video.xml</include>
     <include name="random image">./art/systemsbk/image.xml</include>
