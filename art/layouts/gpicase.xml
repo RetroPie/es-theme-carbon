@@ -41,6 +41,9 @@
     <image name="carousel-shadow" extra="true">
       <visible>false</visible>
     </image>
+    <image name="carousel-inner" extra="true">
+      <visible>false</visible>
+    </image>
   </view>
   <view name="system, basic, detailed, grid">
     <helpsystem name="help">
@@ -50,6 +53,7 @@
   <view name="grid">
     <imagegrid name="gamegrid">
       <autoLayout>1 1</autoLayout>
+      <size>0.950 0.78</size>
       <padding>0.03 0.06 0.03 0.04</padding>
       <margin>0.010 0.03</margin>
       <scrollDirection>horizontal</scrollDirection>
@@ -66,4 +70,9 @@
       <fontSize>0.039</fontSize>
     </text>
   </view>
+  <customView name="Carousel,Boxes,Tiles,grid">
+    <ninepatch name="gridtile.background:selected">
+      <animateColorTime>0</animateColorTime>
+    </ninepatch>
+  </customView>
 </theme>
