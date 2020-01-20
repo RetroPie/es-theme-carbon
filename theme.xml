@@ -176,7 +176,7 @@ originally based on: "simple" by nils bonenberger
 
   <view name="screen">
     <text name="clock">
-      <textColor>777777FF</textColor>
+      <color>777777FF</color>
       <fontSize>0.035</fontSize>
       <pos>0.90 0.94</pos>
       <size>0.09 0.058</size>
@@ -469,14 +469,14 @@ originally based on: "simple" by nils bonenberger
       <backgroundEdgeColor>${bottomBarColor}</backgroundEdgeColor>
       <imageColor>FFFFFFFF</imageColor>
     </gridtile>
-    <text name="gridtile">
+    <text name="gridtile.text">
       <color>D0D0D0</color>
       <backgroundColor>00000000</backgroundColor>
       <fontSize>0.022</fontSize>
       <alignment>center</alignment>
       <size>1 0.24</size>
     </text>
-    <text name="gridtile:selected">
+    <text name="gridtile.text:selected">
       <color>FFFFFF</color>
       <glowColor>${glowColor}</glowColor>
       <glowSize>3</glowSize>
@@ -493,10 +493,10 @@ originally based on: "simple" by nils bonenberger
       <autoLayout>6 2</autoLayout>
       <autoLayoutSelectedZoom>1.08</autoLayoutSelectedZoom>
     </imagegrid>
-    <text name="gridtile">
+    <text name="gridtile.text">
       <visible>false</visible>
     </text>
-    <text name="gridtile:selected">
+    <text name="gridtile.text:selected">
       <visible>false</visible>
     </text>
     <image name="gridtile.favorite">
@@ -550,13 +550,13 @@ originally based on: "simple" by nils bonenberger
       <backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
       <padding>64 16</padding>
     </gridtile>
-    <text name="gridtile">
+    <text name="gridtile.text">
       <visible>false</visible>
       <color>80808080</color>
       <fontSize>0.016</fontSize>
       <size>1 0</size>
     </text>
-    <text name="gridtile:selected">
+    <text name="gridtile.text:selected">
       <color>FFFFFF00</color>
       <fontSize>0.035</fontSize>
       <size>1 0</size>
@@ -594,7 +594,7 @@ originally based on: "simple" by nils bonenberger
     <image name="gridtile.image">
       <roundCorners>0.06</roundCorners>
     </image>
-    <text name="gridtile">
+    <text name="gridtile.text">
       <color>D0D0D0D0</color>
       <backgroundColor>00000000</backgroundColor>
       <fontPath>./art/Cabin-Bold.ttf</fontPath>

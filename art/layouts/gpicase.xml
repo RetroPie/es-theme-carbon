@@ -65,7 +65,7 @@
       <backgroundCenterColor>00000000</backgroundCenterColor>
       <backgroundEdgeColor>00000000</backgroundEdgeColor>
     </gridtile>
-    <text name="gridtile">
+    <text name="gridtile.text">
       <size>1 0.20</size>
       <fontSize>0.039</fontSize>
     </text>
