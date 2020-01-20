@@ -217,7 +217,7 @@ originally based on: "simple" by nils bonenberger
     <menuTextSmall name="menutextsmall">
       <fontPath>./art/Cabin-Regular.ttf</fontPath>
       <fontSize>0.02</fontSize>
-      <color>909090FF</color>
+      <color>C0C030FF</color>
     </menuTextSmall>
     <menuBackground name="menubg">
       <color>242424</color>
