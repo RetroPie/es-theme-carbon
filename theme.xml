@@ -25,6 +25,7 @@ originally based on: "simple" by nils bonenberger
     <zoomboxesSubsetName>Zoom boxes</zoomboxesSubsetName>
     <hideselectionSubsetName>Hide selection</hideselectionSubsetName>
     <systemBackgroundName>System background</systemBackgroundName>
+    <optimizesmallscreensSubsetName>Optimize for small screens</optimizesmallscreensSubsetName>
     <helpSubsetName>Help icons</helpSubsetName>
     <systemViewName>System view</systemViewName>
     <colored>Colored</colored>
@@ -51,6 +52,7 @@ originally based on: "simple" by nils bonenberger
     <videoboxesSubsetName>Afficher la video en mode boite</videoboxesSubsetName>
     <zoomboxesSubsetName>Zoomer les boites</zoomboxesSubsetName>
     <hideselectionSubsetName>Masquer la sélection</hideselectionSubsetName>
+    <optimizesmallscreensSubsetName>Optimiser pour les petits écrans</optimizesmallscreensSubsetName>
     <helpSubsetName>Icônes d'aide</helpSubsetName>
     <colored>Colorés</colored>
     <subset.colorset>Jeux de couleurs</subset.colorset>
@@ -640,8 +642,13 @@ originally based on: "simple" by nils bonenberger
 
   <!-- Specific layout for systems -->
   <include>./art/layouts/${system.theme}.xml</include>
+    
   <!-- Layout for small screens -->
-  <include tinyScreen="true">./art/layouts/gpicase.xml</include>
+  <subset tinyScreen="true" name="optimizesmallscreens" displayName="${optimizesmallscreensSubsetName}">
+    <include name="yes" displayName="${yes}">./art/layouts/gpicase.xml</include>
+    <include name="no" displayName="${no}"/>
+  </subset>
+  
   <!-- Layout when help is disabled -->
   <include ifHelpPrompts="false">./art/layouts/nohelp.xml</include>
   <!-- Subset options for grid views -->
