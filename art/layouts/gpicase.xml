@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<theme defaultView="grid">
+<theme defaultView="Tiles">
   <formatVersion>7</formatVersion>
   <view name="menu">
     <menuText name="menutext">
@@ -65,8 +65,8 @@
       <backgroundCenterColor>00000000</backgroundCenterColor>
       <backgroundEdgeColor>00000000</backgroundEdgeColor>
     </gridtile>
-    <text name="gridtile.text">
-      <size>1 0.20</size>
+    <text name="gridtile">
+     
       <fontSize>0.039</fontSize>
     </text>
   </view>
@@ -75,4 +75,30 @@
       <animateColorTime>0</animateColorTime>
     </ninepatch>
   </customView>
+
+
+ <customView name="Tiles">
+    <imagegrid name="gamegrid">
+      <pos>0 0.15</pos>
+      <size>1 0.80</size>
+      <padding>0 0</padding>
+      <margin>0 0</margin>
+      <scrollDirection>horizontal</scrollDirection>
+    </imagegrid>
+
+    <imagegrid ifHelpPrompts="false" name="gamegrid">
+      <size>1 0.85</size>
+    </imagegrid>
+
+    <gridtile name="default">
+      <backgroundCornerSize>0 0</backgroundCornerSize>
+    </gridtile>
+    <gridtile name="selected">
+      <backgroundCornerSize>0 0</backgroundCornerSize>
+    </gridtile>
+    <image name="gridtile.image">
+      <roundCorners>0</roundCorners>
+    </image>
+  </customView>
+
 </theme>

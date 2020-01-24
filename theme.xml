@@ -643,14 +643,15 @@ originally based on: "simple" by nils bonenberger
   <!-- Specific layout for systems -->
   <include>./art/layouts/${system.theme}.xml</include>
     
+  <!-- Layout when help is disabled -->
+  <include ifHelpPrompts="false">./art/layouts/nohelp.xml</include>
+
   <!-- Layout for small screens -->
   <subset tinyScreen="true" name="optimizesmallscreens" displayName="${optimizesmallscreensSubsetName}">
     <include name="yes" displayName="${yes}">./art/layouts/gpicase.xml</include>
     <include name="no" displayName="${no}"/>
-  </subset>
-  
-  <!-- Layout when help is disabled -->
-  <include ifHelpPrompts="false">./art/layouts/nohelp.xml</include>
+  </subset> 
+
   <!-- Subset options for grid views -->
   <subset name="videoboxes" displayName="${videoboxesSubsetName}" appliesTo="Boxes,grid">
     <include name="no" displayName="${no}"/>
@@ -673,7 +674,7 @@ originally based on: "simple" by nils bonenberger
     <include name="yes" displayName="${yes}">./art/grid/previewbar.xml</include>
   </subset>
   <!-- Subset options for Tiles view -->
-  <subset name="tileborders" displayName="${roundBorderSubsetName}" appliesTo="Tiles">
+  <subset tinyScreen="false" name="tileborders" displayName="${roundBorderSubsetName}" appliesTo="Tiles">
     <include name="yes" displayName="${yes}"/>
     <include name="no" displayName="${no}">./art/tiles/squareborders.xml</include>
   </subset>
