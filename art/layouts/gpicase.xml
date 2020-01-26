@@ -5,6 +5,9 @@
     <menuText name="menutext">
       <fontSize>0.0415</fontSize>
     </menuText>
+    <menuTextSmall name="menutextsmall">
+      <fontSize>0.03</fontSize>
+    </menuTextSmall>
   </view>
   <view name="system">
     <carousel name="systemcarousel">
@@ -47,7 +50,7 @@
   </view>
   <view name="system, basic, detailed, grid">
     <helpsystem name="help">
-      <fontSize>0.024</fontSize>
+      <fontSize>0.026</fontSize>
     </helpsystem>
   </view>
   <view name="grid">

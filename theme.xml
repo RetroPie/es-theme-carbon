@@ -156,8 +156,9 @@ originally based on: "simple" by nils bonenberger
 
   <!-- Subset option for System view background -->
   <subset name="systembackground" displayName="${systemBackgroundName}">
-    <include name="mini-consoles">./art/systemsbk/consoles.xml</include>
+    <include tinyScreen="false" name="mini-consoles">./art/systemsbk/consoles.xml</include> <!-- change default for small screens -->
     <include name="consoles">./art/systemsbk/batomachines.xml</include>
+    <include tinyScreen="true" name="mini-consoles">./art/systemsbk/consoles.xml</include>
     <include name="carbon controllers">./art/systemsbk/animatedbackgroundsubset.xml</include>
     <include name="carbon legacy">./art/systemsbk/carbon.xml</include>
     <include name="random video">./art/systemsbk/video.xml</include>
