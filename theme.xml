@@ -309,10 +309,6 @@ originally based on: "simple" by nils bonenberger
       <pos>1 1</pos>
     </datetime>
 
-    <text name="md_genre">
-      <pos>0.53 0.66</pos>
-      <size>0 0.033</size>
-    </text>
     <text name="md_developer">
       <color>EFEFFF</color>
       <pos>0.530 0.875</pos>
