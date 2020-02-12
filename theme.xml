@@ -16,6 +16,8 @@ originally based on: "simple" by nils bonenberger
     <bottomBarColor>8b0000c0</bottomBarColor>
     <glowColor>Ab000020</glowColor>
     <systemInfoColor>DDDDDDD8</systemInfoColor>
+    <groupColor>BD4747</groupColor>
+    <groupSeparatorColor>BD4747</groupSeparatorColor>    
     <backgroundImage>./art/fiber.png</backgroundImage>
     <tilesViewName>Tiles</tilesViewName>
     <roundBorderSubsetName>Round borders</roundBorderSubsetName>
@@ -220,8 +222,18 @@ originally based on: "simple" by nils bonenberger
     <menuTextSmall name="menutextsmall">
       <fontPath>./art/Cabin-Regular.ttf</fontPath>
       <fontSize>0.02</fontSize>
-      <color>C0C030FF</color>
+      <color>${groupColor}</color>
     </menuTextSmall>
+
+    <menuGroup name="menugroup">
+      <fontPath>./art/Cabin-Bold.ttf</fontPath>
+      <fontSize>0.025</fontSize>
+      <color>${groupColor}</color>
+      <separatorColor>${groupSeparatorColor}</separatorColor>    
+      <backgroundColor>00000000</backgroundColor>
+      <lineSpacing>2.5</lineSpacing>
+    </menuGroup>
+
     <menuBackground name="menubg">
       <color>242424</color>
       <cornerSize>32 32</cornerSize>
@@ -248,6 +260,10 @@ originally based on: "simple" by nils bonenberger
       <inactive>./art/textinput_ninepatch.png</inactive>
       <active>./art/textinput_ninepatch_active.png</active>
     </menuTextEdit>
+    <menuButton name="menubutton">
+      <path>./art/button.png</path>
+      <filledPath>./art/button_filled.png</filledPath>
+    </menuButton>
   </view>
   <view name="basic">
     <image name="background" extra="true">
