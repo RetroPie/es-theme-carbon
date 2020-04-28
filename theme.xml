@@ -287,7 +287,7 @@ originally based on: "simple" by nils bonenberger
       <selectorColor>1c1c1c</selectorColor>
       <selectedColor>${basecolor}</selectedColor>
       <primaryColor>969696</primaryColor>
-      <secondaryColor>7a6161</secondaryColor>
+      <secondaryColor>808080</secondaryColor>
       <fontPath>./art/Cabin-Bold.ttf</fontPath>
       <fontSize>0.030</fontSize>
       <pos>0.025 0.18</pos>
@@ -296,6 +296,8 @@ originally based on: "simple" by nils bonenberger
       <horizontalMargin>0.01</horizontalMargin>
       <forceUppercase>1</forceUppercase>
       <scrollSound>./art/scroll.wav</scrollSound>
+<lines>17</lines>
+<horizontalMargin>0.005</horizontalMargin>
     </textlist>
   </view>
   <view name="detailed">
@@ -383,7 +385,7 @@ originally based on: "simple" by nils bonenberger
       <selectorColor>1c1c1c</selectorColor>
       <selectedColor>${baseColor}</selectedColor>
       <primaryColor>969696</primaryColor>
-      <secondaryColor>7a6161</secondaryColor>
+      <secondaryColor>808080</secondaryColor>
       <fontPath>./art/Cabin-Bold.ttf</fontPath>
       <forceUppercase>1</forceUppercase>
       <pos>0.021 0.18</pos>
@@ -392,6 +394,8 @@ originally based on: "simple" by nils bonenberger
       <horizontalMargin>0.00</horizontalMargin>
       <fontSize>0.03</fontSize>
       <scrollSound>./art/scroll.wav</scrollSound>
+<lines>17</lines>
+<horizontalMargin>0.005</horizontalMargin>
     </textlist>
     <image name="md_hidden">
       <path>./art/hidden.svg</path>
