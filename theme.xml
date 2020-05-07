@@ -144,8 +144,8 @@ originally based on: "simple" by nils bonenberger
   <!-- Subset options for screen -->
   <subset name="systemview" displayName="${systemViewName}">
     <include name="horizontal">./art/systemview/horizontal.xml</include>
-    <include name="legacy">./art/systemview/legacy.xml</include>
-    <include name="transparent">./art/systemview/transparent.xml</include>
+    <include name="legacy" tinyScreen="false">./art/systemview/legacy.xml</include>
+    <include name="transparent" tinyScreen="false">./art/systemview/transparent.xml</include>
     <include name="simple">./art/systemview/verticalone.xml</include>
     <include name="vertical">./art/systemview/vertical.xml</include>
     <include name="wheel">./art/systemview/wheel.xml</include>
