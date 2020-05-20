@@ -22,7 +22,7 @@
 		</text>
 	</view>
 
-	<view name="basic, detailed, video">
+	<view name="basic, detailed, video, grid">
 		<text name="logoText">
 			<pos>0.01 0.02</pos>
 			<size>0.460 0.126</size>
