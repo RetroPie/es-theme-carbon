@@ -78,6 +78,23 @@ originally based on: "simple" by nils bonenberger
   </view>
   <view name="system">
     <!-- Used by random box need to be declared there -->
+
+    <text name="manufacturerName" extra="static">
+      <pos>0.025 0.8</pos>
+      <size>0.98 0.15</size>
+      <text>Manufacturer : {manufacturer}
+Release Year : {release}</text>
+      <text lang="fr">Constructeur : {manufacturer}
+Année de sortie : {release}</text>
+      <alignment>left</alignment>
+      <fontPath>./art/Cabin-Regular.ttf</fontPath>
+      <fontSize>0.024</fontSize>
+      <glowSize>1</glowSize>
+      <glowColor>${glowColor}</glowColor>
+      <color>C0C0C0</color>      
+      <zIndex>100</zIndex>
+    </text>
+
     <image name="box" extra="true">
       <pos>0.50 0.18</pos>
       <origin>0.5 0.5</origin>
@@ -408,12 +425,22 @@ originally based on: "simple" by nils bonenberger
 
     <image name="md_kidgame">     
       <path>./art/kid.svg</path>
+      <pos>0.86 0.9</pos>
+      <maxSize>0.02 0.03</maxSize>      
+      <origin>0.5 0.5</origin>
+      <color>969696</color>
+      <zIndex>150</zIndex>
+    </image>
+
+    <image name="md_manual">
+      <path>./art/manual.svg</path>
       <pos>0.882 0.9</pos>
       <maxSize>0.02 0.03</maxSize>      
       <origin>0.5 0.5</origin>
       <color>969696</color>
       <zIndex>150</zIndex>
     </image>
+
 <!--
     <image name="md_favorite">
       <pos>0.975 0.21</pos>
@@ -505,6 +532,26 @@ originally based on: "simple" by nils bonenberger
       <color>FFFFFF</color>
       <unfilledColor>808080</unfilledColor>
     </rating>
+<!--
+    <image name="md_fanart">
+      <pos>0.5 0.08</pos>
+      <minSize>1 0.16</minSize>      
+      <origin>0.5 0.5</origin>
+      <color>808080</color>
+      <zIndex>1</zIndex>
+<linearSmooth>true</linearSmooth>
+    </image>
+-->
+
+    <image name="md_manual">
+      <path>./art/manual.svg</path>
+      <pos>0.023 0.896</pos>
+      <maxSize>0.02 0.03</maxSize>      
+      <origin>0.5 0.5</origin>
+      <color>808080</color>
+      <zIndex>150</zIndex>
+    </image>
+
     <imagegrid name="gamegrid">
       <!--
       <pos>0.025 0.16</pos>
