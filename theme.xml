@@ -77,23 +77,8 @@ originally based on: "simple" by nils bonenberger
     </helpsystem>
   </view>
   <view name="system">
-    <!-- Used by random box need to be declared there -->
 
-    <text name="manufacturerName" extra="static">
-      <pos>0.025 0.8</pos>
-      <size>0.98 0.15</size>
-      <text>Manufacturer : {manufacturer}
-Release Year : {release}</text>
-      <text lang="fr">Constructeur : {manufacturer}
-Année de sortie : {release}</text>
-      <alignment>left</alignment>
-      <fontPath>./art/Cabin-Regular.ttf</fontPath>
-      <fontSize>0.024</fontSize>
-      <glowSize>1</glowSize>
-      <glowColor>${glowColor}</glowColor>
-      <color>C0C0C0</color>      
-      <zIndex>100</zIndex>
-    </text>
+    <!-- Used by random box need to be declared there -->
 
     <image name="box" extra="true">
       <pos>0.50 0.18</pos>
@@ -158,6 +143,27 @@ Année de sortie : {release}</text>
       <zIndex>19</zIndex>
     </image>
   </view>
+  
+  <feature supported="manufacturer">
+    <view name="system">
+      <text name="manufacturerName" extra="static">
+        <pos>0.025 0.8</pos>
+        <size>0.98 0.15</size>
+        <text>Manufacturer : ${system.manufacturer}
+Release Year : ${system.releaseYear}</text>
+        <text lang="fr">Constructeur : ${system.manufacturer}
+Année de sortie : ${system.releaseYear}</text>
+        <alignment>left</alignment>
+        <fontPath>./art/Cabin-Regular.ttf</fontPath>
+        <fontSize>0.024</fontSize>
+        <glowSize>1</glowSize>
+        <glowColor>${glowColor}</glowColor>
+        <color>C0C0C0</color>      
+        <zIndex>100</zIndex>
+      </text>
+    </view>
+  </feature>
+  
   <!-- Subset options for screen -->
   <subset name="systemview" displayName="${systemViewName}">
     <include name="horizontal">./art/systemview/horizontal.xml</include>
