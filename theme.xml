@@ -288,6 +288,7 @@ Année de sortie : ${system.releaseYear}</text>
       <iconShutdown>./art/icons/Shutdown.png</iconShutdown>
       <iconFastShutdown>./art/icons/Fastshutdown.png</iconFastShutdown>
       <iconRetroachievements>./art/icons/Contest.png</iconRetroachievements>
+      <iconManual>./art/icons/Manual.png</iconManual>
     </menuIcons>
     <menuTextEdit name="menutextedit">
       <inactive>./art/textinput_ninepatch.png</inactive>
