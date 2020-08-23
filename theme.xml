@@ -123,6 +123,17 @@ originally based on: "simple" by nils bonenberger
       <path>/userdata/themes/${system.theme}/art/${system}-${lang}.svg</path>
       -->
     </image>
+    <image name="logo" region="eu"></image>
+		<image name="logo" region="us">
+		  <path>./art/logos/us/${system.theme}.png</path>
+			<path>./art/logos/us/${system.theme}.svg</path>
+		</image>
+		
+		<image name="logo" region="jp">
+		  <path>./art/logos/jp/${system.theme}.png</path>
+			<path>./art/logos/jp/${system.theme}.svg</path>
+		</image>
+		    
     <image name="BottomBar" extra="static">
       <tile>false</tile>
       <size>1 0.065</size>
@@ -505,6 +516,18 @@ Année de sortie : ${system.releaseYear}</text>
       <maxSize>0.3 0.120</maxSize>
       <origin>0.5 0.5</origin>
     </image>
+
+    <image name="logo" region="eu"></image>
+		<image name="logo" region="us">
+		  <path>./art/logos/us/${system.theme}.png</path>
+			<path>./art/logos/us/${system.theme}.svg</path>
+		</image>
+		
+		<image name="logo" region="jp">
+		  <path>./art/logos/jp/${system.theme}.png</path>
+			<path>./art/logos/jp/${system.theme}.svg</path>
+		</image>
+		    
     <text name="folderpath">
       <pos>0.05 0.132</pos>
       <size>0.90 0.02</size>  
