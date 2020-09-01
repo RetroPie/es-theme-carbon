@@ -331,8 +331,11 @@ Année de sortie : ${system.releaseYear}</text>
       <horizontalMargin>0.01</horizontalMargin>
       <forceUppercase>1</forceUppercase>
       <scrollSound>./art/scroll.wav</scrollSound>
-<lines>17</lines>
-<horizontalMargin>0.005</horizontalMargin>
+      <scrollbarColor>252525</scrollbarColor>
+      <scrollbarCorner>0.49</scrollbarCorner>
+      <scrollbarSize>0.005</scrollbarSize>
+      <lines>17</lines>
+      <horizontalMargin>0.005</horizontalMargin>
     </textlist>
   </view>
   <view name="detailed">
@@ -429,8 +432,11 @@ Année de sortie : ${system.releaseYear}</text>
       <horizontalMargin>0.00</horizontalMargin>
       <fontSize>0.03</fontSize>
       <scrollSound>./art/scroll.wav</scrollSound>
-<lines>17</lines>
-<horizontalMargin>0.005</horizontalMargin>
+      <scrollbarColor>252525</scrollbarColor>
+      <scrollbarCorner>0.49</scrollbarCorner>
+      <scrollbarSize>0.005</scrollbarSize>
+      <lines>17</lines>
+      <horizontalMargin>0.005</horizontalMargin>
     </textlist>
     <image name="md_hidden">
       <path>./art/hidden.svg</path>
@@ -597,6 +603,11 @@ Année de sortie : ${system.releaseYear}</text>
       <autoLayoutSelectedZoom>1.12</autoLayoutSelectedZoom>
       <animateSelection>false</animateSelection>
       <centerSelection>false</centerSelection>
+
+      <scrollbarColor>252525</scrollbarColor>
+      <scrollbarCorner>0.49</scrollbarCorner>
+      <scrollbarSize>0.005</scrollbarSize>
+
     </imagegrid>
     <gridtile name="default">
       <backgroundColor>FFFFFF00</backgroundColor>
