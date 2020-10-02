@@ -2,6 +2,18 @@
 <theme>
   <formatVersion>7</formatVersion>
   <view name="system">
+    <image name="staticBackground">
+      <pos>0.5 0.5</pos>
+      <size>1 2.38</size> <!-- 2.38 is to ensure UltraWide screen are ok -->
+      <origin>0.5 0.5</origin>
+      <path>./art/background.jpg</path>
+      <color>A0A0A028</color>
+      <zIndex>19</zIndex>
+      <storyboard>
+        <animation property="rotation" from="0" to="360" duration="60000" mode="linear" repeat="forever"/>
+      </storyboard>
+    </image>
+    <!--
     <video name="staticBackgroundVideo">
       <size>1 1</size>
       <pos>0 0</pos>
@@ -10,5 +22,6 @@
       <color>A0A0A028</color>
       <zIndex>19</zIndex>
     </video>
+-->
   </view>
 </theme>
