@@ -4,9 +4,6 @@
   <include>./animatedbackgroundsubset.xml</include>
   <include>./animatedcoverssubset.xml</include>
   <view name="system">
-     <carousel name="systemcarousel">
-      <defaultTransition>fade &amp; slide</defaultTransition>
-    </carousel>    
     <image name="ControllerOverlay" extra="true">
       <path>./../consoles/default.png</path>
       <path>./../consoles/${system.theme}.png</path>

@@ -27,21 +27,23 @@
       <zIndex>40</zIndex>
     </image>
     <text name="systemInfo">
-      <pos>0.1 0.71</pos>
-      <size>0.8 0.035</size>
-      <pos>0.03 0.32</pos>
-      <size>0.94 0.12</size>
+      <pos>0 0.64</pos>
+      <size>1 0.25</size>
       <backgroundColor>00000000</backgroundColor>
-      <!-- <backgroundColor>0000FF80</backgroundColor> -->
       <color>${systemInfoColor}</color>
       <glowColor>${glowColor}</glowColor>
-      <glowSize>1</glowSize>
+      <glowSize>2</glowSize>
       <reflexion>0.20 0.0</reflexion>
       <fontPath>./art/Cabin-Bold.ttf</fontPath>
       <fontSize>0.024</fontSize>
-      <reflexion>0</reflexion>
+      
+     <!-- <pos>0.03 0.32</pos>
+      <size>0.94 0.12</size>
       <alignment>right</alignment>
       <verticalAlignment>top</verticalAlignment>
+      <reflexion>0</reflexion>
+      -->
+            
       <!--
       <storyboard>
         <animation property="opacity" from="0" to="1" duration="350" mode="easeOut"/>

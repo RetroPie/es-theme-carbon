@@ -2,14 +2,19 @@
 <theme>
   <formatVersion>7</formatVersion>
   <view name="system">
+    <text name="systemInfo" ifSubset="systemview:horizontal|legacy|transparent">
+      <pos>0.03 0.32</pos>
+      <size>0.94 0.12</size>
+      <alignment>right</alignment>
+      <verticalAlignment>top</verticalAlignment>
+      <reflexion>0</reflexion>
+    </text>
     <image name="box1" extra="true">
       <origin>0.5 0.5</origin>
       <pos>0.92 0.78</pos>
       <maxSize>0.11 0.24</maxSize>
-            
       <y ifSubset="systemview:legacy">0.805</y>
       <h ifSubset="systemview:legacy">0.215</h>
-
       <zIndex>30</zIndex>
       <path>{random:thumbnail}</path>
       <color>FFFFFFFF</color>
@@ -32,10 +37,8 @@
       <pos>0.8 0.78</pos>
       <origin>0.5 0.5</origin>
       <maxSize>0.11 0.24</maxSize>
-
       <y ifSubset="systemview:legacy">0.805</y>
       <h ifSubset="systemview:legacy">0.215</h>
-
       <zIndex>29</zIndex>
       <path>{random:thumbnail}</path>
       <color>FFFFFFFF</color>
@@ -57,10 +60,8 @@
       <pos>0.68 0.78</pos>
       <origin>0.5 0.5</origin>
       <maxSize>0.11 0.24</maxSize>
-
       <y ifSubset="systemview:legacy">0.805</y>
       <h ifSubset="systemview:legacy">0.215</h>
-
       <zIndex>28</zIndex>
       <path>{random:thumbnail}</path>
       <color>FFFFFFFF</color>
@@ -81,10 +82,8 @@
       <pos>0.56 0.78</pos>
       <origin>0.5 0.5</origin>
       <maxSize>0.11 0.24</maxSize>
-
       <y ifSubset="systemview:legacy">0.805</y>
       <h ifSubset="systemview:legacy">0.215</h>
-
       <zIndex>27</zIndex>
       <path>{random:thumbnail}</path>
       <color>FFFFFFFF</color>
@@ -105,10 +104,8 @@
       <pos>0.44 0.78</pos>
       <origin>0.5 0.5</origin>
       <maxSize>0.11 0.24</maxSize>
-
       <y ifSubset="systemview:legacy">0.805</y>
       <h ifSubset="systemview:legacy">0.215</h>
-
       <zIndex>26</zIndex>
       <path>{random:thumbnail}</path>
       <color>FFFFFFFF</color>
@@ -129,10 +126,8 @@
       <pos>0.32 0.78</pos>
       <origin>0.5 0.5</origin>
       <maxSize>0.11 0.24</maxSize>
-
       <y ifSubset="systemview:legacy">0.805</y>
       <h ifSubset="systemview:legacy">0.215</h>
-
       <zIndex>25</zIndex>
       <path>{random:thumbnail}</path>
       <color>FFFFFFFF</color>
@@ -153,10 +148,8 @@
       <pos>0.20 0.78</pos>
       <origin>0.5 0.5</origin>
       <maxSize>0.11 0.24</maxSize>
-
       <y ifSubset="systemview:legacy">0.805</y>
       <h ifSubset="systemview:legacy">0.215</h>
-
       <zIndex>24</zIndex>
       <path>{random:thumbnail}</path>
       <color>FFFFFFFF</color>
@@ -177,10 +170,8 @@
       <pos>0.08 0.78</pos>
       <origin>0.5 0.5</origin>
       <maxSize>0.11 0.24</maxSize>
-
       <y ifSubset="systemview:legacy">0.805</y>
       <h ifSubset="systemview:legacy">0.215</h>
-
       <zIndex>23</zIndex>
       <path>{random:thumbnail}</path>
       <color>FFFFFFFF</color>

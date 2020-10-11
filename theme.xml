@@ -169,13 +169,14 @@ originally based on: "simple" by nils bonenberger
       <path>./art/controllers/${system.theme}.svg</path>
       <color>${baseColor}</color>
       <zIndex>19</zIndex>
+      <linearSmooth>true</linearSmooth>
     </image>
   </view>
   
   <feature supported="manufacturer">
     <view name="system">
       <text name="manufacturerName" extra="static">
-        <text>${system.manufacturer}</text>
+        <text>${system.sortedBy}</text>
         <alignment>left</alignment>
         <verticalAlignment>top</verticalAlignment>
         <fontPath>./art/Cabin-Regular.ttf</fontPath>
@@ -446,16 +447,15 @@ originally based on: "simple" by nils bonenberger
       <showSnapshotDelay>true</showSnapshotDelay>
       <loops>1</loops>
       <roundCorners>0.02</roundCorners>
-
+<!--
       <storyboard>
         <animation property="opacity" from="0" to="1" duration="800" mode="easeIn"/>
-        <!--<animation property="scale" from="0" to="1" duration="800" mode="easeOutCubic"/>-->
       </storyboard>
 
       <storyboard event="snapshot">
         <animation property="opacity" from="0" to="1" duration="350" mode="easeIn"/>        
       </storyboard>
-    
+    -->
     </video>
 
     <image name="background">
@@ -806,9 +806,9 @@ originally based on: "simple" by nils bonenberger
       <pos>0.025 0.16</pos>
       <size>0.950 0.84</size>
       <padding>0.03 0.04 0.03 0.1</padding>
-      <zIndex>10</zIndex>
+      <zIndex>13</zIndex>
       <autoLayout>5 2</autoLayout>
-      <autoLayoutSelectedZoom>1.12</autoLayoutSelectedZoom>
+      <!--<autoLayoutSelectedZoom>1.12</autoLayoutSelectedZoom>-->      
       <animateSelection>false</animateSelection>
       <centerSelection>false</centerSelection>
 
@@ -830,7 +830,7 @@ originally based on: "simple" by nils bonenberger
       <imageColor>FFFFFFFF</imageColor>
     </gridtile>
     <text name="gridtile">
-      <color>D0D0D0</color>
+      <color>FFFFFF80</color>
       <backgroundColor>00000000</backgroundColor>
       <fontSize>0.022</fontSize>
       <alignment>center</alignment>
@@ -930,7 +930,7 @@ originally based on: "simple" by nils bonenberger
       <imageSource>image</imageSource>
       <margin>0.005 0.010</margin>
       <showVideoAtDelay>800</showVideoAtDelay>
-      <zIndex>10</zIndex>
+      <zIndex>13</zIndex>
      
       <!--
       <autoLayoutSelectedZoom>1.18</autoLayoutSelectedZoom>
