@@ -5,6 +5,10 @@
     <carousel name="systemcarousel">
       <color>FAFAFFA0</color>
       <colorEnd>FAFAFFD0</colorEnd>
+      
+      <color>FAFAFFA0</color>
+      <colorEnd>FAFAFFB0</colorEnd>
+      
       <systemInfoDelay>700</systemInfoDelay>
       <pos>0 0.3837</pos>
       <size>1 0.2325</size>
@@ -35,7 +39,7 @@
       <glowSize>2</glowSize>
       <reflexion>0.20 0.0</reflexion>
       <fontPath>./art/Cabin-Bold.ttf</fontPath>
-      <fontSize>0.024</fontSize>
+      <fontSize>0.027</fontSize>
       
      <!-- <pos>0.03 0.32</pos>
       <size>0.94 0.12</size>
