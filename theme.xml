@@ -107,7 +107,30 @@ originally based on: "simple" by nils bonenberger
   <view name="system">
 
     <!-- Used by random box need to be declared there -->
+<!--
+    <ninepatch name="totor" extra="true">
+        <pos>0.15 0.15</pos>
+        <origin>0.5 0.5</origin>
+        <size>0.15 0.15</size>
+    <path>./art/fade.png</path>
+    <path>./art/framew.png</path>
+    <edgeColor>FFFFFFFF</edgeColor>
+    <centerColor>FFFF</centerColor>
+        <cornerSize>14 14</cornerSize>
+        <zIndex>150</zIndex>
+        <padding>-30 -30</padding>
+    </ninepatch>
 
+ <ninepatch name="tot2" extra="true">
+        <pos>0.15 0.15</pos>
+        <origin>0.5 0.5</origin>
+        <size>0.15 0.15</size>
+    <path>:/frame.png</path>
+    <color>FF0000FF</color>
+        <cornerSize>0 0 </cornerSize>
+        <zIndex>49</zIndex>
+    </ninepatch>
+-->
     <image name="box" extra="true">
       <pos>0.50 0.18</pos>
       <origin>0.5 0.5</origin>
@@ -280,6 +303,7 @@ originally based on: "simple" by nils bonenberger
     <include tinyScreen="true" name="mini-consoles">./art/systemsbk/consoles.xml</include>
     <include name="carbon controllers">./art/systemsbk/animatedbackgroundsubset.xml</include>
     <include name="carbon legacy">./art/systemsbk/carbon.xml</include>
+    <include name="simple">./art/systemsbk/simple.xml</include>
     <include name="random video">./art/systemsbk/video.xml</include>
     <include name="random image">./art/systemsbk/image.xml</include>
     <include name="random box">./art/systemsbk/box.xml</include>
@@ -485,7 +509,19 @@ originally based on: "simple" by nils bonenberger
       </storyboard>
     -->
     </video>
-
+    <!--
+    <image name="md_thumbnail">
+      <pos>0.925 0.535</pos>
+      <maxSize>0.10 0.20</maxSize>
+      <origin>0.5 0.5</origin>
+      <zIndex>40</zIndex> 
+      <opacity>0</opacity>
+      <storyboard>
+        <animation property="opacity" from="0" to="1" duration="700" mode="easeIn"/>        
+        <animation property="scale" from="0" to="1" duration="700" mode="easeIn"/>        
+      </storyboard>
+    </image>
+    -->
     <image name="background">
       <tile>false</tile>
       <size>1 1</size>
@@ -718,7 +754,7 @@ originally based on: "simple" by nils bonenberger
       <color>${baseColor}</color>
       <!-- <forceUppercase>true</forceUppercase>-->
     </text>
-    <image name="logo" extra="true">
+    <image name="logo">
       <!-- try png -->
       <path>./art/logos/${system.theme}.png</path>
       <path>./art/logos/${system.theme}.svg</path>
@@ -731,16 +767,16 @@ originally based on: "simple" by nils bonenberger
       <maxSize>0.3 0.120</maxSize>
       <origin>0.5 0.5</origin>
       <linearSmooth>true</linearSmooth>
-<zIndex>30</zIndex>
+      <zIndex>30</zIndex>
     </image>
 
-    <image name="logo" extra="true" region="eu"/>
-		<image name="logo" extra="true" region="us">
+    <image name="logo" region="eu"/>
+		<image name="logo" region="us">
 		  <path>./art/logos/us/${system.theme}.png</path>
 			<path>./art/logos/us/${system.theme}.svg</path>
 		</image>
 		
-		<image name="logo" extra="true" region="jp">
+		<image name="logo" region="jp">
 		  <path>./art/logos/jp/${system.theme}.png</path>
 			<path>./art/logos/jp/${system.theme}.svg</path>
 		</image>
@@ -958,56 +994,70 @@ originally based on: "simple" by nils bonenberger
   <customView name="Tiles" inherits="grid" displayName="${tilesViewName}">
     <imagegrid name="gamegrid">
       <autoLayout>3 2</autoLayout>
-      <autoLayoutSelectedZoom>1.03</autoLayoutSelectedZoom>
+      <autoLayoutSelectedZoom>1.02</autoLayoutSelectedZoom>
       <imageSource>image</imageSource>
       <margin>0.005 0.010</margin>
+      <margin>0.001 0.002</margin>
+      <margin>0 0</margin>
       <showVideoAtDelay>800</showVideoAtDelay>
       <zIndex>13</zIndex>
-     
-      <!--
-      <autoLayoutSelectedZoom>1.18</autoLayoutSelectedZoom>
-      -->
+      <gameImage>./art/defgame.png</gameImage>
+      <folderImage>./art/deffolder.png</folderImage>
+      <logoBackgroundImage>./art/deflogobk.png</logoBackgroundImage>
     </imagegrid>
 
-
-<!--
     <ninepatch name="gridtile.background">
-      <path>./art/fade.png</path>     
+      <path>./art/framew.png</path>
+      <cornerSize>20 20</cornerSize>
+      <padding>-2 -2</padding>
+      <edgeColor>000000B0</edgeColor>
+      <centerColor>000000A0</centerColor>
     </ninepatch>
     
     <ninepatch name="gridtile.background:selected">
-  <color>FFFFFFFF</color>
-      <animateColorTime>0</animateColorTime>
-      <cornerSize>1 1</cornerSize>
+      <path>./art/framewsel.png</path>
+      <cornerSize>38 38</cornerSize>
+      <padding>-18 -18</padding>      
+      <color>${baseColor}</color>
     </ninepatch>
-    -->
+    
     <gridtile name="default">
       <backgroundImage/>
       <backgroundCenterColor>40404080</backgroundCenterColor>
       <backgroundEdgeColor>40404080</backgroundEdgeColor>
-      <padding>1 1</padding>
+      <padding>5 5</padding>
       <imageSizeMode>minSize</imageSizeMode>
       <imageColor>A0A0A0FF</imageColor>
       <backgroundCornerSize>0 0</backgroundCornerSize>
-      <backgroundCornerSize>0.06</backgroundCornerSize>
+      <backgroundCornerSize>0.021</backgroundCornerSize>
     </gridtile>
     <gridtile name="selected">
       <padding>5 5</padding>
-     <!-- <padding>25 25</padding>-->
       <imageColor>FFFFFFFF</imageColor>
       <backgroundCornerSize>0 0</backgroundCornerSize>
-      <backgroundCornerSize>0.06</backgroundCornerSize>
+      <backgroundCornerSize>0.021</backgroundCornerSize>
     </gridtile>
+ <!--
+    <image name="gridtile.overlay">
+      <roundCorners>0.020</roundCorners>
+      <path>./art/overlay.png</path>
+<color>FFFFFF70</color>
+    </image>
+
+     <image name="gridtile.overlay:selected">
+      <color>FFFFFF20</color>
+    </image>
+    -->
     <image name="gridtile.image">
-      <roundCorners>0.06</roundCorners>
+      <roundCorners>0.020</roundCorners>
     </image>
     <text name="gridtile">
       <color>D0D0D0D0</color>
       <backgroundColor>00000000</backgroundColor>
-      <fontPath>./art/Cabin-Bold.ttf</fontPath>
-      <fontSize>0.030</fontSize>
+      <fontPath>./art/Cabin-Regular.ttf</fontPath>
+      <fontSize>0.026</fontSize>
       <alignment>center</alignment>
-      <singleLineScroll>false</singleLineScroll>
+      <singleLineScroll>false</singleLineScroll>      
       <padding>0.08 0</padding>
       <size>0 0.23</size>
       <glowColor>00000060</glowColor>

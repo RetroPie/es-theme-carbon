@@ -31,8 +31,9 @@
       </storyboard>
     </imagegrid>
   </view>
+
   <view name="basic, detailed, grid">
-    <image name="logo" extra="true">
+    <image name="logo">
       <storyboard>
         <animation property="y" from="0.05" begin="0" duration="350" mode="easeOut"/>
         <animation property="opacity" from="0" to="1" duration="350" mode="easeIn"/>
