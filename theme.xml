@@ -326,31 +326,48 @@ originally based on: "simple" by nils bonenberger
       <alignment>right</alignment>
       <verticalAlignment>center</verticalAlignment>
     </text>
+    
     <controllerActivity name="controllerActivity">
       <pos>0.01 0.012</pos>
-      <size>0.085 0.025</size>
+      <size>0.185 0.023</size>
       <itemSpacing>0.003</itemSpacing>
-      <imagePath>./art/gamepad.svg</imagePath>
-      <color>FFFFFF80</color>
+      <color>FFFFFF90</color>
+      
+      <!-- controllers -->
+      <imagePath>./art/gamepad.svg</imagePath>      
       <activityColor>A0A0FFC0</activityColor>
       <hotkeyColor>FFA0A0C0</hotkeyColor>
+
+      <!-- wifi 
+      <networkIcon>./art/icons/Network.png</networkIcon>
+      -->
+      <!-- battery 
+      <incharge>./art/battery/incharge.svg</incharge>
+      <full>./art/battery/full.svg</full>
+      <at75>./art/battery/75.svg</at75>
+      <at50>./art/battery/50.svg</at50>
+      <at25>./art/battery/25.svg</at25>
+      <empty>./art/battery/empty.svg</empty>-->
     </controllerActivity>
-    <!--
-    <controllerActivity name="controllerActivity" tinyScreen="true">
-     <visible>false</visible>
-    </controllerActivity>
--->
+
     <batteryIndicator name="batteryIndicator">
-      <pos>0.955 0.0125</pos>
-      <size>0.033 0.033</size>
+      <pos>0.955 0.012</pos>
+      <size>0.033 0.0275</size>
+<horizontalAlignment>right</horizontalAlignment>
       <incharge>./art/battery/incharge.svg</incharge>
       <full>./art/battery/full.svg</full>
       <at75>./art/battery/75.svg</at75>
       <at50>./art/battery/50.svg</at50>
       <at25>./art/battery/25.svg</at25>
       <empty>./art/battery/empty.svg</empty>
+
+<!-- wifi -->
+  <!--    <networkIcon>./art/icons/Network.png</networkIcon>-->
+<!--<networkIcon>none</networkIcon>-->
+
       <color>FFFFFFA0</color>
     </batteryIndicator>
+
     <batteryIndicator name="batteryIndicator" tinyScreen="true">
       <pos>0.915 0.013</pos>
       <size>0.07 0.07</size>
@@ -394,6 +411,10 @@ originally based on: "simple" by nils bonenberger
       <color>242424</color>
       <cornerSize>32 32</cornerSize>
       <path>./art/frame.png</path>
+      <scrollbarColor>96969620</scrollbarColor>
+      <scrollbarCorner>0.49</scrollbarCorner>
+      <scrollbarSize>0.003</scrollbarSize>
+      <scrollbarAlignment>innerright</scrollbarAlignment>
     </menuBackground>
     <menuIcons name="menuicons">
       <iconKodi>./art/icons/Kodi.png</iconKodi>
@@ -641,6 +662,7 @@ originally based on: "simple" by nils bonenberger
       <origin>0 0.5</origin>
       <pos>0.55 0.9</pos>
       <maxSize>0.02 0.05</maxSize>
+      <linearSmooth>true</linearSmooth>
     </image>
     <text name="md_developer">
       <color>EFEFFF</color>
