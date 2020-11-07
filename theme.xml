@@ -229,60 +229,44 @@ originally based on: "simple" by nils bonenberger
         <alignment>left</alignment>
         <verticalAlignment>top</verticalAlignment>
         <fontPath>./art/Cabin-Regular.ttf</fontPath>
-        <fontSize>0.060</fontSize>
-        <glowSize>1</glowSize>
-        <glowColor>${glowColor}</glowColor>
- <reflexion>0.20 0.0</reflexion>
- <reflexion>0</reflexion>
- <!--<backgroundColor>0000FF80</backgroundColor>-->
-      <pos>0.029 0.037</pos>
-      <size>0.942 0.28</size>
+        <fontSize>0.060</fontSize>                    
+        <pos>0.029 0.037</pos>
+        <size>0.942 0.28</size>
         <color>C0C0C0</color>      
         <zIndex>100</zIndex>
         <color>D0D0D0FF</color>
-      <glowColor>00000040</glowColor>
-      <glowSize>2</glowSize>
+        <glowColor>00000040</glowColor>
+        <glowSize>2</glowSize>
+        <glowSize tinyScreen="true">1</glowSize>
       </text>
-
       <text name="fullName" extra="true">
         <text>${system.fullName}</text>
         <alignment>left</alignment>
         <verticalAlignment>top</verticalAlignment>
-              <fontPath>./art/Cabin-Regular.ttf</fontPath>
-      <fontSize>0.024</fontSize>
-        <glowSize>1</glowSize>
-        <glowColor>${glowColor}</glowColor>
- <reflexion>0.20 0.0</reflexion>
- <reflexion>0</reflexion>
-      <pos>0.03 0.12</pos>
-      <size>0.94 0.28</size>
-        <color>C0C0C0</color>      
+        <fontPath>./art/Cabin-Regular.ttf</fontPath>
+        <fontSize>0.024</fontSize>
+        <pos>0.03 0.12</pos>
+        <size>0.94 0.28</size>
         <zIndex>100</zIndex>
         <color>D0D0D0FF</color>
-      <glowColor>00000025</glowColor>
-      <glowSize>2</glowSize>
+        <glowColor>00000025</glowColor>
+        <glowSize>2</glowSize>
+        <glowSize tinyScreen="true">1</glowSize>
       </text>
       <text name="releaseYyear" extra="true">
         <text>${system.releaseYearOrNull}</text>
         <alignment>left</alignment>
         <verticalAlignment>top</verticalAlignment>
-              <fontPath>./art/Cabin-Regular.ttf</fontPath>
-      <fontSize>0.024</fontSize>
-        <glowSize>1</glowSize>
-        <glowColor>${glowColor}</glowColor>
- <reflexion>0.20 0.0</reflexion>
- <reflexion>0</reflexion>
-      <pos>0.03 0.157</pos>
-      <size>0.94 0.28</size>
-        <color>C0C0C0</color>      
+        <fontPath>./art/Cabin-Regular.ttf</fontPath>
+        <fontSize>0.024</fontSize>
+        <pos>0.03 0.157</pos>
+        <size>0.94 0.28</size>        
         <zIndex>100</zIndex>
-       <color>D0D0D0FF</color>
-      <glowColor>00000025</glowColor>
-      <glowSize>2</glowSize>
+        <color>D0D0D0FF</color>
+        <glowColor>00000025</glowColor>
+        <glowSize>2</glowSize>
+        <glowSize tinyScreen="true">1</glowSize>
       </text>
-
-
-
     </view>
   </feature>
   
