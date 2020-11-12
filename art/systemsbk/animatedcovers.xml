@@ -189,4 +189,11 @@
       </storyboard>
     </image>
   </view>
+  <feature supported="manufacturer">
+    <view name="system">
+      <text name="systemInfoEx" extra="true">
+        <visible>false</visible>
+      </text>
+    </view>
+  </feature>
 </theme>

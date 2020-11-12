@@ -34,6 +34,10 @@
       <color>${systemInfoColor}</color>
       <glowColor>${glowColor}</glowColor>
       <glowSize>2</glowSize>
+            
+     
+        <glowSize>1</glowSize>
+      
       <reflexion>0.20 0.0</reflexion>
       <fontPath>./art/Cabin-Bold.ttf</fontPath>
       <fontSize>0.027</fontSize>

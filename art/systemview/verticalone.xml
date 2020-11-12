@@ -23,7 +23,7 @@
     </carousel>
     <text name="systemInfo">
       <pos>0.04 0.67</pos>
-      <size>0.34 0.25</size>
+      <size>0.92 0.25</size>
     </text>
     <image name="CenterFade" extra="true">
       <tile>false</tile>

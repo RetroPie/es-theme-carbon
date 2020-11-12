@@ -63,6 +63,7 @@
     <text name="systemInfo">
       <pos>0.175 0.67</pos>
       <size>1 0.25</size>
+ <pos>0.05 0.67</pos>
       <backgroundColor>0000FF00</backgroundColor>
       <color>${systemInfoColor}</color>
       <glowColor>${glowColor}</glowColor>
@@ -86,4 +87,11 @@
 
 
   </view>
+  <feature supported="manufacturer">
+    <view name="system">
+      <text name="systemInfoEx" extra="true">
+        <alignment>right</alignment>
+      </text>
+    </view>
+  </feature>  
 </theme>

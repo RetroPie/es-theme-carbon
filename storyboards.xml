@@ -41,4 +41,19 @@
       </storyboard>
     </image>
   </view>
+  
+  <feature supported="manufacturer">
+    <view name="system">
+      <text name="systemInfoEx" extra="true">      
+        <storyboard>
+          <animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+        
+          <animation property="opacity" from="0" to="1" begin="750" duration="250" mode="easeIn"/>
+          <animation property="scale" from="0" to="1" begin="750" duration="250" mode="easeOut"/> 
+          
+       <!--   <animation property="y" from="0.75" begin="750" duration="250" mode="easeOut"/> -->
+        </storyboard>
+      </text>
+    </view>
+  </feature>
 </theme>
