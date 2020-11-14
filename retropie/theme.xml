@@ -1,67 +1,273 @@
+<!--
+Theme: Carbon
+version: 2.5
+author: Tomas Jakobsson (Tomaz)
+license: creative commons CC-BY-NC-SA
+originally based on: "Carbon 2.4" by Eric Hettervik (Rookervik)
+originally based on: "simple" by nils bonenberger
+-->
+
 <theme>
-    <formatVersion>3</formatVersion>
-    <include>./../carbon.xml</include>
+	<formatVersion>6</formatVersion>
+	<resolution>1920 1080</resolution>
+
+	<variables>
+		<colorRed>8b0000</colorRed>
+		<colorBlue>3082ce</colorBlue>
+		<colorGreen>50d62c</colorGreen>
+		<colorYellow>efbc0b</colorYellow>
+		<colorOrange>ef710b</colorOrange>
+		<colorPurple>ac0bef</colorPurple>
+		<colorTeal>04e9f7</colorTeal>
+		<colorPink>f50297</colorPink>
+		<themeColor>${colorRed}</themeColor>
+		<themeArtFolder>./../art</themeArtFolder>
+		<themeFont>${themeArtFolder}/Cabin-Bold.ttf</themeFont>
+		<themeScrollSound>${themeArtFolder}/scroll.wav</themeScrollSound>
+		<themeGamelistFontSize>32</themeGamelistFontSize>
+	</variables>
 
 	<view name="system">
+		<image name="background" extra="true">
+			<path>${themeArtFolder}/carbon_fiber.png</path>
+			<tile>true</tile>
+			<size>1920 1080</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+		</image>
 
-		<image name="ControllerOverlay" extra="true">
-			<tile>false</tile>
-			<pos>0.5 0.2</pos>
+		<image name="centerfade" extra="true">
+			<path>${themeArtFolder}/centerfade.png</path>
+			<size>1920 540</size>
+			<pos>960 540</pos>
 			<origin>0.5 0.5</origin>
-			<size>0.3 0</size>
-			<path>./art/controller.svg</path>
-			<!--<color>8b0000</color>-->
+			<color>${themeColor}50</color>
+		</image>
+
+		<image name="bottom" extra="true">
+			<path>${themeArtFolder}/bottom.png</path>
+			<size>1920 70</size>
+			<pos>0 1080</pos>
+			<origin>0 1</origin>
+			<color>${themeColor}</color>
 		</image>
 
 		<image name="logo">
-			<path>./art/system.svg</path>
-        </image>
+			<path>${themeArtFolder}/systems/${system.theme}.svg</path>
+		</image>
 
+		<text name="logoText">
+			<fontPath>${themeFont}</fontPath>
+			<forceUppercase>true</forceUppercase>
+			<color>${themeColor}</color>
+		</text>
+
+		<image name="controller" extra="true">
+			<path>${themeArtFolder}/controllers/${system.theme}.svg</path>
+			<maxSize>1920 374</maxSize>
+			<pos>960 207</pos>
+			<origin>0.5 0.5</origin>
+			<color>${themeColor}</color>
+		</image>
+
+		<helpsystem name="help">
+			<iconColor>7d7d7d</iconColor>
+			<textColor>7d7d7d</textColor>
+		</helpsystem>
 	</view>
 
-	<view name="basic, detailed, video">
+	<!-- background -->
+	<view name="basic, detailed, video, grid">
+		<image name="background" extra="true">
+			<path>${themeArtFolder}/carbon_fiber.png</path>
+			<tile>true</tile>
+			<size>1920 1080</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+		</image>
+
+		<image name="top" extra="true">
+			<path>${themeArtFolder}/top.png</path>
+			<size>1920 174</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<color>${themeColor}</color>
+		</image>
+
+		<image name="bottom" extra="true">
+			<path>${themeArtFolder}/bottom.png</path>
+			<size>1920 70</size>
+			<pos>0 1080</pos>
+			<origin>0 1</origin>
+			<color>${themeColor}</color>
+		</image>
 
 		<image name="logo">
-			<path>./art/system.svg</path>
-			<pos>0.266 0.074</pos>
-			<maxSize>0.460 0.126</maxSize>
+			<path>${themeArtFolder}/systems/${system.theme}.svg</path>
+			<maxSize>576 134</maxSize>
+			<pos>480 87</pos>
 			<origin>0.5 0.5</origin>
-		</image>
-		
-		<image name="logo2" extra="true">
-			<path>./art/controller.svg</path>
-			<pos>0.874 0.074</pos>
-			<maxSize>0.460 0.126</maxSize>
-			<origin>0.5 0.5</origin>
-			<color>bbbbbb</color>
 		</image>
 
+		<text name="logoText">
+			<fontPath>${themeFont}</fontPath>
+			<fontSize>128</fontSize>
+			<forceUppercase>true</forceUppercase>
+			<size>728 134</size>
+			<pos>20 20</pos>
+			<color>${themeColor}</color>
+		</text>
 	</view>
 
-	<view name="basic">
-	</view>
+	<!-- hide all metadata by default -->
+	<view name="basic, detailed, video, grid">
+		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_developer, md_lbl_publisher, md_publisher, md_lbl_genre, md_genre, md_lbl_players, md_players, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_description, md_name">
+			<visible>false</visible>
+		</text>
 
-	<view name="detailed">
-
-		<image name="md_image">
-			<pos>0.746 0.40</pos>
-			<maxSize>0.3 0.3</maxSize>
-			<origin>0.5 0.5</origin>
-		</image>
-
-		<datetime name="md_releasedate">
-			<pos>1 1</pos>
+		<datetime name="md_releasedate, md_lastplayed">
+			<visible>false</visible>
 		</datetime>
 
-		<text name="md_lbl_releasedate, md_lbl_genre, md_genre, md_lbl_developer, md_developer, md_lbl_players, md_players">
-			<pos>1 1</pos>
-		</text>
+		<rating name="md_rating">
+			<visible>false</visible>
+		</rating>
 
-		<text name="md_description">
-			<fontSize>0.03</fontSize>
-			<size>0.404 0.3</size>
-			<pos>0.543 0.60</pos>
-		</text>
+		<image name="md_thumbnail, md_image, md_marquee">
+			<visible>false</visible>
+		</image>
+
+		<video name="md_video">
+			<visible>false</visible>
+		</video>
 	</view>
 
+	<!-- basic -->
+	<view name="basic">
+		<image name="controller" extra="true">
+			<path>${themeArtFolder}/controllers/${system.theme}.svg</path>
+			<maxSize>576 134</maxSize>
+			<pos>1440 87</pos>
+			<origin>0.5 0.5</origin>
+			<color>${themeColor}</color>
+		</image>
+
+		<textlist name="gamelist">
+			<fontPath>${themeFont}</fontPath>
+			<fontSize>${themeGamelistFontSize}</fontSize>
+			<forceUppercase>true</forceUppercase>
+			<size>1880 816</size>
+			<pos>20 184</pos>
+			<alignment>center</alignment>
+			<horizontalMargin>0</horizontalMargin>
+			<selectorColor>1c1c1c</selectorColor>
+			<selectedColor>${themeColor}</selectedColor>
+			<primaryColor>969696</primaryColor>
+			<secondaryColor>7a6161</secondaryColor>
+			<scrollSound>${themeScrollSound}</scrollSound>
+		</textlist>
+	</view>
+
+	<!-- detailed, video -->
+	<view name="detailed, video">
+		<image name="controller" extra="true">
+			<path>${themeArtFolder}/controllers/${system.theme}.svg</path>
+			<maxSize>364 134</maxSize>
+			<pos>960 87</pos>
+			<origin>0.5 0.5</origin>
+			<color>${themeColor}</color>
+		</image>
+
+		<image name="shadow" extra="true">
+			<path>${themeArtFolder}/shadow.png</path>
+			<size>960 836</size>
+			<pos>1440 592</pos>
+			<origin>0.5 0.5</origin>
+			<color>${themeColor}</color>
+		</image>
+
+		<textlist name="gamelist">
+			<fontPath>${themeFont}</fontPath>
+			<fontSize>${themeGamelistFontSize}</fontSize>
+			<forceUppercase>true</forceUppercase>
+			<size>920 816</size>
+			<pos>20 184</pos>
+			<alignment>left</alignment>
+			<horizontalMargin>0</horizontalMargin>
+			<selectorColor>1c1c1c</selectorColor>
+			<selectedColor>${themeColor}</selectedColor>
+			<primaryColor>969696</primaryColor>
+			<secondaryColor>7a6161</secondaryColor>
+			<scrollSound>${themeScrollSound}</scrollSound>
+		</textlist>
+
+		<!-- setup metadata fields begin -->
+			<text name="md_description">
+				<fontPath>${themeFont}</fontPath>
+				<fontSize>24</fontSize>
+				<forceUppercase>false</forceUppercase>
+				<size>0 32</size>
+				<color>969696</color>
+				<visible>true</visible>
+			</text>
+		<!-- setup metadata fields end -->
+
+		<!-- position metadata fields begin -->
+			<text name="md_description">
+				<size>920 268</size>
+				<pos>980 732</pos>
+			</text>
+		<!-- position metadata fields end -->
+
+		<image name="md_image">
+			<maxSize>920 400</maxSize>
+			<pos>1440 384</pos>
+			<origin>0.5 0.5</origin>
+			<visible>true</visible>
+		</image>
+	</view>
+
+	<!-- grid -->
+	<view name="grid">
+		<image name="shadow" extra="true">
+			<path>${themeArtFolder}/shadow.png</path>
+			<size>1900 48</size>
+			<pos>10 962</pos>
+			<origin>0 0</origin>
+			<color>${themeColor}</color>
+		</image>
+
+		<imagegrid name="gamegrid">
+			<size>1920 786</size>
+			<pos>0 175</pos>
+			<margin>0 0</margin>
+			<scrollDirection>vertical</scrollDirection>
+			<animate>true</animate>
+		</imagegrid>
+
+		<gridtile name="default">
+			<size>320 262</size>
+			<padding>50 50</padding>
+			<imageColor>7f7f7fff</imageColor>
+			<backgroundColor>ffffff00</backgroundColor>
+		</gridtile>
+
+		<gridtile name="selected">
+			<size>320 262</size>
+			<padding>0 0</padding>
+			<imageColor>ffffffff</imageColor>
+			<backgroundColor>ffffff00</backgroundColor>
+		</gridtile>
+
+		<text name="md_name">
+			<fontPath>${themeFont}</fontPath>
+			<fontSize>${themeGamelistFontSize}</fontSize>
+			<forceUppercase>true</forceUppercase>
+			<size>1900 48</size>
+			<pos>10 962</pos>
+			<alignment>center</alignment>
+			<color>969696</color>
+			<visible>true</visible>
+		</text>
+	</view>
 </theme>
