@@ -1,15 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <theme>
   <formatVersion>7</formatVersion>
-  <customView name="Tiles">
+  <customView name="Tiles,Icons" ifSubset="glowsel:no">
     <gridtile name="default">
       <backgroundCornerSize>0 0</backgroundCornerSize>
     </gridtile>
     <gridtile name="selected">
       <backgroundCornerSize>0 0</backgroundCornerSize>
     </gridtile>
+    <ninepatch name="gridtile.background:selected">
+      <cornerSize>0 0</cornerSize>
+    </ninepatch>
     <image name="gridtile.image">
       <roundCorners>0</roundCorners>
     </image>
-  </customView>
+  </customView> 
 </theme>

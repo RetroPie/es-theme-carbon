@@ -1,9 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <theme>
   <formatVersion>7</formatVersion>
-  <customView name="Carousel,Boxes,Tiles,grid,Icons">
+  <customView name="Tiles,Icons">
     <ninepatch name="gridtile.background:selected">
-      <animateColorTime>0</animateColorTime>
+      <padding>0 0</padding>
+      <path>:/frame.png</path>
+<cornerSize>0.020</cornerSize>
     </ninepatch>
   </customView>
 </theme>

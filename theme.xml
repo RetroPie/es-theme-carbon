@@ -20,6 +20,7 @@ originally based on: "simple" by nils bonenberger
     <groupSeparatorColor>BD4747</groupSeparatorColor>
     <backgroundImage>./art/fiber.png</backgroundImage>
     <tilesViewName>Tiles</tilesViewName>
+    <iconsViewName>Icons</iconsViewName>
     <roundBorderSubsetName>Round borders</roundBorderSubsetName>
     <blinkBorderSubsetName>Blinking borders</blinkBorderSubsetName>
     <previewBarSubsetName>Preview bar</previewBarSubsetName>
@@ -34,10 +35,12 @@ originally based on: "simple" by nils bonenberger
     <colored>Colored</colored>
     <subset.colorset>Colorset</subset.colorset>
     <subset.shader>Shader</subset.shader>
+    <glowSubsetName>Glow selection</glowSubsetName>
   </variables>
   <!-- French -->
   <variables lang="fr">
     <tilesViewName>Vignettes</tilesViewName>
+    <iconsViewName>Icônes</iconsViewName>
     <basicGridName>Boites</basicGridName>
     <carouselViewName>Carrousel</carouselViewName>
     <blue>Bleu</blue>
@@ -61,6 +64,7 @@ originally based on: "simple" by nils bonenberger
     <colored>Colorés</colored>
     <subset.colorset>Jeux de couleurs</subset.colorset>
     <subset.shader>Effets TV</subset.shader>
+    <glowSubsetName>Sélection en Halo</glowSubsetName>
   </variables>
  <!-- Portuguese -->
   <variables lang="pt">
@@ -90,12 +94,12 @@ originally based on: "simple" by nils bonenberger
   </variables>
   <!-- Subset options for color  -->
   <subset name="colorset" displayName="${subset.colorset}">
+    <include name="cyan">./art/colors/cyan.xml</include>
     <include name="blue" displayName="${blue}">./art/colors/blue.xml</include>
     <include name="red" displayName="${red}"/>
     <include name="green" displayName="${green}">./art/colors/green.xml</include>
     <include name="yellow" displayName="${yellow}">./art/colors/yellow.xml</include>
     <include name="violet">./art/colors/violet.xml</include>
-    <include name="cyan">./art/colors/cyan.xml</include>
     <include name="orange">./art/colors/orange.xml</include>
   </subset>
   <view name="system,basic,detailed,grid">
@@ -158,8 +162,9 @@ originally based on: "simple" by nils bonenberger
 
     <text name="logoText">
       <fontPath>./art/Cabin-Bold.ttf</fontPath>
+      <fontSize>0.06</fontSize>
       <color>${baseColor}</color>
-      <forceUppercase>true</forceUppercase>
+      <forceUppercase>true</forceUppercase>    
     </text>
     <image name="logo">
       <!-- try png -->
@@ -229,7 +234,7 @@ originally based on: "simple" by nils bonenberger
         <alignment>left</alignment>
         <verticalAlignment>top</verticalAlignment>
         <fontPath>./art/Cabin-Regular.ttf</fontPath>
-        <fontSize>0.060</fontSize>                    
+        <fontSize>0.060</fontSize>
         <pos>0.029 0.037</pos>
         <size>0.942 0.28</size>
         <color>C0C0C0</color>      
@@ -237,6 +242,8 @@ originally based on: "simple" by nils bonenberger
         <color>D0D0D0FF</color>
         <glowColor>00000040</glowColor>
         <glowSize>2</glowSize>
+
+        <fontSize tinyScreen="true">0.065</fontSize>
         <glowSize tinyScreen="true">1</glowSize>
       </text>
       <text name="fullName" extra="true">
@@ -251,8 +258,11 @@ originally based on: "simple" by nils bonenberger
         <color>D0D0D0FF</color>
         <glowColor>000000A0</glowColor>
         <glowSize>1</glowSize>
-        <glowSize tinyScreen="true">1</glowSize>
-      </text>
+        
+        <pos tinyScreen="true">0.03 0.13</pos>
+        <glowColor tinyScreen="true">00000040</glowColor>
+        <fontSize tinyScreen="true">0.035</fontSize>
+      </text>      
       <text name="releaseYyear" extra="true">
         <text>${system.releaseYearOrNull}</text>
         <alignment>left</alignment>
@@ -265,13 +275,15 @@ originally based on: "simple" by nils bonenberger
         <color>D0D0D0FF</color>
         <glowColor>000000A0</glowColor>
         <glowSize>1</glowSize>
-        <glowSize tinyScreen="true">1</glowSize>
+        
+        <pos tinyScreen="true">0.03 0.19</pos>
+        <glowColor tinyScreen="true">00000040</glowColor>
+        <fontSize tinyScreen="true">0.035</fontSize>
       </text>
-
-<text name="systemInfo">
-<visible>false</visible>
-</text>
- <text name="systemInfoEx" extra="true">
+      <text name="systemInfo" tinyScreen="false">
+        <visible>false</visible>
+      </text>      
+      <text name="systemInfoEx" extra="true" tinyScreen="false">
 
 <!-- possible bindings are :
 {binding:total}, {binding:played}, {binding:favorites}, {binding:hidden}, {binding:gamesPlayed}
@@ -279,7 +291,7 @@ originally based on: "simple" by nils bonenberger
 -->
 
         <text>Games played : {binding:gamesPlayed}
-Favorites : {binding:favorites}        
+Favorites : {binding:favorites}
 Most played : {binding:mostPlayed}
 Last played : {binding:lastPlayedDate}</text>
 
@@ -299,9 +311,7 @@ Dernière partie : {binding:lastPlayedDate}</text>
         <zIndex>100</zIndex>
         <color>D0D0D0FF</color>
         <glowColor>000000A0</glowColor>
-<!--<glowColor>${glowColor}</glowColor>-->
         <glowSize>1</glowSize>
-        <glowSize tinyScreen="true">1</glowSize>
       </text>
 
     </view>
@@ -309,6 +319,7 @@ Dernière partie : {binding:lastPlayedDate}</text>
   
   <!-- Subset options for screen -->
   <subset name="systemview" displayName="${systemViewName}">
+    <include name="darkened">./art/systemview/horizontaldark.xml</include>
     <include name="horizontal">./art/systemview/horizontal.xml</include>
     <include name="legacy" tinyScreen="false">./art/systemview/legacy.xml</include>
     <include name="transparent" tinyScreen="false">./art/systemview/transparent.xml</include>
@@ -619,6 +630,16 @@ Dernière partie : {binding:lastPlayedDate}</text>
       <zIndex>12</zIndex>
     </image>
     
+    <image name="detailsBkLine" extra="true">
+      <path>./art/white.png</path>
+      <color>${glowColor}</color>
+      <origin>0 0</origin>
+      <pos>0.526 0.16</pos>
+      <size>0.003 0.775</size>
+      <zIndex>14</zIndex>
+    </image>
+    
+
     <textlist name="gamelist">
       <selectorColor>1c1c1c</selectorColor>
       <selectedColor>${baseColor}</selectedColor>
@@ -1039,9 +1060,7 @@ Dernière partie : {binding:lastPlayedDate}</text>
       <autoLayout>3 2</autoLayout>
       <autoLayoutSelectedZoom>1.02</autoLayoutSelectedZoom>
       <imageSource>image</imageSource>
-      <margin>0.005 0.010</margin>
-      <margin>0.001 0.002</margin>
-      <margin>0 0</margin>
+      <margin>0.002 0.004</margin>
       <showVideoAtDelay>800</showVideoAtDelay>
       <zIndex>13</zIndex>
       <gameImage>./art/defgame.png</gameImage>
@@ -1059,8 +1078,8 @@ Dernière partie : {binding:lastPlayedDate}</text>
     
     <ninepatch name="gridtile.background:selected">
       <path>./art/framewsel.png</path>
-      <cornerSize>38 38</cornerSize>
-      <padding>-18 -18</padding>      
+      <cornerSize>36 36</cornerSize>
+      <padding>-18 -18</padding>
       <color>${baseColor}</color>
     </ninepatch>
     
@@ -1071,20 +1090,18 @@ Dernière partie : {binding:lastPlayedDate}</text>
       <padding>5 5</padding>
       <imageSizeMode>minSize</imageSizeMode>
       <imageColor>A0A0A0FF</imageColor>
-      <backgroundCornerSize>0 0</backgroundCornerSize>
       <backgroundCornerSize>0.021</backgroundCornerSize>
     </gridtile>
     <gridtile name="selected">
       <padding>5 5</padding>
       <imageColor>FFFFFFFF</imageColor>
-      <backgroundCornerSize>0 0</backgroundCornerSize>
       <backgroundCornerSize>0.021</backgroundCornerSize>
     </gridtile>
  <!--
     <image name="gridtile.overlay">
       <roundCorners>0.020</roundCorners>
       <path>./art/overlay.png</path>
-<color>FFFFFF70</color>
+      <color>FFFFFF70</color>
     </image>
 
      <image name="gridtile.overlay:selected">
@@ -1101,14 +1118,14 @@ Dernière partie : {binding:lastPlayedDate}</text>
       <fontSize>0.026</fontSize>
       <alignment>center</alignment>
       <singleLineScroll>false</singleLineScroll>      
-      <padding>0.08 0</padding>
-      <size>0 0.23</size>
+      <padding>0.08 0.02</padding>
+      <size>0 0.22</size>
       <glowColor>00000060</glowColor>
       <glowSize>1</glowSize>
     </text>
     <text name="gridtile:selected">
       <singleLineScroll>false</singleLineScroll>
-      <color>FFFFFF</color>
+      <color>FFFFFF</color>      
       <glowColor>${glowColor}</glowColor>
       <glowSize>2</glowSize>
     </text>
@@ -1124,6 +1141,20 @@ Dernière partie : {binding:lastPlayedDate}</text>
       <color>FFFF00D0</color>
     </image>
   </customView>
+  
+  <customView name="Icons" inherits="Tiles" displayName="${iconsViewName}">
+   <imagegrid name="gamegrid">
+      <autoLayout>4 2</autoLayout>
+      <margin>0.008 0.010</margin>
+    </imagegrid>
+    <text name="gridtile">
+      <fontSize>0.020</fontSize>
+      <size>1 0.18</size>
+      <padding>0 0.01 0 0.1</padding>
+    </text>
+  </customView>
+  
+  
   <!-- Subset options for help -->
   <subset name="helpsystem" displayName="${helpSubsetName}">
     <include name="colored" displayName="${colored}">./art/systemview/colorhelp.xml</include>
@@ -1153,7 +1184,7 @@ Dernière partie : {binding:lastPlayedDate}</text>
     <include name="no" displayName="${no}"/>
     <include name="yes" displayName="${yes}">./art/grid/zoomboxes.xml</include>
   </subset>
-  <subset name="scrolldirection" displayName="Orientation" appliesTo="Tiles,Boxes,grid">
+  <subset name="scrolldirection" displayName="Orientation" appliesTo="Tiles,Icons,Boxes,grid">
     <include name="vertical"/>
     <include name="horizontal">./art/grid/scrollhorz.xml</include>
   </subset>
@@ -1161,20 +1192,24 @@ Dernière partie : {binding:lastPlayedDate}</text>
     <include name="no" displayName="${no}"/>
     <include name="yes" displayName="${yes}">./art/grid/hidesel.xml</include>
   </subset>
-  <subset name="previewbar" displayName="${previewBarSubsetName}" appliesTo="Tiles,Carousel,Boxes,grid">
+  <subset name="previewbar" displayName="${previewBarSubsetName}" appliesTo="Tiles,Icons,Carousel,Boxes,grid">
     <include name="no" displayName="${no}"/>
     <include name="yes" displayName="${yes}">./art/grid/previewbar.xml</include>
   </subset>
   <!-- Subset options for Tiles view -->
-  <subset tinyScreen="false" name="tileborders" displayName="${roundBorderSubsetName}" appliesTo="Tiles">
+  <subset tinyScreen="false" name="glowsel" displayName="${glowSubsetName}" appliesTo="Tiles, Icons">
+    <include name="yes" displayName="${yes}"/>
+    <include name="no" displayName="${no}">./art/tiles/noglow.xml</include>
+  </subset>
+  <subset tinyScreen="false" name="tileborders" displayName="${roundBorderSubsetName}" appliesTo="Tiles, Icons">
     <include name="yes" displayName="${yes}"/>
     <include name="no" displayName="${no}">./art/tiles/squareborders.xml</include>
-  </subset>
-  <subset name="blinkborders" displayName="${blinkBorderSubsetName}" appliesTo="Tiles,Carousel,Boxes,grid">
+  </subset>  
+  <subset name="blinkborders" displayName="${blinkBorderSubsetName}" appliesTo="Tiles,Icons,Carousel,Boxes,grid">
     <include name="yes" displayName="${yes}"/>
     <include name="no" displayName="${no}">./art/grid/blinkbordersoff.xml</include>
   </subset>
-  <subset name="videotiles" displayName="Videos" appliesTo="Tiles">
+  <subset name="videotiles" displayName="Videos" appliesTo="Icons,Tiles">
     <include name="yes" displayName="${yes}"/>
     <include name="no" displayName="${no}">./art/tiles/novideo.xml</include>
   </subset>

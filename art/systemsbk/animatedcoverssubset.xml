@@ -7,7 +7,7 @@
   <variables lang="fr">
     <animatedCovers>Boites aléatoires</animatedCovers>
   </variables>
-  <subset name="animatedCovers" displayName="${animatedCovers}" tinyScreen="false" ifSubset="systemview:horizontal|transparent|legacy">
+  <subset name="animatedCovers" displayName="${animatedCovers}" tinyScreen="false" ifSubset="systemview:horizontal|darkened|transparent|legacy">
     <include name="no" displayName="${no}"/>
     <include name="yes" displayName="${yes}">./animatedcovers.xml</include>
   </subset>

@@ -2,7 +2,7 @@
 <theme>
   <formatVersion>7</formatVersion>
   <view name="system">
-    <text name="systemInfo" ifSubset="systemview:horizontal|legacy|transparent">
+    <text name="systemInfo" ifSubset="systemview:horizontal|darkened|legacy|transparent">
       <pos>0.03 0.32</pos>
       <size>0.94 0.12</size>
       <alignment>right</alignment>

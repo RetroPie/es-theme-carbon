@@ -2,13 +2,13 @@
 <theme>
   <formatVersion>7</formatVersion>
 
-  <customView name="Carousel,Boxes,Tiles,grid">
+  <customView name="Carousel,Boxes,Tiles,Icons,grid">
     <imagegrid name="gamegrid">
       <showVideoAtDelay>-1</showVideoAtDelay>
     </imagegrid>
   </customView>
 
-  <customView name="Carousel,Boxes,Tiles,grid">
+  <customView name="Carousel,Boxes,Tiles,Icons, grid">
     <image name="gamelistBackground" extra="true">
       <path>./art/filter.png</path>
       <color>606060FF</color>
@@ -99,7 +99,7 @@
     </imagegrid>
   </customView>
   
-  <customView name="Boxes,Tiles,grid">
+  <customView name="Boxes,Tiles,Icons,grid">
     <imagegrid name="gamegrid">
       <pos>0 0.16</pos>
       <size>0.66 0.84</size>
@@ -107,7 +107,7 @@
     </imagegrid>
   </customView>
   
-    <customView name="Tiles">
+  <customView name="Tiles,Icons">
     <imagegrid name="gamegrid">
       <pos>0 0.16</pos>
       <size>0.66 0.84</size>
