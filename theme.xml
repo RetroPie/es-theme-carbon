@@ -953,7 +953,7 @@ originally based on: "simple" by nils bonenberger
     </image>
 -->
     <image name="md_manual">
-      <path>./art/manual.svg</path>
+      <path>./art/book.png</path>
       <pos>0.98 0.812</pos>
       <pos>0.0225 0.856</pos>
       <pos>0.0225 0.812</pos>
@@ -965,7 +965,7 @@ originally based on: "simple" by nils bonenberger
     </image>
 
     <image name="md_nomanual">
-      <path>./art/manual.svg</path>
+      <path>./art/book.png</path>
       <pos>0.98 0.812</pos>
       <pos>0.0225 0.856</pos>
       <pos>0.0225 0.812</pos>
