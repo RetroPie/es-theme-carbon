@@ -12,7 +12,7 @@ originally based on: "simple" by nils bonenberger
     <baseColor>8b0000</baseColor>
     <gradientEndColor>6b2020</gradientEndColor>
     <centerFadeColor>8b000050</centerFadeColor>
-    <backgroundColor>252525</backgroundColor>
+    <backgroundColor>200000</backgroundColor>
     <bottomBarColor>8b0000c0</bottomBarColor>
     <glowColor>Ab000020</glowColor>
     <systemInfoColor>DDDDDDD8</systemInfoColor>
@@ -48,11 +48,12 @@ originally based on: "simple" by nils bonenberger
     <red>Rouge</red>
     <green>Vert</green>
     <yellow>Jaune</yellow>
+    <gray>Gris</gray>
     <none>Aucun</none>
     <roundBorderSubsetName>Bords arrondis</roundBorderSubsetName>
     <blinkBorderSubsetName>Bords clignotants</blinkBorderSubsetName>
     <yes>Oui</yes>
-    <no>Non</no>
+    <no>Non</no>    
     <systemBackgroundName>Arrière-plan</systemBackgroundName>
     <systemViewName>Vue Système</systemViewName>
     <previewBarSubsetName>Volet aperçu</previewBarSubsetName>
@@ -77,6 +78,7 @@ originally based on: "simple" by nils bonenberger
     <red>Vermelho</red>
     <green>Verde</green>
     <yellow>Amarelo</yellow>
+    <gray>Cinzento</gray>
     <none>Nenhum</none>
     <roundBorderSubsetName>Bordas arredondadas</roundBorderSubsetName>
     <blinkBorderSubsetName>Bordas intermitentes</blinkBorderSubsetName>
@@ -89,20 +91,24 @@ originally based on: "simple" by nils bonenberger
     <zoomboxesSubsetName>Caixas de zoom</zoomboxesSubsetName>
     <hideselectionSubsetName>Esconder seleção</hideselectionSubsetName>
     <optimizesmallscreensSubsetName>Otimizar telas pequenas</optimizesmallscreensSubsetName>
+    <animationsSubsetName>Animações de transição</animationsSubsetName>
+    <systemViewExInfos>Informações de sistema aprimoradas</systemViewExInfos>
     <helpSubsetName>Ícones de ajuda</helpSubsetName>
+    <glowSubsetName>Seleção com Halo</glowSubsetName>
     <colored>Colorido</colored>
     <subset.colorset>Esquemas de cores</subset.colorset>
     <subset.shader>Efeitos de TV</subset.shader>
   </variables>
   <!-- Subset options for color  -->
   <subset name="colorset" displayName="${subset.colorset}">
-    <include name="cyan">./art/colors/cyan.xml</include>
     <include name="blue" displayName="${blue}">./art/colors/blue.xml</include>
     <include name="red" displayName="${red}"/>
     <include name="green" displayName="${green}">./art/colors/green.xml</include>
+    <include name="cyan">./art/colors/cyan.xml</include>
     <include name="yellow" displayName="${yellow}">./art/colors/yellow.xml</include>
     <include name="violet">./art/colors/violet.xml</include>
-    <include name="orange">./art/colors/orange.xml</include>
+    <include name="orange">./art/colors/orange.xml</include>   
+    <include name="gray" displayName="${gray}">./art/colors/gray.xml</include>   
   </subset>
   <view name="system,basic,detailed,grid">
     <helpsystem name="help">
@@ -111,32 +117,7 @@ originally based on: "simple" by nils bonenberger
     </helpsystem>
   </view>
   <view name="system">
-
     <!-- Used by random box need to be declared there -->
-<!--
-    <ninepatch name="totor" extra="true">
-        <pos>0.15 0.15</pos>
-        <origin>0.5 0.5</origin>
-        <size>0.15 0.15</size>
-    <path>./art/fade.png</path>
-    <path>./art/framew.png</path>
-    <edgeColor>FFFFFFFF</edgeColor>
-    <centerColor>FFFF</centerColor>
-        <cornerSize>14 14</cornerSize>
-        <zIndex>150</zIndex>
-        <padding>-30 -30</padding>
-    </ninepatch>
-
- <ninepatch name="tot2" extra="true">
-        <pos>0.15 0.15</pos>
-        <origin>0.5 0.5</origin>
-        <size>0.15 0.15</size>
-    <path>:/frame.png</path>
-    <color>FF0000FF</color>
-        <cornerSize>0 0 </cornerSize>
-        <zIndex>49</zIndex>
-    </ninepatch>
--->
     <image name="box" extra="true">
       <pos>0.50 0.18</pos>
       <origin>0.5 0.5</origin>
@@ -168,6 +149,7 @@ originally based on: "simple" by nils bonenberger
       <color>${baseColor}</color>
       <forceUppercase>true</forceUppercase>    
     </text>
+    
     <image name="logo">
       <!-- try png -->
       <path>./art/logos/${system.theme}.png</path>
@@ -177,23 +159,6 @@ originally based on: "simple" by nils bonenberger
       <path>./art/logos/${system.theme}-${lang}.png</path>
       <path>./art/logos/${system.theme}-${lang}.svg</path>
       <linearSmooth>true</linearSmooth>
-<!--
-     <storyboard event="activate">
-       <animation property="scale" from="0.84" to="1.0" duration="350" mode="bump"/>
-      </storyboard>
-
-
-      <scale>0.5</scale>
-      <storyboard>
-        <animation property="scale" from="1.0" to="0.5" duration="500" mode="easeInOut"/>        
-        <animation property="scale" from="0.5" to="0.6" begin="500" duration="1200" mode="easeInOut" autoreverse="true" repeat="forever"/>        
-      </storyboard>    
-      <storyboard event="activate">
-       <animation property="scale" from="0.5" to="1.55" duration="500" mode="easeIn"/>        
-        <animation property="scale" from="1.55" to="1.0" begin="500" duration="1200" mode="easeInOut" autoreverse="true" repeat="forever"/>        
-      </storyboard>
--->
-
     </image>
     
     <image name="logo" region="eu"></image>
@@ -264,7 +229,7 @@ originally based on: "simple" by nils bonenberger
         <pos tinyScreen="true">0.03 0.13</pos>
         <glowColor tinyScreen="true">00000040</glowColor>
         <fontSize tinyScreen="true">0.035</fontSize>
-      </text>      
+      </text>
       <text name="releaseYyear" extra="true">
         <text>${system.releaseYearOrNull}</text>
         <alignment>left</alignment>
@@ -277,15 +242,12 @@ originally based on: "simple" by nils bonenberger
         <color>D0D0D0FF</color>
         <glowColor>000000A0</glowColor>
         <glowSize>1</glowSize>
-        
+                
         <pos tinyScreen="true">0.03 0.19</pos>
         <glowColor tinyScreen="true">00000040</glowColor>
         <fontSize tinyScreen="true">0.035</fontSize>
-      </text>
- 
-    </view>  
-
-
+      </text> 
+    </view>
   </feature>
 
   <!-- Subset options for screen -->
@@ -299,6 +261,7 @@ originally based on: "simple" by nils bonenberger
     <include name="wheel">./art/systemview/wheel.xml</include>
   </subset>
 
+  <!-- Subset option for System extended informations -->
   <subset name="subsetSystemInfoEx" displayName="${systemViewExInfos}" tinyScreen="false">
     <include name="yes" displayName="${yes}">./art/systemview/extendedInfo.xml</include>
     <include name="no" displayName="${no}"/>
@@ -322,11 +285,11 @@ originally based on: "simple" by nils bonenberger
     <include name="mini random video">./art/systemsbk/smallvideo.xml</include>
   </subset>
 
-
   <!-- Fix for controller image size -->
   <include subset="systemview" name="simple">./art/systemview/controllersizefix.xml</include>
   <include subset="systemview" name="vertical">./art/systemview/controllersizefix.xml</include>
   <include subset="systemview" name="wheel">./art/systemview/controllersizefix.xml</include>
+  
   <!-- Fix for Legacy option in systemview subset : systemInfo colors have to be restored after applying systembackground subset -->
   <include subset="systemview" name="legacy">./art/systemview/legacyfix.xml</include>
   <view name="screen">
@@ -398,9 +361,10 @@ originally based on: "simple" by nils bonenberger
     </menuText>
     <menuText name="menutext">
       <fontPath>./art/Cabin-Regular.ttf</fontPath>
-      <fontSize>0.034</fontSize>
+      <fontSize>0.0325</fontSize>
+      <fontSize tinyScreen="true">0.034</fontSize>
       <color>969696</color>
-      <separatorColor>292929</separatorColor>
+      <separatorColor>282828</separatorColor>
       <selectorColor>${baseColor}</selectorColor>
       <selectorColorEnd>${gradientEndColor}</selectorColorEnd>
       <selectedColor>FFFFFF</selectedColor>
@@ -456,14 +420,6 @@ originally based on: "simple" by nils bonenberger
     </menuButton>
   </view>
   <view name="basic">
-<!--
-    <image name="background" extra="true">
-      <tile>true</tile>
-      <pos>0 0</pos>
-      <origin>0 0</origin>
-      <size>1 1</size>
-      <path>${backgroundImage}</path>
-    </image>-->
     <image name="background">
       <tile>false</tile>
       <size>1 1</size>
@@ -542,19 +498,7 @@ originally based on: "simple" by nils bonenberger
       </storyboard>
     -->
     </video>
-    <!--
-    <image name="md_thumbnail">
-      <pos>0.925 0.535</pos>
-      <maxSize>0.10 0.20</maxSize>
-      <origin>0.5 0.5</origin>
-      <zIndex>40</zIndex> 
-      <opacity>0</opacity>
-      <storyboard>
-        <animation property="opacity" from="0" to="1" duration="700" mode="easeIn"/>        
-        <animation property="scale" from="0" to="1" duration="700" mode="easeIn"/>        
-      </storyboard>
-    </image>
-    -->
+
     <image name="background">
       <tile>false</tile>
       <size>1 1</size>
@@ -586,27 +530,25 @@ originally based on: "simple" by nils bonenberger
       <zIndex>11</zIndex>
     </image>
     
-    
     <image name="detailsBk" extra="true">
       <path>./art/filter.png</path>
       <color>00000040</color>
-<colorEnd>00000000</colorEnd>
-<gradientType>horizontal</gradientType>
+      <colorEnd>00000000</colorEnd>
+      <gradientType>horizontal</gradientType>
       <origin>0 0</origin>
-      <pos>0.53 0.16</pos>
-      <size>0.50 0.774</size>
- <size>0.4 0.774</size>
+      <pos>0.53 0.16</pos>      
+      <size>0.4 0.774</size>
       <zIndex>12</zIndex>
     </image>
 
-        <image name="detailsBkR" extra="true">
+    <image name="detailsBkR" extra="true">
       <path>./art/filter.png</path>
       <color>00000000</color>
-<colorEnd>00000010</colorEnd>
-<gradientType>horizontal</gradientType>
+      <colorEnd>00000010</colorEnd>
+      <gradientType>horizontal</gradientType>
       <origin>0 0</origin>
       <pos>0.525 0.16</pos>
-     <size>0.005 0.774</size>
+      <size>0.005 0.774</size>
       <zIndex>12</zIndex>
     </image>
     
@@ -617,37 +559,25 @@ originally based on: "simple" by nils bonenberger
       <pos>0.526 0.16</pos>
       <size>0.003 0.775</size>
       <zIndex>14</zIndex>
-    </image>
-    
+    </image>    
 
     <textlist name="gamelist">
-      <selectorColor>1c1c1c</selectorColor>
-      <selectedColor>${baseColor}</selectedColor>
       <primaryColor>C0C0C0</primaryColor>
       <secondaryColor>808080</secondaryColor>
-      <selectorColor>96969618</selectorColor>
-                  
-      <selectorColor>${centerFadeColor}</selectorColor>      
+      <selectorColor>${centerFadeColor}</selectorColor>
       <selectedColor>FFFFFFFF</selectedColor>
-            
-      <fontPath>./art/Cabin-Bold.ttf</fontPath>
       <forceUppercase>1</forceUppercase>
       <pos>0.021 0.18</pos>
       <size>0.489 0.73</size>
       <alignment>left</alignment>
-      <horizontalMargin>0.00</horizontalMargin>
-      <fontSize>0.03</fontSize>
-      
+      <horizontalMargin>0.00</horizontalMargin> 
       <fontPath>./art/Cabin-Regular.ttf</fontPath>
-       <fontSize>0.028</fontSize>
-       
-      <scrollSound>./art/scroll.wav</scrollSound>
-      
+      <fontSize>0.028</fontSize>       
+      <scrollSound>./art/scroll.wav</scrollSound>      
       <scrollbarColor>96969620</scrollbarColor>
       <scrollbarCorner>0.49</scrollbarCorner>
       <scrollbarSize>0.0065</scrollbarSize>            
-      <scrollbarAlignment>outerright</scrollbarAlignment>
-      
+      <scrollbarAlignment>outerright</scrollbarAlignment>      
       <lines>17</lines>
       <horizontalMargin>0.005</horizontalMargin>
     </textlist>
@@ -670,7 +600,7 @@ originally based on: "simple" by nils bonenberger
       <forceUppercase>0</forceUppercase>
       <fontPath>./art/Cabin-Bold.ttf</fontPath>
       <fontSize>0.023</fontSize>
-    </text>    
+    </text>
 
     <text name="md_lbl_rating, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_releasedate, md_lbl_genre, md_lbl_developer">
       <pos>1 1</pos>
@@ -794,13 +724,11 @@ originally based on: "simple" by nils bonenberger
       <alignment>center</alignment>
       <fontSize>0.055</fontSize>
       <fontPath>./art/Cabin-Bold.ttf</fontPath>
-      <!--<alignment>left</alignment>-->
       <color>${baseColor}</color>
       <color>FAFAFA</color>
       <glowColor>${glowColor}</glowColor>
       <glowSize>3</glowSize>
       <glowOffset>1 1</glowOffset>
-      <!-- <forceUppercase>true</forceUppercase>-->
     </text>
     <image name="logo">
       <!-- try png -->
@@ -810,7 +738,6 @@ originally based on: "simple" by nils bonenberger
       <path>./art/logos/${system.theme}-${lang}.svg</path>
       <!-- if system2 exists, take this version -->
       <path>./art/logos/${system.theme}-w.svg</path>
-      <!--<pos>0.266 0.074</pos><maxSize>0.460 0.126</maxSize>-->
       <pos>0.5 0.074</pos>
       <maxSize>0.3 0.120</maxSize>
       <origin>0.5 0.5</origin>
@@ -841,15 +768,6 @@ originally based on: "simple" by nils bonenberger
     </text>  
   </view>
   <view name="grid">
-  <!--
-    <image name="background">
-      <tile>true</tile>
-      <pos>0 0</pos>
-      <origin>0 0</origin>
-      <size>1 1</size>
-      <path>${backgroundImage}</path>
-    </image>
--->
     <image name="background">
       <tile>false</tile>
       <size>1 1</size>
@@ -859,7 +777,6 @@ originally based on: "simple" by nils bonenberger
       <color>${backgroundColor}</color>
       <zIndex>8</zIndex>      
     </image>
-    
     <image name="consolebk" extra="true" ifSubset="systembackground:consoles">
       <path>./art/background/${system.theme}.jpg</path>
       <linearSmooth>true</linearSmooth>
@@ -868,8 +785,7 @@ originally based on: "simple" by nils bonenberger
       <origin>0.5 0.5</origin>
       <color>FFFFFF10</color>
       <zIndex>9</zIndex>
-    </image>
-            
+    </image>            
     <image name="ControllerOverlay" extra="true" ifSubset="systembackground:mini-consoles">
       <path>./art/consoles/default.png</path>
       <path>./art/consoles/${system.theme}.png</path>
@@ -880,7 +796,6 @@ originally based on: "simple" by nils bonenberger
       <color>FFFFFF09</color>
       <zIndex>9</zIndex>
     </image>
-
     <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
       <color>A0A0B000</color>
     </text>
@@ -897,6 +812,7 @@ originally based on: "simple" by nils bonenberger
       <unfilledColor>606060</unfilledColor>
       <unfilledPath>:/star_filled.svg</unfilledPath>
     </rating>
+    
 <!--
     <image name="md_fanart">
       <pos>0.5 0.08</pos>
@@ -904,10 +820,9 @@ originally based on: "simple" by nils bonenberger
       <origin>0.5 0.5</origin>
       <color>808080</color>
       <zIndex>1</zIndex>
-<linearSmooth>true</linearSmooth>
+      <linearSmooth>true</linearSmooth>
     </image>
 -->
-
 		<text name="md_players">
 			<fontPath>./art/players.ttf</fontPath>
       <text>1</text>
@@ -933,7 +848,6 @@ originally based on: "simple" by nils bonenberger
 <!--
     <image name="md_kidgame">
       <path>./art/kid.svg</path>
-      <pos>0.98 0.765</pos>
       <pos>0.0225 0.812</pos>
       <maxSize>0.02 0.03</maxSize>
       <origin>0.5 0.5</origin>
@@ -942,9 +856,7 @@ originally based on: "simple" by nils bonenberger
     </image>
     
     <image name="md_notkidgame">
-      <path>./art/kid.svg</path>
-      
-      <pos>0.98 0.765</pos>
+      <path>./art/kid.svg</path>      
       <pos>0.0225 0.812</pos>
       <maxSize>0.02 0.03</maxSize>
       <origin>0.5 0.5</origin>
@@ -975,7 +887,6 @@ originally based on: "simple" by nils bonenberger
       <zIndex>150</zIndex>
       <linearSmooth>true</linearSmooth>
     </image>
-
     <imagegrid name="gamegrid">
       <margin>0.005 0.010</margin>
       <pos>0.025 0.16</pos>
@@ -983,14 +894,11 @@ originally based on: "simple" by nils bonenberger
       <padding>0.03 0.04 0.03 0.1</padding>
       <zIndex>13</zIndex>
       <autoLayout>5 2</autoLayout>
-      <!--<autoLayoutSelectedZoom>1.12</autoLayoutSelectedZoom>-->      
       <animateSelection>false</animateSelection>
       <centerSelection>false</centerSelection>
-
       <scrollbarColor>96969620</scrollbarColor>
       <scrollbarCorner>0.49</scrollbarCorner>
       <scrollbarSize>0.005</scrollbarSize>
-
     </imagegrid>
     <gridtile name="default">
       <backgroundColor>FFFFFF00</backgroundColor>
@@ -1033,7 +941,6 @@ originally based on: "simple" by nils bonenberger
       <visible>false</visible>
     </text>
     <image name="gridtile.favorite">
-      <path>:/star_filled.svg</path>
       <path>./art/favorite.png</path>
       <pos>0.91 0.09</pos>
       <maxSize>0.14 0.14</maxSize>
@@ -1169,13 +1076,12 @@ originally based on: "simple" by nils bonenberger
     </text>
     <text name="gridtile:selected">
       <singleLineScroll>false</singleLineScroll>
-      <color>FFFFFF</color>      
+      <color>FFFFFF</color>
       <glowColor>${glowColor}</glowColor>
       <glowSize>2</glowSize>
     </text>
-    <image name="gridtile.favorite">
-      <path>:/star_filled.svg</path>
-<path>./art/favorite.png</path>
+    <image name="gridtile.favorite">      
+      <path>./art/favorite.png</path>
       <pos>0.93 0.07</pos>
       <maxSize>0.10 0.10</maxSize>
       <origin>0.5 0.5</origin>
@@ -1197,8 +1103,7 @@ originally based on: "simple" by nils bonenberger
       <size>1 0.18</size>
       <padding>0 0.01 0 0.1</padding>
     </text>
-  </customView>
-  
+  </customView>  
   
   <!-- Subset options for help -->
   <subset name="helpsystem" displayName="${helpSubsetName}">
