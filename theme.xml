@@ -114,7 +114,10 @@ originally based on: "simple" by nils bonenberger
     <helpsystem name="help">
       <textColor>7d7d7d</textColor>
       <iconColor>7d7d7d</iconColor>
-<fontSize  verticalScreen="true">0.025</fontSize>
+      
+      <pos verticalScreen="true">0.5 0.96</pos>
+      <origin verticalScreen="true">0.5 0.5</origin>
+      <fontSize  verticalScreen="true">0.025</fontSize>
     </helpsystem>
   </view>
   <view name="system">
@@ -1032,6 +1035,13 @@ originally based on: "simple" by nils bonenberger
     <imagegrid name="gamegrid">
       <autoLayout>3 2</autoLayout>
       <autoLayout verticalScreen="true">2 3</autoLayout>
+
+      <cellProportion>1.25</cellProportion>
+      <autoLayout>0 2</autoLayout>
+      
+      <cellProportion verticalScreen="true">0.77</cellProportion>
+      <autoLayout verticalScreen="true">2 0</autoLayout>
+      
       <autoLayoutSelectedZoom>1.02</autoLayoutSelectedZoom>
       <imageSource>image</imageSource>
       <margin>0.002 0.004</margin>
@@ -1118,8 +1128,11 @@ originally based on: "simple" by nils bonenberger
   
   <customView name="Icons" inherits="Tiles" displayName="${iconsViewName}">
    <imagegrid name="gamegrid">
-      <autoLayout>4 2</autoLayout>
-      <autoLayout verticalScreen="true">2 3</autoLayout>
+      
+      <autoLayout>0 2</autoLayout>
+      <cellProportion>1</cellProportion>
+      <cellProportion verticalScreen="true">0.77</cellProportion>
+      <autoLayout verticalScreen="true">2 0</autoLayout>
       <margin>0.008 0.010</margin>
     </imagegrid>
     <text name="gridtile">
