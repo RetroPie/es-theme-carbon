@@ -9,6 +9,8 @@
       <systemInfoCountOnly>false</systemInfoCountOnly>
       <pos>0 0.3837</pos>
       <size>1 0.2325</size>
+      <logoSize verticalScreen="true">0.35 0.1</logoSize>
+      <maxLogoCount verticalScreen="true">1</maxLogoCount>
       <zIndex>20</zIndex>
     </carousel>
     <carousel name="systemcarousel" tinyScreen="true">

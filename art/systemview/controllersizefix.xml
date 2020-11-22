@@ -2,11 +2,11 @@
 <theme>
   <formatVersion>7</formatVersion>
   <view name="system">
-
     <image name="ControllerOverlay" extra="true">
       <tile>false</tile>
       <pos>0.675 0.40</pos>
-      <size>0.3 0</size>
+      <pos verticalScreen="true">0.75 0.5</pos>
+      <size>0.3 0.3</size>
     </image>
   </view>
 </theme>

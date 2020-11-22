@@ -114,6 +114,7 @@ originally based on: "simple" by nils bonenberger
     <helpsystem name="help">
       <textColor>7d7d7d</textColor>
       <iconColor>7d7d7d</iconColor>
+<fontSize  verticalScreen="true">0.025</fontSize>
     </helpsystem>
   </view>
   <view name="system">
@@ -185,7 +186,7 @@ originally based on: "simple" by nils bonenberger
       <tile>false</tile>
       <pos>0.5 0.19</pos>
       <origin>0.5 0.5</origin>
-      <size>0.3 0</size>
+      <size>0.3 0.3</size>
       <path>./art/splash.svg</path>
       <path>./art/controllers/${system.theme}.svg</path>
       <color>${baseColor}</color>
@@ -220,6 +221,7 @@ originally based on: "simple" by nils bonenberger
         <fontPath>./art/Cabin-Regular.ttf</fontPath>
         <fontSize>0.024</fontSize>
         <pos>0.03 0.12</pos>
+        <pos verticalScreen="true">0.03 0.10</pos>         
         <size>0.94 0.28</size>
         <zIndex>100</zIndex>
         <color>D0D0D0FF</color>
@@ -237,6 +239,7 @@ originally based on: "simple" by nils bonenberger
         <fontPath>./art/Cabin-Regular.ttf</fontPath>
         <fontSize>0.024</fontSize>
         <pos>0.03 0.157</pos>
+        <pos verticalScreen="true">0.03 0.127</pos>         
         <size>0.94 0.28</size>        
         <zIndex>100</zIndex>
         <color>D0D0D0FF</color>
@@ -250,6 +253,13 @@ originally based on: "simple" by nils bonenberger
     </view>
   </feature>
 
+
+  <!-- Subset option for System extended informations -->
+  <subset name="subsetSystemInfoEx" displayName="${systemViewExInfos}" tinyScreen="false">
+    <include name="yes" displayName="${yes}">./art/systemview/extendedInfo.xml</include>
+    <include name="no" displayName="${no}"/>
+  </subset>
+  
   <!-- Subset options for screen -->
   <subset name="systemview" displayName="${systemViewName}">
     <include name="darkened">./art/systemview/horizontaldark.xml</include>
@@ -261,12 +271,7 @@ originally based on: "simple" by nils bonenberger
     <include name="wheel">./art/systemview/wheel.xml</include>
   </subset>
 
-  <!-- Subset option for System extended informations -->
-  <subset name="subsetSystemInfoEx" displayName="${systemViewExInfos}" tinyScreen="false">
-    <include name="yes" displayName="${yes}">./art/systemview/extendedInfo.xml</include>
-    <include name="no" displayName="${no}"/>
-  </subset>
-  
+
   <!-- Subset option for System view background -->
   <subset name="systembackground" displayName="${systemBackgroundName}">
     <include tinyScreen="false" name="mini-consoles">./art/systemsbk/consoles.xml</include>
@@ -298,6 +303,12 @@ originally based on: "simple" by nils bonenberger
       <fontSize>0.035</fontSize>
       <pos>0.90 0.94</pos>
       <size>0.09 0.058</size>
+
+      <fontSize verticalScreen="true">0.028</fontSize>
+      <pos verticalScreen="true">0.90 0.012</pos>
+      <size verticalScreen="true">0.09 0.0275</size>
+      <color verticalScreen="true">FFFFFFA0</color>
+
       <alignment>right</alignment>
       <verticalAlignment>center</verticalAlignment>
     </text>
@@ -327,6 +338,7 @@ originally based on: "simple" by nils bonenberger
 
     <batteryIndicator name="batteryIndicator">
       <pos>0.955 0.012</pos>
+  <pos verticalScreen="true">0.9 0.013</pos>
       <size>0.033 0.0275</size>
 <horizontalAlignment>right</horizontalAlignment>
       <incharge>./art/battery/incharge.svg</incharge>
@@ -417,6 +429,7 @@ originally based on: "simple" by nils bonenberger
     <menuButton name="menubutton">
       <path>./art/button.png</path>
       <filledPath>./art/button_filled.png</filledPath>
+      <cornerSize>8 8</cornerSize>
     </menuButton>
   </view>
   <view name="basic">
@@ -624,13 +637,17 @@ originally based on: "simple" by nils bonenberger
       <fontSize>0.025</fontSize>
     </text>
     <rating name="md_rating">
-      <pos>0.9 0.886</pos>
+      <pos>0.94 0.886</pos>
       <size>0.05 0.03</size>
+      <size verticalScreen="true">0.05 0.02</size>
+      <horizontalAlignment>right</horizontalAlignment>      
       <color>FFFF00</color>
       <unfilledColor>808080</unfilledColor>
+  <unfilledPath>:/star_filled.svg</unfilledPath>
     </rating>
     <text name="md_lbl_players">
       <pos>0.9 0.645</pos>
+      <pos verticalScreen="true">0.85 0.645</pos>
       <size>0.09 0</size>
     </text>
     <text name="md_players">
@@ -646,6 +663,7 @@ originally based on: "simple" by nils bonenberger
     <datetime name="md_releasedate">
       <color>EFEFFF</color>
       <pos>0.645 0.645</pos>
+      <pos verticalScreen="true">0.7 0.645</pos>
       <size>0 0.033</size>
     </datetime>
     <text name="md_description">
@@ -739,7 +757,7 @@ originally based on: "simple" by nils bonenberger
       <!-- if system2 exists, take this version -->
       <path>./art/logos/${system.theme}-w.svg</path>
       <pos>0.5 0.074</pos>
-      <maxSize>0.3 0.120</maxSize>
+      <maxSize>0.45 0.120</maxSize>
       <origin>0.5 0.5</origin>
       <linearSmooth>true</linearSmooth>
       <zIndex>30</zIndex>
@@ -806,9 +824,10 @@ originally based on: "simple" by nils bonenberger
       <color>ffffff00</color>
     </datetime>
     <rating name="md_rating">
-      <pos>0.935 0.89</pos>
+      <pos>0.96 0.89</pos>
       <size>0.03 0.02</size>
       <color>FFFF00</color>
+      <horizontalAlignment>right</horizontalAlignment>
       <unfilledColor>606060</unfilledColor>
       <unfilledPath>:/star_filled.svg</unfilledPath>
     </rating>
@@ -894,6 +913,7 @@ originally based on: "simple" by nils bonenberger
       <padding>0.03 0.04 0.03 0.1</padding>
       <zIndex>13</zIndex>
       <autoLayout>5 2</autoLayout>
+      <autoLayout verticalScreen="true">2 2</autoLayout>
       <animateSelection>false</animateSelection>
       <centerSelection>false</centerSelection>
       <scrollbarColor>96969620</scrollbarColor>
@@ -932,6 +952,7 @@ originally based on: "simple" by nils bonenberger
   <customView name="Boxes" inherits="grid" displayName="${basicGridName}">
     <imagegrid name="gamegrid">
       <autoLayout>6 2</autoLayout>
+      <autoLayout verticalScreen="true">2 2</autoLayout>
       <autoLayoutSelectedZoom>1.08</autoLayoutSelectedZoom>
     </imagegrid>
     <text name="gridtile">
@@ -973,6 +994,7 @@ originally based on: "simple" by nils bonenberger
       <padding>0.05 0.14 0.05 0.30</padding>
       <scrollDirection>horizontal</scrollDirection>
       <autoLayout>5 1</autoLayout>
+      <autoLayout verticalScreen="true">3 1</autoLayout>
       <autoLayoutSelectedZoom>1.50</autoLayoutSelectedZoom>
       <margin>0.005 0.010</margin>
       <centerSelection>true</centerSelection>
@@ -1009,6 +1031,7 @@ originally based on: "simple" by nils bonenberger
   <customView name="Tiles" inherits="grid" displayName="${tilesViewName}">
     <imagegrid name="gamegrid">
       <autoLayout>3 2</autoLayout>
+      <autoLayout verticalScreen="true">2 3</autoLayout>
       <autoLayoutSelectedZoom>1.02</autoLayoutSelectedZoom>
       <imageSource>image</imageSource>
       <margin>0.002 0.004</margin>
@@ -1096,6 +1119,7 @@ originally based on: "simple" by nils bonenberger
   <customView name="Icons" inherits="Tiles" displayName="${iconsViewName}">
    <imagegrid name="gamegrid">
       <autoLayout>4 2</autoLayout>
+      <autoLayout verticalScreen="true">2 3</autoLayout>
       <margin>0.008 0.010</margin>
     </imagegrid>
     <text name="gridtile">

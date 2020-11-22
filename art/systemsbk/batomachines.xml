@@ -8,6 +8,10 @@
     </carousel>    
 
     <image name="background" extra="true">
+      <visible>false</visible>
+    </image>
+    
+    <image name="backgroundMachines" extra="true">
       <tile>false</tile>
       <linearSmooth>true</linearSmooth>
       <path>./../background/${system.theme}.jpg</path>

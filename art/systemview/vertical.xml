@@ -4,15 +4,15 @@
 <feature supported="manufacturer">
     <view name="system">
       <text name="manufacturerName" extra="static">
-        <pos>0.029 0.067</pos>
+     <!--   <pos>0.029 0.067</pos>-->
         <alignment>right</alignment>
       </text>
       <text name="fullName" extra="true">
-        <pos>0.03 0.15</pos>
+     <!--   <pos>0.03 0.15</pos>-->
         <alignment>right</alignment>
       </text>
       <text name="releaseYyear" extra="true">
-       <pos>0.03 0.187</pos>
+       <!-- <pos>0.03 0.187</pos>-->
         <alignment>right</alignment>
       </text>
     </view>
@@ -33,6 +33,7 @@
    <image name="logo">
       <!-- if system2 exists, take this version -->
       <path>./../../${system.theme}/art/system2.svg</path>
+      <path verticalScreen="true">./../logos/${system.theme}-w.svg</path>
     </image>
     
     <carousel name="systemcarousel">
@@ -42,7 +43,10 @@
       
       <pos>0 -0.5</pos>
       <size>0.42 1.435</size>
-      
+
+      <pos verticalScreen="true">0 0</pos>
+      <size verticalScreen="true">0.6 1</size>
+
       <color>00000000</color>
       <colorEnd>00000000</colorEnd>
       <gradientType>horizontal</gradientType>
@@ -51,7 +55,37 @@
       <maxLogoCount>5</maxLogoCount>
       <systemInfoDelay>0</systemInfoDelay>
       
+      <logoSize verticalScreen="true">0.33 0.15</logoSize>
+      <logoScale verticalScreen="true">1.4</logoScale>
     </carousel>
+    
+    <image name="carousel-back" extra="true" verticalScreen="true">
+      <path>./../white.png</path>
+      <color>00000080</color>
+      <origin>0 0</origin>
+      <pos>0 0.381</pos>
+      <size>1 0.23</size>
+      <zIndex>12</zIndex>
+    </image>
+
+    <image name="carousel-topline" extra="true"   verticalScreen="true">
+      <path>./../white.png</path>
+      <color>${baseColor}</color>
+      <origin>0 0</origin>
+      <pos>0 0.3817</pos>
+      <size>1 0.005</size>
+      <zIndex>45</zIndex>
+    </image>
+
+    <image name="carousel-bottomline" extra="true"  verticalScreen="true">
+      <path>./../white.png</path>
+      <color>${baseColor}</color>
+      <origin>0 0</origin>
+      <pos>0 0.6101</pos>
+      <size>1 0.005</size>
+      <zIndex>45</zIndex>
+    </image>
+
     <text name="systemInfo">
       <pos>0.175 0.67</pos>
       <pos>0.05 0.67</pos>
@@ -74,7 +108,7 @@
     <image name="ControllerOverlay" extra="true">
       <tile>false</tile>
       <pos>0.675 0.40</pos>
-      <size>0.4 0</size>
+      <size>0.4 0</size>      
     </image>
 
    <image name="darkwheel" extra="static" tinyScreen="false">
@@ -82,8 +116,9 @@
       <pos>0.21 0.2175</pos>
       <size>0.36 0.285</size>
       <origin>0.5 0.5</origin>
-      <path>./../darkwheel.png</path>      
+      <path>./../darkwheel.png</path>
       <zIndex>12</zIndex>
+      <visible verticalScreen="true">false</visible>
     </image>
 
 

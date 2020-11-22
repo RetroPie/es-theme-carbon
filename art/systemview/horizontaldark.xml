@@ -20,6 +20,9 @@
       
       <logoSize>0.17 0.1</logoSize>
       <logoScale>1.6</logoScale>
+
+      <logoSize verticalScreen="true">0.35 0.1</logoSize>
+      <maxLogoCount verticalScreen="true">1</maxLogoCount>
     </carousel>
 
     <image name="logo">
