@@ -867,25 +867,26 @@ originally based on: "simple" by nils bonenberger
        <maxSize>0.025 0.018</maxSize>
     </image>
 
-<!--
-    <image name="md_kidgame">
-      <path>./art/kid.svg</path>
-      <pos>0.0225 0.812</pos>
+
+    <image name="md_cheevos">
+      <path>./art/icons/Contest.png</path>
+      <pos>0.0225 0.766</pos>
       <maxSize>0.02 0.03</maxSize>
       <origin>0.5 0.5</origin>
-      <color>969696</color>
+      <color>D0D0D0D0</color>
       <zIndex>150</zIndex>
     </image>
     
-    <image name="md_notkidgame">
-      <path>./art/kid.svg</path>      
-      <pos>0.0225 0.812</pos>
+    <image name="md_notcheevos">
+      <path>./art/icons/Contest.png</path>
+      <pos>0.0225 0.766</pos>
       <maxSize>0.02 0.03</maxSize>
       <origin>0.5 0.5</origin>
       <color>80808030</color>
       <zIndex>150</zIndex>
     </image>
--->
+
+
     <image name="md_manual">
       <path>./art/book.png</path>
       <pos>0.98 0.812</pos>
@@ -1204,11 +1205,8 @@ originally based on: "simple" by nils bonenberger
     <include name="yes" displayName="${yes}">./art/tiles/marquee.xml</include>
     <include name="no" displayName="${no}"/>
   </subset>
-
   <subset name="storyboards" displayName="${animationsSubsetName}">
     <include name="yes" displayName="${yes}">./storyboards.xml</include>
     <include name="no" displayName="${no}"/>
   </subset>
-
-
 </theme>
