@@ -29,6 +29,7 @@
       <color>${centerFadeColor}</color>
       <zIndex>12</zIndex>
     </image>
+
     <text name="systemInfo">
       <pos>0 0.66</pos>
       <size>1 0.25</size>

@@ -735,9 +735,17 @@ originally based on: "simple" by nils bonenberger
     <image name="top" extra="true">
       <pos>0 0</pos>
       <origin>0 0</origin>
-      <size>1 0.16</size>
-      <path>./art/top.png</path>
+      <size>1 0.155</size>
+      <path>./art/white.png</path>
+      <color>00000090</color>
+    </image>
+    <image name="topLine" extra="true">
+      <pos>0 0.155</pos>
+      <origin>0 0</origin>
+      <size>1 0.005</size>
+      <path>./art/white.png</path>
       <color>${baseColor}</color>
+      <zIndex>15</zIndex>
     </image>
     <text name="logoText">
       <pos>0.02 0.02</pos>

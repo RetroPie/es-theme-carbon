@@ -22,6 +22,18 @@
       <zIndex>11</zIndex>
     </image>
 
+    <image name="backgroundFade" extra="static">
+      <tile>false</tile>
+      <linearSmooth>true</linearSmooth>
+      <path>./../backfade.png</path>
+      <color>FFFFFFFF</color>
+      <pos>0.5 0.5</pos>
+      <origin>0.5 0.5</origin>
+      <minSize>1 1</minSize>
+      <zIndex>12</zIndex>
+    </image>
+
+
     <image name="background" extra="true" region="eu"></image>
 		<image name="background" extra="true" region="us">
 		  <path>./art/background/us/${system.theme}.jpg</path>
