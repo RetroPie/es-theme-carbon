@@ -1103,6 +1103,26 @@ originally based on: "simple" by nils bonenberger
     </image>
 
 
+    <image name="md_savestate">
+      <path>./art/icons/SaveState.png</path>
+      <pos>0.0225 0.720</pos>
+      <maxSize>0.02 0.03</maxSize>
+      <pos ifCheevos="false">0.0225 0.766</pos>
+      <origin>0.5 0.5</origin>
+      <color>D0D0D0D0</color>
+      <zIndex>150</zIndex>
+    </image>
+    
+    <image name="md_nosavestate">
+      <path>./art/icons/SaveState.png</path>
+      <pos>0.0225 0.720</pos>
+      <pos ifCheevos="false">0.0225 0.766</pos>
+      <maxSize>0.02 0.03</maxSize>
+      <origin>0.5 0.5</origin>
+      <color>80808030</color>
+      <zIndex>150</zIndex>
+    </image>
+
     <image name="md_manual">
       <path>./art/book.png</path>
       <pos>0.98 0.812</pos>

@@ -15,11 +15,21 @@
     </carousel>
 
     <image name="logo">
-      <!-- if system2 exists, take this version -->
-      <path>./art/logos/${system.theme}2.svg</path>
+      <path>./../logos/${system.theme}-w.svg</path>
       <reflexion>0.16 0.0</reflexion>
       <reflexionOnFrame>true</reflexionOnFrame>
     </image>
+
+		<image name="logo" region="us">
+		  <path>./../logos/us/${system.theme}.svg</path>
+			<path>./../logos/us/${system.theme}-w.svg</path>
+		</image>
+		
+		<image name="logo" region="jp">
+		  <path>./../logos/jp/${system.theme}.svg</path>
+			<path>./../logos/jp/${system.theme}-w.svg</path>
+		</image>
+
     <image name="CenterFade" extra="true">
       <tile>false</tile>
       <pos>0.5 0.5</pos>
