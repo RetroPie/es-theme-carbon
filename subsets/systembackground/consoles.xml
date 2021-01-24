@@ -8,10 +8,10 @@
       <path>./../../art/consoles/default.png</path>
       <path>./../../art/consoles/${system.theme}.png</path>
       <linearSmooth>true</linearSmooth>
-      <size>0.2 0</size>
+      <maxSize>0.2 0.33</maxSize>
 
       <pos verticalScreen="true">0.5 0.22</pos>
-      <size verticalScreen="true">0.33 0</size>
+      <maxSize verticalScreen="true">0.33 0.33</maxSize>
       <color>FFFFFFF0</color>
       <zIndex>21</zIndex>
     </image>

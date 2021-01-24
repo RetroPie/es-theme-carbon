@@ -107,7 +107,7 @@
     <image name="ControllerOverlay" extra="true">
       <tile>false</tile>
       <pos>0.675 0.40</pos>
-      <size>0.4 0</size>      
+      <maxSize>0.4 0.4</maxSize>      
     </image>
 
    <image name="darkwheel" extra="static" tinyScreen="false">

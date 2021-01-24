@@ -4,9 +4,9 @@
   <view name="system">
     <image name="ControllerOverlay" extra="true">
       <tile>false</tile>
-      <pos>0.675 0.40</pos>
+      <pos>0.66 0.43</pos>
       <pos verticalScreen="true">0.75 0.5</pos>
-      <size>0.3 0.3</size>
+      <maxSize>0.4 0.5</maxSize>
     </image>
   </view>
 </theme>
