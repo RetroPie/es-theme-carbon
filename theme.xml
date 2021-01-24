@@ -42,7 +42,6 @@ originally based on: "simple" by nils bonenberger
     <psxbuttons>Playstation buttons</psxbuttons>
   </variables>
 
-  <include>./lang/en.xml</include>
   <include lang="fr">./lang/fr.xml</include>
   <include lang="pt">./lang/pt.xml</include>
   
