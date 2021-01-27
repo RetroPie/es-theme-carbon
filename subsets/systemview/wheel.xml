@@ -33,15 +33,13 @@
     </image>
     <carousel name="systemcarousel">
       <type>vertical_wheel</type>
-      <pos>0 -0.1</pos>
-      <size>0.44 1.1</size>
       <pos>0 -0.5</pos>
-      <size>0.44 1.5</size>
+      <size>0.44 1.5</size>      
       <origin>0 0</origin>
       <color>00000000</color>
       <logoScale>2</logoScale>
       <logoSize>0.18 0.15</logoSize>
-      <logoRotation>-14</logoRotation>
+      <logoRotation>14</logoRotation>
       <logoRotationOrigin>-2.9 0.2</logoRotationOrigin>
       <logoAlignment>center</logoAlignment>
       <maxLogoCount>5</maxLogoCount>
