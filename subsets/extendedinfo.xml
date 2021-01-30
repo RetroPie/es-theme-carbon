@@ -10,8 +10,9 @@
 {binding:total}, {binding:played}, {binding:favorites}, {binding:hidden}, {binding:gamesPlayed}
 {binding:mostPlayed}, {binding:lastPlayedDate}
 -->
-        <text>Games played : {binding:gamesPlayed}
+        <text>Games : {binding:total}
 Favorites : {binding:favorites}
+Games played : {binding:gamesPlayed}
 Most played : {binding:mostPlayed}
 Last played : {binding:lastPlayedDate}</text>
         <text lang="fr">Nombre de jeux : {binding:total}
