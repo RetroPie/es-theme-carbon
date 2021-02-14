@@ -15,7 +15,7 @@
       <padding ifSubset="glowsel:no">0 0</padding>
       <cornerSize ifSubset="glowsel:no">0 0</cornerSize>
       <path ifSubset="glowsel:no">:/frame.png</path>
-      <path ifSubset="glowsel:yes">./../framewselsq.png</path>
+      <path ifSubset="glowsel:yes">./../../art/framewselsq.png</path>
     </ninepatch>
   </customView>
 </theme>
