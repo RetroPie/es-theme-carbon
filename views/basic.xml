@@ -53,7 +53,7 @@ originally based on: "simple" by nils bonenberger
       <size ifHelpPrompts="false">0.950 0.76</size>
       <alignment>center</alignment>
       <horizontalMargin>0.01</horizontalMargin>
-      <forceUppercase>1</forceUppercase>
+      <forceUppercase>0</forceUppercase>
       <scrollSound>./../art/sounds/scroll.wav</scrollSound>
       
       <selectorColor>${centerFadeColor}</selectorColor>      

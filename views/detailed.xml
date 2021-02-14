@@ -107,7 +107,7 @@ originally based on: "simple" by nils bonenberger
       <secondaryColor>808080</secondaryColor>
       <selectorColor>${centerFadeColor}</selectorColor>
       <selectedColor>FFFFFFFF</selectedColor>
-      <forceUppercase>1</forceUppercase>
+      <forceUppercase>0</forceUppercase>
       <pos>0.021 0.18</pos>
       <size>0.489 0.73</size>
       <alignment>left</alignment>
