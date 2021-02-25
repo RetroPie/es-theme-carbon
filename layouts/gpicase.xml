@@ -57,6 +57,7 @@
     <imagegrid name="gamegrid">
       <autoLayout>1 1</autoLayout>
       <size>0.950 0.78</size>
+      <size ifSubset="gameBar:yes">0.935 0.78</size>
       <padding>0.03 0.06 0.03 0.04</padding>
       <margin>0.010 0.03</margin>
       <scrollDirection>horizontal</scrollDirection>
@@ -89,12 +90,14 @@
     <imagegrid name="gamegrid">
       <pos>0 0.16</pos>
       <size>1 0.78</size>
+      <size ifSubset="gameBar:yes">0.949 0.78</size>
       <padding>0 0</padding>
       <margin>0 0</margin>
       <scrollDirection>horizontal</scrollDirection>
     </imagegrid>
     <imagegrid ifHelpPrompts="false" name="gamegrid">
       <size>1 0.85</size>
+      <size ifSubset="gameBar:yes">0.949 0.85</size>
     </imagegrid>
     <gridtile name="default">
       <backgroundCornerSize>0 0</backgroundCornerSize>
@@ -118,7 +121,7 @@
       <padding>0 0</padding>
       <color>00000000</color>
     </ninepatch>
-    <rating name="md_rating">
+    <rating ifSubset="gameBar:no" name="md_rating">
       <pos>0.94 0.875</pos>
       <size>0.05 0.04</size>
     </rating>

@@ -131,17 +131,18 @@ originally based on: "simple" by nils bonenberger
   <include>./layouts/${system.theme}.xml</include>
   <!-- Layout when help is disabled -->
   <include ifHelpPrompts="false">./layouts/nohelp.xml</include>
-  <!-- Layout for small screens -->
-  <subset tinyScreen="true" name="optimizesmallscreens" displayName="${optimizesmallscreensSubsetName}">
-    <include name="yes" displayName="${yes}">./layouts/gpicase.xml</include>
-    <include name="no" displayName="${no}"/>
-  </subset>
 
   <!-- add game info bar -->
   <subset name="gameBar" displayName="${gameBar}" appliesTo="detailed,grid,Tiles,Icons,Carousel,Boxes">
     <include name="yes" displayName="${yes}">./subsets/gameinfobar.xml</include>
     <include name="no" displayName="${no}"/>
 	</subset>
+
+  <!-- Layout for small screens -->
+  <subset tinyScreen="true" name="optimizesmallscreens" displayName="${optimizesmallscreensSubsetName}">
+    <include name="yes" displayName="${yes}">./layouts/gpicase.xml</include>
+    <include name="no" displayName="${no}"/>
+  </subset>
 
   <!-- Subset options for grid views -->
   <subset name="videoboxes" displayName="${videoboxesSubsetName}" appliesTo="Boxes,grid">

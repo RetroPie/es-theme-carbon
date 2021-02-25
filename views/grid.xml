@@ -168,7 +168,7 @@ originally based on: "simple" by nils bonenberger
     
     <ninepatch name="gridtile.background:selected">
       <animateColor>EFEF60B0</animateColor>
-      <animateColorTime>350</animateColorTime>
+      <animateColorTime>750</animateColorTime>
     </ninepatch>
   </view>
 </theme>

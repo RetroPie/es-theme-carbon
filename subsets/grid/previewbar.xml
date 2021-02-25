@@ -10,7 +10,7 @@
 
   <customView name="Carousel,Boxes,Tiles,Icons,grid">
     <image name="gamelistBackground" extra="true">
-      <path>./art/filter.png</path>
+      <path>./../../art/filter.png</path>
       <color>000000A0</color>
       <origin>0 0</origin>
       <pos>0.663 0.16</pos>
@@ -20,7 +20,7 @@
     </image>
     
 		<image name="gamelistLineZ" extra="true">
-			<path>./art/white.png</path>
+			<path>./../../art/white.png</path>
 			<color>${glowColor}</color>
 			<origin>0 0</origin>
 			<pos>0.66 0.16</pos>
@@ -36,11 +36,12 @@
       <pos>0.68 0.18</pos>
       <size>0.30 0.05</size>
       <color>F0F0F0</color>
-      <fontSize>0.040</fontSize>
-      <fontPath>./art/fonts/Cabin-Bold.ttf</fontPath>
+      <fontSize>0.038</fontSize>
+      <fontPath>./../../art/fonts/Cabin-Bold.ttf</fontPath>
       <alignment>center</alignment>
       <glowColor>${glowColor}</glowColor>
       <glowSize>2</glowSize>
+<glowOffset>1 1</glowOffset>
       <lineSpacing>1.1</lineSpacing>
     </text>
 
@@ -83,7 +84,7 @@
     <image name="tv_overlay" extra="true">
       <pos>0.68 0.25</pos>
       <size>0.30 0.40</size>
-      <path>./art/tv.png</path>
+      <path>./../../art/tv.png</path>
       <zIndex>140</zIndex>
     </image>-->
     <text name="md_description">
@@ -107,7 +108,7 @@
       <horizontalAlignment>right</horizontalAlignment>
     </rating>
     <image name="md_kidgame" ifSubset="gameBar:no">
-      <path>./art/kid.svg</path>
+      <path>./../../art/kid.svg</path>
       <pos>0.882 0.901</pos>
       <maxSize>0.02 0.03</maxSize>      
       <origin>0.5 0.5</origin>
@@ -115,7 +116,7 @@
       <zIndex>150</zIndex>
     </image>
     <image name="md_hidden" ifSubset="gameBar:no">
-      <path>./art/hidden.svg</path>
+      <path>./../../art/hidden.svg</path>
       <pos>0.975 0.205</pos>
       <maxSize>0.02 0.03</maxSize>      
       <origin>0.5 0.5</origin>

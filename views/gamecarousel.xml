@@ -14,7 +14,7 @@ originally based on: "simple" by nils bonenberger
       <type>vertical_wheel</type>
       <pos>0 0.162</pos>
       <size>0.52 0.775</size>
-      <logoScale>4.5</logoScale>
+      <logoScale>4.6</logoScale>
       <logoSize>0.15 0.12</logoSize>
       <maxLogoCount>15</maxLogoCount>
       <imageSource>marquee</imageSource> <!-- text, image, thumbnail, marquee -->
@@ -37,6 +37,18 @@ originally based on: "simple" by nils bonenberger
       <roundCorners>0.02</roundCorners>
     </video>
 
+    <image name="md_fanart">
+      <minSize>1 0.775</minSize>
+      <pos>0.5 0.55</pos>
+      <origin>0.5 0.5</origin>
+      <color>FFFFFF80</color>
+<colorEnd>FFFFFF30</colorEnd>
+<gradientType>horizontal</gradientType>
+      <linearSmooth>true</linearSmooth>
+      <zIndex>9</zIndex>
+    </image>
+    
+<!--
     <image name="background">
       <tile>false</tile>
       <size>1 1</size>
@@ -56,7 +68,7 @@ originally based on: "simple" by nils bonenberger
       <color>FFFFFF12</color>
       <zIndex>11</zIndex>
     </image>
-    
+  
     <image name="ControllerOverlay" extra="true" ifSubset="systembackground:mini-consoles">
       <path>./art/consoles/default.png</path>
       <path>./art/consoles/${system.theme}.png</path>
@@ -67,20 +79,20 @@ originally based on: "simple" by nils bonenberger
       <color>FFFFFF09</color>
       <zIndex>11</zIndex>
     </image>
-    
+    -->
     <image name="detailsBk" extra="true">
-      <path>./art/filter.png</path>
-      <color>00000040</color>
+      <path>./../art/white.png</path>
+      <color>000000A0</color>
       <colorEnd>00000000</colorEnd>
       <gradientType>horizontal</gradientType>
       <origin>0 0</origin>
-      <pos>0.53 0.16</pos>      
+      <pos>0.53 0.16</pos>
       <size>0.4 0.774</size>
       <zIndex>12</zIndex>
     </image>
 
     <image name="detailsBkR" extra="true">
-      <path>./art/filter.png</path>
+      <path>./../art/filter.png</path>
       <color>00000000</color>
       <colorEnd>00000010</colorEnd>
       <gradientType>horizontal</gradientType>
@@ -89,6 +101,8 @@ originally based on: "simple" by nils bonenberger
       <size>0.005 0.774</size>
       <zIndex>12</zIndex>
     </image>
+      
+   <!--
     <image name="detailsBkLine" extra="true">
       <path>./art/white.png</path>
       <color>${glowColor}</color>
@@ -97,7 +111,8 @@ originally based on: "simple" by nils bonenberger
       <size>0.003 0.775</size>
       <size ifHelpPrompts="false">0.003 0.84</size>
       <zIndex>14</zIndex>
-    </image>    
+    </image>
+ -->
     <text name="md_genre, md_developer, md_publisher, md_lastplayed, md_releasedate, md_players, md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_lbl_releasedate">
       <storyboard>
         <animation property="opacity" from="0" duration="350" mode="easeOut"/>
