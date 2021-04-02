@@ -104,7 +104,7 @@ originally based on: "simple" by nils bonenberger
 	
     <textlist name="gamelist">
       <primaryColor>C0C0C0</primaryColor>
-      <secondaryColor>808080</secondaryColor>
+      <secondaryColor>F0F0F0</secondaryColor>
       <selectorColor>${centerFadeColor}</selectorColor>
       <selectedColor>FFFFFFFF</selectedColor>
       <forceUppercase>0</forceUppercase>

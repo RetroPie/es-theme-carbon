@@ -42,10 +42,10 @@ originally based on: "simple" by nils bonenberger
 
     <textlist name="gamelist">    
       <selectorColor>1c1c1c</selectorColor>
-       <selectorColor>96969620</selectorColor>
+      <selectorColor>96969620</selectorColor>
       <selectedColor>${basecolor}</selectedColor>
       <primaryColor>C0C0C0</primaryColor>
-      <secondaryColor>808080</secondaryColor>
+      <secondaryColor>F0F0F0</secondaryColor>
       <fontPath>./../art/fonts/Cabin-Regular.ttf</fontPath>
       <fontSize>0.030</fontSize>
       <pos>0.025 0.18</pos>
