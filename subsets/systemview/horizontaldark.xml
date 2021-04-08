@@ -3,8 +3,6 @@
   <formatVersion>7</formatVersion>
   <view name="system">
     <carousel name="systemcarousel">
-      <color>FAFAFFA0</color>
-      <colorEnd>FAFAFFB0</colorEnd>
       <color>00000060</color>
       <colorEnd>00000070</colorEnd>
       <systemInfoDelay>700</systemInfoDelay>
@@ -12,13 +10,13 @@
       <pos>0 0.3837</pos>
       <size>1 0.2325</size>
       <zIndex>20</zIndex>
-      <logoSize>0.25 0.155</logoSize>
-      <logoScale>1.2</logoScale>
       <logoSize>0.17 0.1</logoSize>
       <logoScale>1.6</logoScale>
+      <transitionSpeed>650</transitionSpeed>
+      <minLogoOpacity>0.6</minLogoOpacity>
       <logoSize verticalScreen="true">0.35 0.1</logoSize>
       <maxLogoCount verticalScreen="true">1</maxLogoCount>
-    </carousel>
+    </carousel>    
     <image name="logo">
       <path>./../../art/logos/${system.theme}-w.svg</path>
     </image>
