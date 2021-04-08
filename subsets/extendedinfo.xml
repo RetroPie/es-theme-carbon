@@ -20,6 +20,11 @@ Favoris : {binding:favorites}
 Jeux joués : {binding:gamesPlayed}
 Le plus joué : {binding:mostPlayed}
 Dernière partie : {binding:lastPlayedDate}</text>
+        <text lang="es">Número de juegos : {binding:total}
+Favoritos : {binding:favorites}
+Jugados : {binding:gamesPlayed}
+El más jugado : {binding:mostPlayed}
+Última partida : {binding:lastPlayedDate}</text>
         <alignment>left</alignment>
         <alignment>center</alignment>
         <verticalAlignment>center</verticalAlignment>
