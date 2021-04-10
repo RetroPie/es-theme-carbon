@@ -26,6 +26,9 @@ originally based on: "simple" by nils bonenberger
     <previewBarSubsetName>Preview bar</previewBarSubsetName>
     <videoboxesSubsetName>Show Video in boxes</videoboxesSubsetName>
     <zoomboxesSubsetName>Zoom boxes</zoomboxesSubsetName>
+    <orientationSubsetName>Orientation</orientationSubsetName>
+    <videosSubsetName>Videos</videosSubsetName>
+    <logosSubsetName>Logos</logosSubsetName>
     <systemViewExInfos>Extended system informations</systemViewExInfos>
     <animationsSubsetName>Transition Animations</animationsSubsetName>
     <hideselectionSubsetName>Hide selection</hideselectionSubsetName>
@@ -47,6 +50,10 @@ originally based on: "simple" by nils bonenberger
     <helpbuttons>Button location</helpbuttons>
     <xboxbuttons>Xbox buttons</xboxbuttons>
     <psxbuttons>Playstation buttons</psxbuttons>
+    <marquee>marquee</marquee>
+    <image>image</image>
+    <text>text</text>
+    <thumbnail>thumbnail</thumbnail>
   </variables>
 
   <include lang="fr">./lang/fr.xml</include>
@@ -161,7 +168,7 @@ originally based on: "simple" by nils bonenberger
     <include name="no" displayName="${no}"/>
     <include name="yes" displayName="${yes}">./subsets/grid/zoomboxes.xml</include>
   </subset>
-  <subset name="scrolldirection" displayName="Orientation" appliesTo="Tiles,Icons,Boxes,grid">
+  <subset name="scrolldirection" displayName="${orientationSubsetName}" appliesTo="Tiles,Icons,Boxes,grid">
     <include name="vertical"/>
     <include name="horizontal">./subsets/grid/scrollhorz.xml</include>
   </subset>
@@ -186,19 +193,19 @@ originally based on: "simple" by nils bonenberger
     <include name="yes" displayName="${yes}"/>
     <include name="no" displayName="${no}">./subsets/grid/blinkbordersoff.xml</include>
   </subset>
-  <subset name="videotiles" displayName="Videos" appliesTo="Icons,Tiles">
+  <subset name="videotiles" displayName="${videosSubsetName}" appliesTo="Icons,Tiles">
     <include name="yes" displayName="${yes}"/>
     <include name="no" displayName="${no}">./subsets/tiles/novideo.xml</include>
   </subset>
-  <subset name="marqueetiles" displayName="Logos" appliesTo="Tiles">
+  <subset name="marqueetiles" displayName="${logosSubsetName}" appliesTo="Tiles">
     <include name="yes" displayName="${yes}">./subsets/tiles/marquee.xml</include>
     <include name="no" displayName="${no}"/>
   </subset>  
  	<subset name="carouselimagesource" displayName="${gamecarouseltype}" appliesTo="gamecarousel">
-		<include name="marquee">./subsets/carouselimagesource/marquee.xml</include>
-		<include name="image">./subsets/carouselimagesource/image.xml</include>
-		<include name="text" >./subsets/carouselimagesource/text.xml</include>
-		<include name="thumbnail">./subsets/carouselimagesource/thumbnail.xml</include>
+		<include name="marquee" displayName="${marquee}">./subsets/carouselimagesource/marquee.xml</include>
+		<include name="image" displayName="${image}">./subsets/carouselimagesource/image.xml</include>
+		<include name="text" displayName="${text}">./subsets/carouselimagesource/text.xml</include>
+		<include name="thumbnail" displayName="${thumbnail}">./subsets/carouselimagesource/thumbnail.xml</include>
 	</subset>
   <subset name="storyboards" displayName="${animationsSubsetName}">
     <include name="yes" displayName="${yes}">./subsets/storyboards.xml</include>
