@@ -9,7 +9,7 @@ originally based on: "simple" by nils bonenberger
 <theme defaultView="Icons">
   <formatVersion>7</formatVersion>
 
-  <view name="gamecarousel">
+  <view name="gamecarousel" displayName="${gameCarouselViewName}">
     <gamecarousel name="gamecarousel">
       <type>vertical_wheel</type>
       <pos>0 0.162</pos>

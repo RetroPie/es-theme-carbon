@@ -7,6 +7,7 @@
     <iconsViewName>Iconos</iconsViewName>
     <basicGridName>Cuadrícula</basicGridName>
     <carouselViewName>Carrusel de caudrículas</carouselViewName>
+    <gameCarouselViewName>Carrusel de juegos</gameCarouselViewName>
     <blue>Azul</blue>
     <red>Rojo</red>
     <green>Verde</green>
@@ -20,6 +21,10 @@
     <blinkBorderSubsetName>Bordes parpadeantes</blinkBorderSubsetName>
     <yes>Si</yes>
     <no>No</no>
+    <marquee>marquesina</marquee>
+    <image>imagen</image>
+    <text>texto</text>
+    <thumbnail>miniatura</thumbnail>
     <systemBackgroundName>Fondo</systemBackgroundName>
     <systemViewName>Visualización de sistema</systemViewName>
     <systemview.darkened>oscurecido</systemview.darkened>
@@ -32,6 +37,9 @@
     <previewBarSubsetName>Panel de visualización</previewBarSubsetName>
     <videoboxesSubsetName>Mostrar vídeo en modo caja</videoboxesSubsetName>
     <zoomboxesSubsetName>Ampliar cajas</zoomboxesSubsetName>
+    <orientationSubsetName>Orientación</orientationSubsetName>
+    <videosSubsetName>Vídeos</videosSubsetName>
+    <logosSubsetName>Logotipos</logosSubsetName>
     <hideselectionSubsetName>Ocultar la selección</hideselectionSubsetName>
     <optimizesmallscreensSubsetName>Optimizar para pantallas pequeñas</optimizesmallscreensSubsetName>
     <animationsSubsetName>Animaciones de transición</animationsSubsetName>
