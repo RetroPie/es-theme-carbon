@@ -35,5 +35,6 @@
     <helpbuttons>Position des boutons</helpbuttons>
     <gamecarouseltype>Image source</gamecarouseltype>
     <gameBar>Barre d'information des jeux</gameBar>
+    <animatedInfobar>Animation du volet aperçu</animatedInfobar>
   </variables>
 </theme>

@@ -8,7 +8,6 @@ originally based on: "simple" by nils bonenberger
 -->
 <theme defaultView="Icons">
   <formatVersion>7</formatVersion>
-
   <view name="gamecarousel" displayName="${gameCarouselViewName}">
     <gamecarousel name="gamecarousel">
       <type>vertical_wheel</type>
@@ -30,7 +29,7 @@ originally based on: "simple" by nils bonenberger
       <pos>0.76 0.408</pos>
       <maxSize>0.46 0.436</maxSize>
       <origin>0.5 0.5</origin>
-      <delay>0.8</delay>
+      <delay>1.4</delay>
       <showSnapshotNoVideo>true</showSnapshotNoVideo>
       <showSnapshotDelay>true</showSnapshotDelay>
       <loops>1</loops>

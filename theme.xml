@@ -54,6 +54,7 @@ originally based on: "simple" by nils bonenberger
     <image>image</image>
     <text>text</text>
     <thumbnail>thumbnail</thumbnail>
+    <animatedInfobar>Animated preview bar</animatedInfobar>
   </variables>
 
   <include lang="fr">./lang/fr.xml</include>
@@ -180,6 +181,11 @@ originally based on: "simple" by nils bonenberger
     <include name="no" displayName="${no}"/>
     <include name="yes" displayName="${yes}">./subsets/grid/previewbar.xml</include>
   </subset>
+  <subset name="animatedInfobar" displayName="${animatedInfobar}" appliesTo="detailed,grid,gamecarousel,Tiles,Icons,Carousel,Boxes">
+    <include name="yes" displayName="${yes}">./subsets/animatedpreview.xml</include>
+    <include name="no" displayName="${no}"/>
+  </subset>
+  
   <!-- Subset options for Tiles view -->
   <subset tinyScreen="false" name="glowsel" displayName="${glowSubsetName}" appliesTo="Tiles, Icons">
     <include name="yes" displayName="${yes}"/>

@@ -33,7 +33,7 @@
 			<unfilledColor>808080</unfilledColor>
 			<unfilledPath>:/star_filled.svg</unfilledPath>
 			<horizontalAlignment>right</horizontalAlignment>  
-			<zIndex>100</zIndex>
+			<zIndex>15</zIndex>
 		</rating>
 
 		<text name="md_players">
@@ -134,13 +134,12 @@
 <!-- DETAILED -->  	
 	<view name="detailed,gamecarousel"> 
 	
-	    <video name="md_video">
+    <video name="md_video">
 			<pos>0.74 0.39</pos>
 			<maxSize>0.39 0.4</maxSize>
 		</video>
  
 		<text name="md_description">
-			<pos>0.55 0.67</pos>
 			<pos>0.55 0.615</pos>
 			<size>0.38 0.25</size>
 		</text> 
