@@ -1,22 +1,26 @@
-Theme 'carbon' v2.4 - 08-16-2016 by Rookervik
+Theme 'carbon' v2.5 - 2020-11-17 by Tomaz
+based on carbon v2.4 by Rookervik
 based on simple(c) Nils Bonenberger - nilsbyte@nilsbyte.de - http://blog.nilsbyte.de/
 For use with EmulationStation (http://www.emulationstation.org/)
 
 
-Fonts:
-Users can use any font they would like with the theme. Just copy your font to /etc/emulationstation/themes/carbon/art folder. Rename the original font "Cabin-Bold.ttf" to "Cabin-Bold.ttf.backup" and then rename your font to "Cabin-Bold.ttf". This will have the theme use your font instead of what comes with Carbon.
+Change Font:
+    Copy your font to "carbon/art" folder.
+    Open "carbon/theme.xml" with a text editor and change '<themeFont>./art/Cabin-Bold.ttf</themeFont>' to the path to your font.
+    This will have the theme use your font instead of what comes with Carbon.
 
-Gamelist Font Size:
-To change the font size of the Gamelist, open the "carbon.xml" with a text editor, look for the tag <gamelist> and find a tag inside called <fontSize>. The original value is 0.03. A small change makes a big difference in size. If you want smaller gamelist names, try 0.02. If you want larger, try 0.04. You can even go further by trying 0.015.
+Change Color:
+    Open "carbon/theme.xml" with a text editor and change '<themeColor>${colorRed}</themeColor>' to any of the colors listed above it.
 
-Colors:
-To change the colors open carbon.xml with a text editor. Choose a color and find it's hexidecimal value. Some examples are found in the carbon.xml file. Find all occurances of "8b0000" and replace them with your chosen color. Such as Orange: ef710b. Save the carbon.xml and exit. To change the color to another color after the first change, search for your old color, and replace it with a new one.
-
-Sounds:
-To change the sound effect, replace /art/scroll.wav with what ever WAV file you would like. Carbon theme will play what ever is called "scroll.wav" in the /art folder.
+Change Sound:
+    Copy your wav file to "carbon/art" folder.
+	Open "carbon/theme.xml" with a text editor and change '<themeScrollSound>./art/scroll.wav</themeScrollSound>' to the path to your wav file.
 
 Changelog
 =========
+
+====2020/11/14===
+Rewritten from scratch to take advantage of new features in ES (variables and resolution)
 
 ===08/16/2016===
 Added Super Grafx
