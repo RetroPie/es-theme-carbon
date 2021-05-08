@@ -8,7 +8,7 @@
     <image name="background">
       <pos>0.5 0.5</pos>
       <origin>0.5 0.5</origin>
-      <maxSize>1 1</maxSize>
+      <minSize>1 1</minSize>
       <roundCorners>0</roundCorners>
       <linearSmooth>false</linearSmooth>
       <color>A0A0A0FF</color>
@@ -20,6 +20,16 @@
       <glowSize>2</glowSize>
       <glowOffset>1</glowOffset>
     </text>
+    <image name="backgroundFade" extra="true">
+      <tile>false</tile>
+      <linearSmooth>true</linearSmooth>
+      <path>./art/overlay.png</path>
+      <color>FFFFFFFF</color>
+      <pos>0.5 0.5</pos>
+      <origin>0.5 0.5</origin>
+      <minSize>1 1</minSize>
+      <zIndex>16</zIndex>
+    </image>
     <image name="darken" extra="true">
       <path>./art/white.png</path>
       <pos>0 0.7</pos>

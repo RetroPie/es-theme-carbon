@@ -96,4 +96,19 @@
       </storyboard>
     </control>
   </view>
+  
+  <!-- Disable storyboards for Carousel if previewbar is disabled -->
+  <customView name="Carousel" ifSubset="previewbar:no">
+    <control name="md_rating, md_releasedate, md_players, md_kidgame, md_notkidgame, md_manual, md_nomanual, md_cheevos,md_notcheevos, md_savestate, md_nosavestate, md_flag, md_fanart, md_name, md_image, md_video, md_description, md_genre, md_developer, md_publisher, md_lastplayed, md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_lbl_releasedate">
+      <clipRect>0 0 1 1</clipRect>
+      <storyboard event="open"/>
+      <storyboard event="activateNext"/>
+      <storyboard event="activatePrev"/>
+      <storyboard event="deactivateNext"/>
+      <storyboard event="deactivatePrev"/>
+      <storyboard event="activate"/>
+      <storyboard event="deactivate"/>
+    </control>
+  </customView>
+  
 </theme>
