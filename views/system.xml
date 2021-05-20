@@ -38,8 +38,10 @@ originally based on: "simple" by nils bonenberger
     <text name="logoText">
       <fontPath>./../art/fonts/Cabin-Bold.ttf</fontPath>
       <fontSize>0.06</fontSize>
-      <color>${baseColor}</color>
-      <forceUppercase>true</forceUppercase>    
+      <color>FFFFFFFF</color>
+      <glowColor>00000010</glowColor>
+      <glowSize>3</glowSize>
+      <forceUppercase>false</forceUppercase>    
     </text>
     
     <image name="logo">

@@ -8,7 +8,7 @@ originally based on: "simple" by nils bonenberger
 -->
 <theme defaultView="Icons">
   <formatVersion>7</formatVersion>
-  <view name="detailed">
+  <view name="detailed">  
     <video name="md_video">
       <pos>0.76 0.408</pos>
       <maxSize>0.46 0.436</maxSize>
@@ -19,6 +19,7 @@ originally based on: "simple" by nils bonenberger
       <loops>1</loops>
       <roundCorners>0.02</roundCorners>
       <zIndex>30</zIndex>
+      <defaultSnapshot>./../art/grid/defgame.png</defaultSnapshot>
     </video>
     <image name="background">
       <tile>false</tile>

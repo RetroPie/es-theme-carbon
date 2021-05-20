@@ -6,6 +6,7 @@
   <view name="system">
     <image name="ControllerOverlay" extra="true">
       <path>./../../art/consoles/default.png</path>
+      <path>{random:image}</path>
       <path>./../../art/consoles/${system.theme}.png</path>
       <linearSmooth>true</linearSmooth>
       <maxSize>0.2 0.33</maxSize>

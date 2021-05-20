@@ -12,6 +12,7 @@
     <image name="backgroundMachines" extra="true">
       <tile>false</tile>
       <linearSmooth>true</linearSmooth>
+      <path>{random:fanart}</path>
       <path>./../../art/background/${system.theme}.jpg</path>
       <color>FFFFFFFF</color>
       <pos>0.5 0.5</pos>
