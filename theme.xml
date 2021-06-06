@@ -192,8 +192,10 @@ originally based on: "simple" by nils bonenberger
     <include name="no" displayName="${no}">./subsets/tiles/noglow.xml</include>
   </subset>
   <subset tinyScreen="false" name="tileborders" displayName="${roundBorderSubsetName}" appliesTo="Tiles, Icons">
-    <include name="yes" displayName="${yes}"/>
+    <!-- default to yes for fast platforms only -->
+    <include ifArch="rpi4,windows,x86,x86_64,odroidc4,odroidxu4" name="yes" displayName="${yes}"/>
     <include name="no" displayName="${no}">./subsets/tiles/squareborders.xml</include>
+    <include ifNotArch="rpi4,windows,x86,x86_64,odroidc4,odroidxu4" name="yes" displayName="${yes}"/>
   </subset>
   <subset name="blinkborders" displayName="${blinkBorderSubsetName}" appliesTo="Tiles,Icons,Carousel,Boxes,grid">
     <include name="yes" displayName="${yes}"/>

@@ -8,7 +8,9 @@
     <animatedBackground>Animation du fond</animatedBackground>
   </variables>
   <subset tinyScreen="false" name="animatedBackground" displayName="${animatedBackground}">
-    <include name="yes" displayName="${yes}">./animatedbackground.xml</include>
+    <!-- default to yes for fast platforms only -->
+    <include ifArch="rpi4,windows,x86,x86_64,odroidc4,odroidxu4" name="yes" displayName="${yes}">./animatedbackground.xml</include>
     <include name="no" displayName="${no}"/>
+    <include ifNotArch="rpi4,windows,x86,x86_64,odroidc4,odroidxu4" name="yes" displayName="${yes}">./animatedbackground.xml</include>
   </subset>
 </theme>

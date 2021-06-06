@@ -23,7 +23,7 @@
       <cornerSize>20 20</cornerSize>
       <padding>-2 -2</padding>
       <edgeColor>000000B0</edgeColor>
-      <centerColor>000000A0</centerColor>
+      <centerColor>000000A0</centerColor>            
     </ninepatch>
     <ninepatch name="gridtile.background:selected">
       <path>./art/framewsel.png</path>
@@ -69,13 +69,12 @@
       <padding>0.08 0.02</padding>
       <size>0 0.22</size>
       <glowColor>00000060</glowColor>
-      <glowSize>1</glowSize>
+      <glowSize>0</glowSize>
+      <glowSize ifArch="rpi4,windows,x86,x86_64,odroidc4,odroidxu4">1</glowSize>
     </text>
     <text name="gridtile:selected">
       <singleLineScroll>false</singleLineScroll>
       <color>FFFFFF</color>
-      <glowColor>${glowColor}</glowColor>
-      <glowSize>2</glowSize>
     </text>
     <image name="gridtile.favorite">
       <path>./art/favorite.png</path>

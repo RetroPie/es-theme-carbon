@@ -101,8 +101,8 @@ originally based on: "simple" by nils bonenberger
         <color>C0C0C0</color>      
         <zIndex>100</zIndex>
         <color>D0D0D0FF</color>
-        <glowColor>00000040</glowColor>
-        <glowSize>2</glowSize>
+        <glowColor>00000080</glowColor>
+        <glowSize>1</glowSize>
 
         <fontSize tinyScreen="true">0.065</fontSize>
         <glowSize tinyScreen="true">1</glowSize>

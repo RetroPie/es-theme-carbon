@@ -16,7 +16,7 @@
       <minLogoOpacity>0.6</minLogoOpacity>
       <logoSize verticalScreen="true">0.35 0.1</logoSize>
       <maxLogoCount verticalScreen="true">1</maxLogoCount>
-    </carousel>    
+    </carousel>
     <image name="logo">
       <path>./../../art/logos/${system.theme}-w.svg</path>
     </image>
@@ -52,6 +52,8 @@
       <logoScale>2.6</logoScale>
       <logoPos>-1 0.1</logoPos>
     </carousel>
+    
+    <!--
     <image name="carousel-inner" extra="true">
       <path>./../../art/carousel.png</path>
       <color>FFFFFFFF</color>
@@ -60,6 +62,7 @@
       <size>1 0.2325</size>
       <zIndex>40</zIndex>
     </image>
+    -->
     <text name="systemInfo">
       <pos>0 0.64</pos>
       <size>1 0.25</size>

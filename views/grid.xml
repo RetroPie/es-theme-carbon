@@ -27,7 +27,7 @@ originally based on: "simple" by nils bonenberger
       <color>FFFFFF10</color>
       <zIndex>9</zIndex>
     </image>
-    <image name="ControllerOverlay" extra="true" ifSubset="systembackground:mini-consoles">
+    <image name="ControllerOverlay" extra="true" ifSubset="systembackground:mini-consoles" ifArch="rpi4,windows,x86,x86_64,odroidc4,odroidxu4" >
       <path>./art/consoles/default.png</path>
       <path>./art/consoles/${system.theme}.png</path>
       <linearSmooth>true</linearSmooth>
@@ -159,7 +159,8 @@ originally based on: "simple" by nils bonenberger
     <text name="gridtile:selected">
       <color>FFFFFF</color>
       <glowColor>${glowColor}</glowColor>
-      <glowSize>2</glowSize>
+      <glowSize ifArch="rpi4,windows,x86,x86_64,odroidc4,odroidxu4">2</glowSize>
+      <glowSize ifNotArch="rpi4,windows,x86,x86_64,odroidc4,odroidxu4">1</glowSize>
     </text>
 
     <image name="gridtile.image">
