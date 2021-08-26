@@ -181,9 +181,10 @@ originally based on: "simple" by nils bonenberger
     <include name="no" displayName="${no}"/>
     <include name="yes" displayName="${yes}">./subsets/grid/previewbar.xml</include>
   </subset>
-  <subset name="animatedInfobar" displayName="${animatedInfobar}" appliesTo="detailed,grid,gamecarousel,Tiles,Icons,Carousel,Boxes">
-    <include name="yes" displayName="${yes}">./subsets/animatedpreview.xml</include>
+  <subset tinyScreen="false" name="animatedInfobar" displayName="${animatedInfobar}" appliesTo="detailed,grid,gamecarousel,Tiles,Icons,Carousel,Boxes">
+    <include ifArch="windows,x86,x86_64,odroidc4,odroidxu4" name="yes" displayName="${yes}">./subsets/animatedpreview.xml</include>
     <include name="no" displayName="${no}"/>
+    <include ifNotArch="windows,x86,x86_64,odroidc4,odroidxu4" name="yes" displayName="${yes}">./subsets/animatedpreview.xml</include>
   </subset>
   
   <!-- Subset options for Tiles view -->
@@ -193,9 +194,9 @@ originally based on: "simple" by nils bonenberger
   </subset>
   <subset tinyScreen="false" name="tileborders" displayName="${roundBorderSubsetName}" appliesTo="Tiles, Icons">
     <!-- default to yes for fast platforms only -->
-    <include ifArch="rpi4,windows,x86,x86_64,odroidc4,odroidxu4" name="yes" displayName="${yes}"/>
+    <include ifArch="windows,x86,x86_64,odroidc4,odroidxu4" name="yes" displayName="${yes}"/>
     <include name="no" displayName="${no}">./subsets/tiles/squareborders.xml</include>
-    <include ifNotArch="rpi4,windows,x86,x86_64,odroidc4,odroidxu4" name="yes" displayName="${yes}"/>
+    <include ifNotArch="windows,x86,x86_64,odroidc4,odroidxu4" name="yes" displayName="${yes}"/>
   </subset>
   <subset name="blinkborders" displayName="${blinkBorderSubsetName}" appliesTo="Tiles,Icons,Carousel,Boxes,grid">
     <include name="yes" displayName="${yes}"/>

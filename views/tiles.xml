@@ -70,7 +70,7 @@
       <size>0 0.22</size>
       <glowColor>00000060</glowColor>
       <glowSize>0</glowSize>
-      <glowSize ifArch="rpi4,windows,x86,x86_64,odroidc4,odroidxu4">1</glowSize>
+      <glowSize ifArch="windows,x86,x86_64,odroidc4,odroidxu4">1</glowSize>
     </text>
     <text name="gridtile:selected">
       <singleLineScroll>false</singleLineScroll>
