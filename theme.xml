@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
 Theme: es-theme-carbon
 author: Fabrice CARUSO
@@ -181,9 +181,10 @@ originally based on: "simple" by nils bonenberger
     <include name="no" displayName="${no}"/>
     <include name="yes" displayName="${yes}">./subsets/grid/previewbar.xml</include>
   </subset>
-  <subset name="animatedInfobar" displayName="${animatedInfobar}" appliesTo="detailed,grid,gamecarousel,Tiles,Icons,Carousel,Boxes">
-    <include name="yes" displayName="${yes}">./subsets/animatedpreview.xml</include>
+  <subset tinyScreen="false" name="animatedInfobar" displayName="${animatedInfobar}" appliesTo="detailed,grid,gamecarousel,Tiles,Icons,Carousel,Boxes">
+    <include ifArch="windows,x86,x86_64,odroidc4,odroidxu4" name="yes" displayName="${yes}">./subsets/animatedpreview.xml</include>
     <include name="no" displayName="${no}"/>
+    <include ifNotArch="windows,x86,x86_64,odroidc4,odroidxu4" name="yes" displayName="${yes}">./subsets/animatedpreview.xml</include>
   </subset>
   
   <!-- Subset options for Tiles view -->
