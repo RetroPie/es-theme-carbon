@@ -1,90 +1,220 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.0"
-   width="1280.000000pt"
-   height="720.000000pt"
-   viewBox="0 0 1280.000000 720.000000"
-   preserveAspectRatio="xMidYMid meet"
-   id="svg20"
+   id="wiiu"
+   width="589"
+   height="350"
+   viewBox="0 0 589 350"
+   version="1.1"
    sodipodi:docname="controller.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
-  <metadata
-     id="metadata26">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs24" />
+     id="defs49" />
   <sodipodi:namedview
+     id="namedview47"
      pagecolor="#ffffff"
      bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
+     borderopacity="1.0"
      inkscape:pageshadow="2"
-     inkscape:window-width="716"
-     inkscape:window-height="480"
-     id="namedview22"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="0.20917969"
-     inkscape:cx="853.33333"
-     inkscape:cy="480"
-     inkscape:window-x="525"
-     inkscape:window-y="195"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg20" />
+     inkscape:zoom="1.7962649"
+     inkscape:cx="294.22164"
+     inkscape:cy="175.08554"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="wiiu" />
   <g
-     transform="translate(0.000000,720.000000) scale(0.100000,-0.100000)"
-     fill="#000000"
-     stroke="none"
-     id="g18"
-     style="fill:#f4f4f4;fill-opacity:1">
+     id="group1">
+    <g
+       id="body">
+      <path
+         id="main"
+         d="M103.52,28.5c-49.16,0-88.77,35.35-88.77,79.34V242.16c0,44,39.61,79.34,88.77,79.34h382c49.16,0,88.77-35.35,88.77-79.34V107.84c0-44-39.61-79.34-88.77-79.34Z"
+         style="fill: none;stroke: #f4f4f4;stroke-miterlimit: 10;stroke-width: 1.5px" />
+      <g
+         id="triggers">
+        <path
+           id="left"
+           d="M85.25,30c-3-4.81-24.9,2.44-40,12.75C30.07,53.21,19.9,68.09,24.21,72.08"
+           style="fill: none;stroke: #f4f4f4;stroke-width: 1.5px" />
+        <path
+           id="right"
+           d="M564.79,72.08c4.31-4-5.86-18.87-21.08-29.29-15.06-10.31-36.93-17.56-40-12.75"
+           style="fill: none;stroke: #f4f4f4;stroke-width: 1.5px" />
+      </g>
+    </g>
     <path
-       d="M2990 6214 c-566 -25 -844 -122 -1092 -382 -249 -261 -387 -636 -439 -1192 -15 -161 -21 -1709 -8 -1955 34 -630 175 -1048 448 -1329 244 -251 487 -334 1045 -356 323 -13 6857 -13 7051 0 353 24 561 77 758 193 92 54 287 246 352 347 170 262 266 593 305 1050 14 163 21 1606 9 1888 -28 636 -167 1071 -434 1361 -211 227 -465 330 -895 360 -123 9 -6914 23 -7100 15z m-551 -739 c214 -57 361 -247 361 -468 0 -29 -8 -83 -19 -119 -38 -138 -127 -243 -261 -307 -66 -31 -86 -36 -171 -39 -149 -6 -248 29 -351 126 -168 157 -199 417 -71 609 110 167 322 249 512 198z m8214 0 c241 -63 393 -290 355 -533 -27 -177 -158 -330 -329 -383 -72 -23 -191 -25 -265 -5 -246 65 -402 328 -339 569 57 219 238 363 460 366 34 1 87 -6 118 -14z m-1405 -1878 l2 -1637 -2812 2 -2813 3 -3 1625 c-1 894 0 1631 3 1638 3 10 571 12 2812 10 l2808 -3 3 -1638z m999 792 c107 -52 126 -205 34 -282 -66 -55 -155 -56 -221 -1 -42 36 -60 75 -60 131 0 66 33 120 89 150 55 29 102 29 158 2z m-7377 -229 l5 -165 165 -5 165 -5 3 -119 c2 -89 -1 -121 -10 -128 -7 -4 -84 -8 -170 -8 l-158 0 0 -164 c0 -140 -2 -165 -16 -170 -30 -11 -219 -7 -232 6 -8 8 -12 60 -12 170 l0 158 -159 0 c-123 0 -161 3 -170 14 -8 9 -11 52 -9 127 l3 114 165 5 165 5 3 155 c1 85 4 161 7 168 3 9 35 12 127 10 l123 -3 5 -165z m6987 -186 c60 -45 88 -113 73 -181 -18 -78 -75 -125 -157 -130 -47 -3 -66 1 -97 19 -47 27 -86 95 -86 148 0 53 39 121 86 148 49 29 139 27 181 -4z m805 4 c112 -63 115 -228 4 -293 -49 -29 -121 -33 -165 -10 -70 36 -112 128 -92 197 33 110 155 161 253 106z m-412 -403 c163 -83 86 -343 -96 -322 -92 10 -154 79 -154 172 0 128 134 209 250 150z m-449 -630 c40 -21 69 -71 69 -120 0 -108 -121 -173 -211 -112 -41 28 -59 60 -59 110 0 104 108 170 201 122z m0 -517 c79 -44 93 -153 26 -215 -48 -43 -94 -51 -149 -24 -53 25 -78 65 -78 123 0 54 27 99 71 121 46 22 84 21 130 -5z"
-       id="path2"
-       style="fill:#f4f4f4;fill-opacity:1" />
+       id="logo"
+       d="M176.18,290.47c0,3,3.5,2.54,3.5.47V286h-3.5Zm-4.83,3.12a2.26,2.26,0,0,0,2.49,2.33h8.41a2.13,2.13,0,0,0,2.26-2.1v-6.15c0-.75-.56-1.56-1.25-1.56h-1.95v5.06c0,3.85-6.69,3.82-6.69.08V286h-1.48a1.65,1.65,0,0,0-1.79,1.56v6Zm-11.64-6.1a1.49,1.49,0,0,0,1.51,1.47,1.48,1.48,0,1,0,0-2.95A1.49,1.49,0,0,0,159.71,287.49Zm2.86,11.35v-8.43H160v8.43ZM165,287.49a1.55,1.55,0,1,0,1.53-1.48A1.51,1.51,0,0,0,165,287.49Zm2.86,11.35v-8.43h-2.61v8.43Zm-12-12.11-2.27,8.94s-1.75-6.71-2-7.68a1.73,1.73,0,0,0-3.39,0c-.27,1-2,7.68-2,7.68l-2.29-8.94h-2.74s2.63,9.53,3,10.64a2,2,0,0,0,1.92,1.56,2,2,0,0,0,1.89-1.56c.25-.75,1.95-7,1.95-7s1.71,6.29,1.94,7a2,2,0,0,0,1.89,1.56,2.08,2.08,0,0,0,1.94-1.56c.35-1.11,3-10.64,3-10.64Z"
+       style="fill: #f4f4f4;fill-rule: evenodd" />
+    <g
+       id="screen">
+      <rect
+         id="frame"
+         x="134.95"
+         y="82.8"
+         width="316.89"
+         height="184.94"
+         rx="6.46"
+         style="fill: none;stroke: #f4f4f4;stroke-width: 1.5px" />
+      <rect
+         id="screen2"
+         x="142.23"
+         y="89.39"
+         width="302.34"
+         height="171.44"
+         style="fill: none;stroke: #f4f4f4;stroke-width: 1.5px" />
+    </g>
+    <g
+       id="speakers">
+      <path
+         id="left2"
+         d="M106.1,290.74h5.73a2.27,2.27,0,1,1,0,4.49H106.1a2.27,2.27,0,1,1,0-4.49Z"
+         style="fill: #f4f4f4" />
+      <path
+         id="right2"
+         d="M476.31,290.74H482a2.27,2.27,0,1,1,0,4.49h-5.72a2.27,2.27,0,1,1,0-4.49Z"
+         style="fill: #f4f4f4" />
+    </g>
     <path
-       d="M2244 5400 c-71 -14 -137 -52 -200 -115 -83 -82 -108 -146 -109 -275 0 -86 3 -101 31 -160 120 -253 456 -308 643 -105 83 90 122 214 103 325 -41 228 -247 374 -468 330z m148 -31 c244 -52 364 -310 247 -530 -37 -69 -89 -118 -169 -157 -47 -23 -67 -27 -145 -27 -77 0 -98 4 -147 27 -79 37 -142 98 -181 177 -29 59 -32 74 -32 156 0 76 4 99 26 145 48 103 133 176 239 204 68 18 95 19 162 5z"
-       id="path4"
-       style="fill:#f4f4f4;fill-opacity:1" />
+       id="microphone"
+       d="M261.72,292.82a1.06,1.06,0,1,1-1.06-1.06A1.06,1.06,0,0,1,261.72,292.82Z"
+       style="fill: #f4f4f4" />
     <path
-       d="M10462 5399 c-204 -40 -349 -248 -312 -446 70 -384 577 -455 743 -105 29 61 32 75 32 167 0 88 -3 107 -27 158 -54 114 -168 204 -289 227 -59 11 -87 11 -147 -1z m198 -44 c62 -21 139 -81 178 -139 125 -186 53 -437 -153 -533 -52 -24 -72 -28 -150 -28 -78 1 -98 5 -149 30 -222 107 -279 392 -115 570 103 111 248 149 389 100z"
-       id="path6"
-       style="fill:#f4f4f4;fill-opacity:1" />
+       id="battery"
+       d="M384.64,293a1.7,1.7,0,1,1-1.7-1.7,1.7,1.7,0,0,1,1.7,1.7Z"
+       style="fill: #f4f4f4" />
+    <rect
+       id="TV_button"
+       data-name="TV button"
+       x="405.13"
+       y="286.49"
+       width="13.04"
+       height="13.04"
+       rx="3.88"
+       style="fill: none;stroke: #f4f4f4;stroke-linejoin: round;stroke-width: 1.5px" />
+    <g
+       id="home">
+      <path
+         id="icon"
+         d="M294.49,287.47l-6,5.59h1.92v4.67h8.23v-4.67h1.95Zm-2.09,5.47h4.18v3H292.4Z"
+         style="fill: #f4f4f4" />
+      <circle
+         id="button"
+         cx="294.5"
+         cy="293.57"
+         r="12.08"
+         style="fill: none;stroke: #f4f4f4;stroke-width: 1.5px" />
+    </g>
+    <g
+       id="power">
+      <path
+         id="button-2"
+         data-name="button"
+         d="M446.49,293.44a6.5,6.5,0,1,1-6.5-6.5,6.5,6.5,0,0,1,6.5,6.5Z"
+         style="fill: none;stroke: #f4f4f4;stroke-width: 1.5px" />
+      <path
+         id="symbol"
+         d="M438.43,290.8a3.11,3.11,0,0,0,1.56,5.81,3.11,3.11,0,0,0,1.56-5.81l-.39.67a2.34,2.34,0,1,1-2.33,0l-.4-.67Zm1.16-.88v3.37h.8v-3.37Z"
+         style="fill: #f4f4f4" />
+    </g>
+    <g
+       id="NF_Comm"
+       data-name="NF Comm">
+      <path
+         id="border"
+         d="M78,221.28H99.25a1.92,1.92,0,0,1,1.93,1.93v13.53"
+         style="fill: none;stroke: #f4f4f4;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 1.5px" />
+      <rect
+         id="comm"
+         x="77.03"
+         y="224.17"
+         width="21.26"
+         height="13.53"
+         rx="1"
+         style="fill: none;stroke: #f4f4f4;stroke-miterlimit: 10;stroke-width: 1.5px" />
+    </g>
     <path
-       d="M3732 3598 l3 -1533 2685 -3 c1477 -1 2695 0 2708 3 l22 5 -2 1528 -3 1527 -2708 3 -2707 2 2 -1532z m5366 7 c2 -1383 1 -1481 -15 -1493 -22 -16 -5263 -18 -5294 -2 -19 11 -19 38 -19 1480 0 807 3 1475 6 1484 6 15 247 16 2663 14 l2656 -3 3 -1480z"
-       id="path8"
-       style="fill:#f4f4f4;fill-opacity:1" />
+       id="select"
+       d="M485.87,245.93a7.14,7.14,0,1,1-14.28,0h0a7.14,7.14,0,1,1,14.28,0Z"
+       style="fill: none;stroke: #f4f4f4;stroke-width: 1.5px" />
     <path
-       d="M2710 4125 l0 -56 33 3 c31 3 32 4 32 53 0 49 -1 50 -32 53 l-33 3 0 -56z"
-       id="path10"
-       style="fill:#f4f4f4;fill-opacity:1" />
+       id="start"
+       d="M485.87,217a7.14,7.14,0,1,1-14.28,0h0a7.14,7.14,0,1,1,14.28,0Z"
+       style="fill: none;stroke: #f4f4f4;stroke-width: 1.5px" />
     <path
-       d="M2430 3865 l0 -35 50 0 50 0 0 35 0 35 -50 0 -50 0 0 -35z"
-       id="path12"
-       style="fill:#f4f4f4;fill-opacity:1" />
+       id="player_buttons"
+       data-name="player buttons"
+       d="M536,159.72a10.26,10.26,0,1,1-10.25-10.26A10.25,10.25,0,0,1,536,159.72Zm-22.35,22.07a10.26,10.26,0,1,1-10.26-10.26A10.26,10.26,0,0,1,513.68,181.79ZM491.54,159.7a10.26,10.26,0,1,1-10.25-10.26A10.25,10.25,0,0,1,491.54,159.7Zm22.14-22.27a10.26,10.26,0,1,1-10.26-10.25A10.26,10.26,0,0,1,513.68,137.43Z"
+       style="fill: none;stroke: #f4f4f4;stroke-width: 1.5px" />
+    <g
+       id="d-pad">
+      <path
+         id="cross"
+         d="M82.15,135.2a2.07,2.07,0,0,0-2.06,2.1v15.18H64.87a2.08,2.08,0,0,0-2.06,2.1v11.55a2.07,2.07,0,0,0,2.06,2.09H80.09v15.19a2.08,2.08,0,0,0,2.06,2.1H93.74a2.08,2.08,0,0,0,2.06-2.1V168.22H111a2.07,2.07,0,0,0,2.06-2.09V154.58a2.08,2.08,0,0,0-2.06-2.1H95.8V137.3a2.07,2.07,0,0,0-2.06-2.1Z"
+         style="fill: none;stroke: #f4f4f4;stroke-width: 1.5px" />
+      <path
+         id="lines"
+         d="M88,171.87v8.37m0-39.77v8.36m11.52,11.52h8.36m-39.77,0h8.37"
+         style="fill: none;stroke: #f4f4f4;stroke-linecap: round;stroke-width: 1.5px" />
+    </g>
+    <g
+       id="joystick2">
+      <path
+         id="back2"
+         d="M496,97.19a29,29,0,0,1,58,0v0a29,29,0,1,1-58,0Z"
+         style="fill: none;stroke: #f4f4f4;stroke-width: 1.5px" />
+      <path
+         id="stick2"
+         d="M506,97.19a19,19,0,1,1,38,0h0a19,19,0,0,1-38,0Z"
+         style="fill: none;stroke: #f4f4f4;stroke-width: 1.5px" />
+      <path
+         id="inside2"
+         d="M512.42,97.19a12.56,12.56,0,0,1,25.12,0h0a12.56,12.56,0,1,1-25.12,0Z"
+         style="fill: none;stroke: #f4f4f4;stroke-width: 1.5px" />
+    </g>
+    <g
+       id="joystick1">
+      <path
+         id="back1"
+         d="M35,97.19a29,29,0,0,1,58,0v0a29,29,0,1,1-58,0Z"
+         style="fill: none;stroke: #f4f4f4;stroke-width: 1.5px" />
+      <path
+         id="stick1"
+         d="M45,97.19a19,19,0,1,1,38,0h0a19,19,0,0,1-38,0Z"
+         style="fill: none;stroke: #f4f4f4;stroke-width: 1.5px" />
+      <path
+         id="inside1"
+         d="M51.46,97.19a12.56,12.56,0,0,1,25.12,0h0a12.56,12.56,0,0,1-25.12,0Z"
+         style="fill: none;stroke: #f4f4f4;stroke-width: 1.5px" />
+    </g>
     <path
-       d="M2957 3894 c-4 -4 -7 -20 -7 -36 0 -27 1 -28 56 -28 l55 0 -3 33 c-3 30 -5 32 -48 35 -25 2 -49 0 -53 -4z"
-       id="path14"
-       style="fill:#f4f4f4;fill-opacity:1" />
-    <path
-       d="M2710 3600 l0 -50 35 0 35 0 0 50 0 50 -35 0 -35 0 0 -50z"
-       id="path16"
-       style="fill:#f4f4f4;fill-opacity:1" />
+       id="camera_bar"
+       data-name="camera bar"
+       d="M220.25,41.58H366.4c6.18,0,11.19,4.6,11.19,10.27v.46c0,5.67-5,10.27-11.19,10.27H220.25c-6.18,0-11.2-4.6-11.2-10.27v-.46C209.05,46.18,214.07,41.58,220.25,41.58Z"
+       style="fill: none;stroke: #f4f4f4;stroke-width: 1.5px" />
+    <g
+       id="camera">
+      <path
+         id="outside3"
+         d="M301.75,52.44a8.5,8.5,0,0,1-17,0v0a8.5,8.5,0,0,1,17,0Z"
+         style="fill: none;stroke: #f4f4f4;stroke-width: 1.5px" />
+      <path
+         id="inside3"
+         d="M299.25,52.48a6,6,0,0,1-12,0h0a6,6,0,1,1,12,0Z"
+         style="fill: none;stroke: #f4f4f4;stroke-width: 1.5px" />
+      <path
+         id="lens"
+         d="M296.92,52.47a3.67,3.67,0,1,1-3.67-3.67A3.66,3.66,0,0,1,296.92,52.47Z"
+         style="fill: #f4f4f4" />
+    </g>
   </g>
 </svg>
