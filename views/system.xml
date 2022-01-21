@@ -9,21 +9,6 @@ originally based on: "simple" by nils bonenberger
 <theme defaultView="Icons">
   <formatVersion>7</formatVersion>
   <view name="system">
-    <!-- Used by random box need to be declared there -->
-    <image name="box" extra="true">
-      <pos>0.50 0.18</pos>
-      <origin>0.5 0.5</origin>
-      <maxSize>0.24 0.24</maxSize>
-      <zIndex>12</zIndex>
-      <visible>false</visible>
-    </image>
-    <video name="videobox" extra="true">
-      <pos>0.50 0.18</pos>
-      <origin>0.5 0.5</origin>
-      <maxSize>0.24 0.24</maxSize>
-      <visible>false</visible>
-      <zIndex>12</zIndex>
-    </video>
     <image name="background" extra="static">
       <tile>false</tile>
       <size>1 1</size>

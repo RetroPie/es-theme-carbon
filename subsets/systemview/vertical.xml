@@ -19,17 +19,6 @@
   </feature>
   <view name="system">
 
-    <!-- When random box -->
-    <image name="box" extra="true">
-      <pos>0.675 0.40</pos>
-      <maxSize>0.40 0.55</maxSize>
-    </image>   
-
-    <video name="videobox" extra="true">
-      <pos>0.675 0.40</pos>
-      <maxSize>0.40 0.55</maxSize>
-    </video>   
-
    <image name="logo">
       <!-- if system2 exists, take this version -->
       <path verticalScreen="true">./../../art/logos/${system.theme}-w.svg</path>

@@ -9,7 +9,19 @@
       <color>FFFFFFFF</color>
       <effect>none</effect>
       <roundCorners>0.05</roundCorners>
+      <pos>0.50 0.18</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>0.24 0.24</maxSize>
+      <zIndex>12</zIndex>
       <visible>true</visible>
+    </video>
+    <video name="videobox" extra="true" ifSubset="systemview:vertical">
+      <pos>0.675 0.40</pos>
+      <maxSize>0.40 0.55</maxSize>
+    </video>
+    <video name="videobox" extra="true" ifSubset="systemview:wheel">
+      <pos>0.675 0.40</pos>
+      <maxSize>0.40 0.55</maxSize>
     </video>
     <image name="ControllerOverlay" extra="true">
       <visible>false</visible>
