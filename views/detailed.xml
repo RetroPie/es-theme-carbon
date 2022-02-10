@@ -9,6 +9,11 @@ originally based on: "simple" by nils bonenberger
 <theme defaultView="Icons">
   <formatVersion>7</formatVersion>
   <view name="detailed">  
+    <!-- Sample per-game customisation path definition
+    <gameextras name="gameextras">
+      <path>./../games/${system.theme}</path>
+    </gameextras>
+    -->
     <video name="md_video">
       <pos>0.76 0.408</pos>
       <maxSize>0.46 0.436</maxSize>
