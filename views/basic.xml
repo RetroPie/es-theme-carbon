@@ -46,6 +46,8 @@ originally based on: "simple" by nils bonenberger
       <selectedColor>${basecolor}</selectedColor>
       <primaryColor>C0C0C0</primaryColor>
       <secondaryColor>F0F0F0</secondaryColor>
+      <extraTextColor>555555</extraTextColor> <!-- extraText color is for texts located between [] or () -->
+      <extraTextSelectedColor>A0A0A0</extraTextSelectedColor>
       <fontPath>./../art/fonts/Cabin-Regular.ttf</fontPath>
       <fontSize>0.030</fontSize>
       <pos>0.025 0.18</pos>

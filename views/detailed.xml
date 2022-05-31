@@ -25,6 +25,7 @@ originally based on: "simple" by nils bonenberger
       <roundCorners>0.02</roundCorners>
       <zIndex>30</zIndex>
       <defaultSnapshot>./../art/grid/defgame.png</defaultSnapshot>
+<!--<shader>:/shaders/scanlines.glsl</shader>-->
     </video>
     <image name="background">
       <tile>false</tile>
@@ -89,6 +90,8 @@ originally based on: "simple" by nils bonenberger
       <secondaryColor>F0F0F0</secondaryColor>
       <selectorColor>${centerFadeColor}</selectorColor>
       <selectedColor>FFFFFFFF</selectedColor>
+      <extraTextColor>606060</extraTextColor> <!-- extraText color is for texts located between [] or () -->
+      <extraTextSelectedColor>A0A0A0</extraTextSelectedColor>
       <forceUppercase>0</forceUppercase>
       <pos>0.021 0.18</pos>
       <size>0.489 0.73</size>
@@ -102,7 +105,9 @@ originally based on: "simple" by nils bonenberger
       <scrollbarSize>0.0065</scrollbarSize>
       <scrollbarAlignment>outerright</scrollbarAlignment>
       <lines>17</lines>
-      <horizontalMargin>0.005</horizontalMargin>      
+      <horizontalMargin>0.005</horizontalMargin>   
+      <glowColor>000000A0</glowColor>
+      <glowSize>1</glowSize>   
     </textlist>
     <!-- 
     <text name="md_genre, md_developer, md_publisher, md_lastplayed, md_releasedate, md_players, md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_lbl_releasedate">
@@ -182,6 +187,8 @@ originally based on: "simple" by nils bonenberger
       <forceUppercase>0</forceUppercase>
       <fontPath>./../art/fonts/Cabin-Regular.ttf</fontPath>
       <fontSize>0.023</fontSize>
+    <glowColor>000000A0</glowColor>
+      <glowSize>1</glowSize>   
     </text>
     <image name="md_hidden">
       <path>./../art/hidden.svg</path>
