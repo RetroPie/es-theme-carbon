@@ -107,7 +107,7 @@ originally based on: "simple" by nils bonenberger
       <lines>17</lines>
       <horizontalMargin>0.005</horizontalMargin>   
       <glowColor>000000A0</glowColor>
-      <glowSize>1</glowSize>   
+      <glowSize ifArch="windows,x86,x86_64,odroidc4,odroidxu4">1</glowSize>
     </textlist>
     <!-- 
     <text name="md_genre, md_developer, md_publisher, md_lastplayed, md_releasedate, md_players, md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_lbl_releasedate">
@@ -187,8 +187,8 @@ originally based on: "simple" by nils bonenberger
       <forceUppercase>0</forceUppercase>
       <fontPath>./../art/fonts/Cabin-Regular.ttf</fontPath>
       <fontSize>0.023</fontSize>
-    <glowColor>000000A0</glowColor>
-      <glowSize>1</glowSize>   
+      <glowColor>000000A0</glowColor>
+      <glowSize ifArch="windows,x86,x86_64,odroidc4,odroidxu4">1</glowSize>
     </text>
     <image name="md_hidden">
       <path>./../art/hidden.svg</path>

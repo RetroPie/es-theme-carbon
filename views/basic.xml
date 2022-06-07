@@ -67,7 +67,9 @@ originally based on: "simple" by nils bonenberger
       <scrollbarAlignment>outerright</scrollbarAlignment> <!-- innerleft -->
 
       <lines>17</lines>
-      <horizontalMargin>0.005</horizontalMargin>  
+      <horizontalMargin>0.005</horizontalMargin>
+      <glowColor>000000A0</glowColor>
+      <glowSize ifArch="windows,x86,x86_64,odroidc4,odroidxu4">1</glowSize>
     </textlist>
   </view>
 </theme>
