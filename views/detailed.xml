@@ -8,12 +8,37 @@ originally based on: "simple" by nils bonenberger
 -->
 <theme defaultView="Icons">
   <formatVersion>7</formatVersion>
-  <view name="detailed">  
+  <view name="detailed">
     <!-- Sample per-game customisation path definition
     <gameextras name="gameextras">
       <path>./../games/${system.theme}</path>
     </gameextras>
-    -->
+      -->
+    <textlist name="gamelist">
+      <lines>17</lines>
+      <primaryColor>C0C0C0</primaryColor>
+      <secondaryColor>F0F0F0</secondaryColor>
+      <selectorColor>${centerFadeColor}</selectorColor>
+      <selectedColor>FFFFFFFF</selectedColor>
+      <extraTextColor>606060</extraTextColor>
+      <!-- extraText color is for texts located between [] or () -->
+      <extraTextSelectedColor>A0A0A0</extraTextSelectedColor>
+      <forceUppercase>0</forceUppercase>
+      <pos>0.021 0.18</pos>
+      <size>0.489 0.73</size>
+      <alignment>left</alignment>
+      <horizontalMargin>0.00</horizontalMargin>
+      <fontPath>./../art/fonts/Cabin-Regular.ttf</fontPath>
+      <fontSize>0.028</fontSize>
+      <scrollSound>./../art/sounds/scroll.wav</scrollSound>
+      <scrollbarColor>96969620</scrollbarColor>
+      <scrollbarCorner>0.49</scrollbarCorner>
+      <scrollbarSize>0.0065</scrollbarSize>
+      <scrollbarAlignment>outerright</scrollbarAlignment>
+      <horizontalMargin>0.005</horizontalMargin>
+      <glowColor>000000A0</glowColor>
+      <glowSize ifArch="windows,x86,x86_64,odroidc4,odroidxu4">1</glowSize>
+    </textlist>
     <video name="md_video">
       <pos>0.76 0.408</pos>
       <maxSize>0.46 0.436</maxSize>
@@ -25,7 +50,7 @@ originally based on: "simple" by nils bonenberger
       <roundCorners>0.02</roundCorners>
       <zIndex>30</zIndex>
       <defaultSnapshot>./../art/grid/defgame.png</defaultSnapshot>
-<!--<shader>:/shaders/scanlines.glsl</shader>-->
+      <!--<shader>:/shaders/scanlines.glsl</shader>-->
     </video>
     <image name="background">
       <tile>false</tile>
@@ -85,30 +110,6 @@ originally based on: "simple" by nils bonenberger
       <size ifHelpPrompts="false">0.003 0.84</size>
       <zIndex>14</zIndex>
     </image>
-    <textlist name="gamelist">
-      <primaryColor>C0C0C0</primaryColor>
-      <secondaryColor>F0F0F0</secondaryColor>
-      <selectorColor>${centerFadeColor}</selectorColor>
-      <selectedColor>FFFFFFFF</selectedColor>
-      <extraTextColor>606060</extraTextColor> <!-- extraText color is for texts located between [] or () -->
-      <extraTextSelectedColor>A0A0A0</extraTextSelectedColor>
-      <forceUppercase>0</forceUppercase>
-      <pos>0.021 0.18</pos>
-      <size>0.489 0.73</size>
-      <alignment>left</alignment>
-      <horizontalMargin>0.00</horizontalMargin>
-      <fontPath>./../art/fonts/Cabin-Regular.ttf</fontPath>
-      <fontSize>0.028</fontSize>
-      <scrollSound>./../art/sounds/scroll.wav</scrollSound>
-      <scrollbarColor>96969620</scrollbarColor>
-      <scrollbarCorner>0.49</scrollbarCorner>
-      <scrollbarSize>0.0065</scrollbarSize>
-      <scrollbarAlignment>outerright</scrollbarAlignment>
-      <lines>17</lines>
-      <horizontalMargin>0.005</horizontalMargin>   
-      <glowColor>000000A0</glowColor>
-      <glowSize ifArch="windows,x86,x86_64,odroidc4,odroidxu4">1</glowSize>
-    </textlist>
     <!-- 
     <text name="md_genre, md_developer, md_publisher, md_lastplayed, md_releasedate, md_players, md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_lbl_releasedate">
       <storyboard>

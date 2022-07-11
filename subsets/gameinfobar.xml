@@ -4,7 +4,7 @@
 
 	<view name="grid,detailed,gamecarousel">
 
-		<image name="iconsBk" extra="true" ifHelpPrompts="true">
+		<image name="iconsBk" extra="true" ifHelpPrompts="true" onclick="gameoptions">
 			<path>./../art/filter.png</path>
 			<color>00000080</color>
 			<colorEnd>000000ff</colorEnd>

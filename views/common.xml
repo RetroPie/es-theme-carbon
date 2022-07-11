@@ -8,6 +8,7 @@ originally based on: "simple" by nils bonenberger
 -->
 <theme defaultView="Icons">
   <formatVersion>7</formatVersion>
+  
   <view name="basic, detailed, grid, gamecarousel">
     <image name="bottom" extra="true">
       <pos>0 1</pos>
@@ -27,7 +28,8 @@ originally based on: "simple" by nils bonenberger
       <zIndex>14</zIndex>
     </image>
     
-    <image name="top" extra="true">
+    <!-- gamelist 'onclick' actions are : back, options, gameoptions, launch, search, savestates, favorite & random -->
+    <image name="top" extra="true" onclick="back">
       <pos>0 0</pos>
       <origin>0 0</origin>
       <size>1 0.155</size>
