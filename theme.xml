@@ -9,6 +9,10 @@ originally based on: "simple" by nils bonenberger
 <theme defaultView="Icons">
   <formatVersion>7</formatVersion>
   <variables>
+    <!-- Example evaluated variables, usable in if="" conditions -->
+    <wideScreen>${screen.ratio} == "16/9" || ${screen.ratio} == "16/10"</wideScreen>
+    <fullHD>${screen.height} >= 1080</fullHD>
+    <!-- Variables -->
     <baseColor>8b0000</baseColor>
     <gradientEndColor>6b2020</gradientEndColor>
     <centerFadeColor>8b000050</centerFadeColor>
